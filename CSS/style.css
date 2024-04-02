@@ -1,4 +1,5 @@
 /* Start Global Rules */
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -348,3 +349,8 @@ footer > p {
 }
 /* End Footer */ 
 
+=======
+
+
+/* End Global Rules */
+>>>>>>> ca47d212f910c4acb137e620d68aebe50e7a6a84
