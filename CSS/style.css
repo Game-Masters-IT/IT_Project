@@ -1,34 +1,4 @@
 /* Start Global Rules */
 
-:root {
-    --Dark: #121212;
-    --light: hsl(0deg 0% 100% / 8%);
 
-}
 /* End Global Rules */
-body{
-    background-color: var(--Dark);
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-}
-div {
-    width: 30px;
-    height: 30px;
-    background-color: var(--Dark);
-    transition: 0.3s;
-    font-weight: bold;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-div:hover {
-    background-color: var(--light);
-}
