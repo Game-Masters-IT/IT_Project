@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Game Masters</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" >
     <!--Normalize-->
     <link rel="stylesheet" href="./CSS/normalize.css">
     <!--Font Awsome-->
@@ -23,37 +24,47 @@
                 <span><span>Game</span>Masters</span>
             </a>
             <div class="pages-box">
-                <i class="fas fa-bars" id="toggle-menu"></i>
+                <i class="fas fa-bars" id="toggle-menu">
+                    <i class="fa-solid fa-angle-down" id="menu-arrow"></i>
+                </i>
                 <ul class="pages" id="pages-links">
-                <li><a href="index.html" title="Home" >Home</a></li>
-                <li><a href="playstation.html" title="Playstation">Playstation</a></li>
-                <li><a href="xbox.html" title="Xbox">Xbox</a></li>
-                <li><a href="pc.html" title="PC">PC</a></li>
-                <!-- <li><a href="trending.html">Trending</a></li> -->
-                <li><a href="support.html" title="Supports">Supports</a></li>
-                <li><a href="about.html" title="About Us">About Us</a></li>
-            </ul>
+                    <div class="col">
+                        <li><a href="index.html" title="Home"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
+                        <li><a href="playstation.html" title="Playstation"><i class="fa-brands fa-playstation fa-fw"></i>Playstation</a></li>
+                        <li><a href="xbox.html" title="Xbox"><i class="fa-brands fa-xbox fa-fw"></i>Xbox</a></li>
+                        <li><a href="pc.html" title="PC"><i class="fa-solid fa-desktop fa-fw"></i>PC</a></li>
+                        <li><a href="trending.html"><i class="fa-solid fa-fire"></i>Trending</a></li>
+                        <li><a href="support.html" title="Supports"><i class="fa-solid fa-headset fa-fw"></i>Supports</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fa-solid fa-circle-info fa-fw"></i>About Us</a></li>
+                        <li><a href="brands.html" title="Brands"><i class="fa-solid fa-globe fa-fw"></i>Brands</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="coming-soon.html" title="coming soon"><i class="fa-solid fa-hourglass-half fa-fw"></i>Coming Soon</a></li>
+                        <li><a href="game-reviews.html" title="Game Reviews"><i class="fa-solid fa-comment fa-fw"></i>Game Reviews</a></li>
+                        <li><a href="gaming-news.html" title="gaming news"><i class="fa-regular fa-newspaper fa-fw"></i>Gaming News</a></li>
+                        <li><a href="hardware.html" title="Hardware"><i class="fa-solid fa-microchip fa-fw"></i>Hardware</a></li>
+                        <li><a href="nintendo.html" title="nintendo"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Nintendo</a></li>
+                        <li><a href="terms.html" title="nintendo"><i class="fa-solid fa-file fa-fw"></i>Terms</a></li>
+                    </div>
+                </ul>
             </div>
             <div class="rightOptions">
                 <div class="profile">
                     <i class="fa-solid fa-user"></i>
                     <span>Account</span>
                     <ul class="acc">
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="signout.html">Sign Out</a></li>
-                        <li><a href="signin.html">Sign In</a></li>
-                        <li><a href="signup.html">Sign Up</a></li>
+                        <li><a href="profile.html"><i class="fa-solid fa-circle-user"></i>Profile</a></li>
+                        <li><a href="signin.html"><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal" id="sign-in-or-out"></i>Sign In</a></li>
                     </ul>
                 </div>
-                <a herf="cart.html" class="cart">
+                <a href="cart.html" class="cart">
                     <i class="fa-solid fa-bag-shopping"></i>
-                    <span>0</span>
+                    <span id="cart-counter">0</span>
                 </a>
                 <div class="theme-mode" id="theme">
                     <i class="fa-solid fa-moon fa-fw" id="theme-icon" ></i>
                 </div>
             </div>
-            
         </div>
     </nav>
 <!-- =======================Start Your Page Here======================= -->

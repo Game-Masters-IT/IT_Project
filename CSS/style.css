@@ -11,7 +11,6 @@
     --light: #EEEEEE;
     --white: white;
     --tranlayer: rgba(255,255,255,.08);
-
 }
 
 .light-theme {
@@ -231,6 +230,9 @@ nav .cart {
     padding-right: 5px;
     border-radius: 6px;
     padding: 10px;
+}
+nav .cart i{
+    margin-right: 5px;
 }
 nav .cart:hover {
     background-color: var(--tranlayer);
