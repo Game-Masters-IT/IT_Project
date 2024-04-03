@@ -1,32 +1,39 @@
-:root {
-    --dark: #393E46;
-    --darker: #222831;
-    --main: #00ADB5;
-    --light: #EEEEEE;
-    --white: white;
-    --tranlayer: rgba(255,255,255,.08);
 
-}
-
+/* Start Login Square */
 .wrapper {
     position: relative;
     width: 480px;
     height: 440px;
-    background: transparent;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
-    backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
-}
+}d
 
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: var(--light) ;
+    color: var(--dark);
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 18px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .form-box h2 {
@@ -82,7 +89,6 @@
 
 .remember-forgot {
     font-size: .9em;
-    color: var(--light);
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -93,11 +99,8 @@
     accent-color: var(--light);
     margin-right: 4px;
 }
-
-.remember-forgot a {
-    color: var(--light);
-}
 .remember-forgot a:hover {
+    color: skyblue;
     text-decoration: underline;
 }
 
@@ -112,5 +115,25 @@
     font-size: 1em;
     color: var(--light);
     font-weight: 500;
-
 }
+.login-register {
+    font-size: .9em;
+    color: var(--light);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: var(--light);
+    font-weight: 600;
+}
+.login-register a:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+
+
+
+/* End Login Layer */

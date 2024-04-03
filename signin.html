@@ -11,17 +11,71 @@
     <link rel="stylesheet" href="./CSS/all.min.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Page CSS File -->
+    <link rel="stylesheet" href="CSS/signin.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/signin.css">
 </head>
 <body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gamepad"></i>
+                <span><span>Game</span>Masters</span>
+            </a>
+            <div class="pages-box">
+                <i class="fas fa-bars" id="toggle-menu">
+                    <i class="fa-solid fa-angle-down" id="menu-arrow"></i>
+                </i>
+                <ul class="pages" id="pages-links">
+                    <div class="col">
+                        <li><a href="index.html" title="Home" class="active"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
+                        <li><a href="playstation.html" title="Playstation"><i class="fa-brands fa-playstation fa-fw"></i>Playstation</a></li>
+                        <li><a href="xbox.html" title="Xbox"><i class="fa-brands fa-xbox fa-fw"></i>Xbox</a></li>
+                        <li><a href="pc.html" title="PC"><i class="fa-solid fa-desktop fa-fw"></i>PC</a></li>
+                        <li><a href="trending.html"><i class="fa-solid fa-fire"></i>Trending</a></li>
+                        <li><a href="support.html" title="Supports"><i class="fa-solid fa-headset fa-fw"></i>Supports</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fa-solid fa-circle-info fa-fw"></i>About Us</a></li>
+                        <li><a href="brands.html" title="Brands"><i class="fa-solid fa-globe fa-fw"></i>Brands</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="coming-soon.html" title="coming soon"><i class="fa-solid fa-hourglass-half fa-fw"></i>Coming Soon</a></li>
+                        <li><a href="game-reviews.html" title="Game Reviews"><i class="fa-solid fa-comment fa-fw"></i>Game Reviews</a></li>
+                        <li><a href="gaming-news.html" title="gaming news"><i class="fa-regular fa-newspaper fa-fw"></i>Gaming News</a></li>
+                        <li><a href="hardware.html" title="Hardware"><i class="fa-solid fa-microchip fa-fw"></i>Hardware</a></li>
+                        <li><a href="nintendo.html" title="nintendo"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Nintendo</a></li>
+                        <li><a href="terms.html" title="nintendo"><i class="fa-solid fa-file fa-fw"></i>Terms</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="rightOptions">
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Account</span>
+                    <ul class="acc">
+                        <li><a href="profile.html"><i class="fa-solid fa-circle-user"></i>Profile</a></li>
+                        <li><a href="signout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign Out</a></li>
+                    </ul>
+                </div>
+                <a href="cart.html" class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-counter">0</span>
+                </a>
+                <div class="theme-mode" id="theme">
+                    <i class="fa-solid fa-moon fa-fw" id="theme-icon" ></i>
+                </div>
+            </div>
+        </div>
+    </nav>
 <!-- =======================Start Your Page Here======================= -->
 
 
     <div class="wrapper container">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
         <div class="form-box login">
             <h2>login</h2>
             <form action="#">
