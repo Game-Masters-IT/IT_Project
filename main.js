@@ -36,20 +36,24 @@ themeToggle.addEventListener("click", () => {
 // toggle menu on small screens
 const menuIcon = document.getElementById("toggle-menu");
 const pagesLinks = document.getElementById("pages-links");
+const arrow = document.getElementById("menu-arrow");
 let display = 0;
 menuIcon.onclick = () => {
     if (display) {
         pagesLinks.style.display = 'none';
+        arrow.classList.remove("rotate-arrow-on-click");
         display = 0;
     }
     else {
         pagesLinks.style.display = 'flex';
+        arrow.classList.add("rotate-arrow-on-click");
         display = 1;
     }
 };
 document.onclick = (e) => {
     if (!menuIcon.contains(e.target) && !pagesLinks.contains(e.target) && menuIcon.style.display !== "none") {
         pagesLinks.style.display = 'none';
+        arrow.classList.remove("rotate-arrow-on-click");
         display = 0;
     }
 };
