@@ -195,6 +195,7 @@ nav .rightOptions .profile:hover{
     color: var(--white);
 }
 nav .acc {
+    z-index: 100;
     display: none;
     position: absolute;
     top: 100%;
