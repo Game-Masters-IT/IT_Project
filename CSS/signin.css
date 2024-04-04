@@ -1,4 +1,11 @@
 
+:root {
+    --link: skyblue;
+}
+
+/* Start Header  */
+
+/* End Header  */
 /* Start Login Square */
 .wrapper {
     position: relative;
@@ -11,6 +18,12 @@
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    transition: height .2s ease;
+    overflow: hidden;
+}
+
+.wrapper.sign-active {
+    height: 520px;
 }
 
 .wrapper .form-box {
@@ -18,23 +31,26 @@
     padding: 40px;
 }
 
-.wrapper .icon-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background: var(--light) ;
-    color: var(--dark);
-    display: flex;
-    font-size: 2em;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 18px;
-    cursor: pointer;
-    z-index: 1;
+.wrapper .form-box.login {
+    transition: transform .15s ease;
+    transform: translateX(0);
 }
+.wrapper.sign-active .form-box.login {
+    transition: none;
+    transform: translateX(-500px);
+}
+
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(500px);
+}
+.wrapper.sign-active .form-box.register {
+    transition: transform .15s ease;
+    transform: translateX(0);
+}
+
 
 .form-box h2 {
     font-size: 2em;
@@ -100,7 +116,7 @@
     margin-right: 4px;
 }
 .remember-forgot a:hover {
-    color: skyblue;
+    color: var(--link);
     text-decoration: underline;
 }
 
@@ -129,11 +145,8 @@
     font-weight: 600;
 }
 .login-register a:hover {
-    color: skyblue;
+    color: var(--link);
     text-decoration: underline;
 }
-
-
-
 
 /* End Login Layer */

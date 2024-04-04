@@ -23,61 +23,22 @@
         <div class="container">
             <a href="index.html" class="logo">
                 <i class="fa-solid fa-gamepad"></i>
-                <span><span>Game</span>Masters</span>
+            <span><span>Game</span>Masters</span>
             </a>
-            <div class="pages-box">
-                <i class="fas fa-bars" id="toggle-menu">
-                    <i class="fa-solid fa-angle-down" id="menu-arrow"></i>
-                </i>
-                <ul class="pages" id="pages-links">
-                    <div class="col">
-                        <li><a href="index.html" title="Home" class="active"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
-                        <li><a href="playstation.html" title="Playstation"><i class="fa-brands fa-playstation fa-fw"></i>Playstation</a></li>
-                        <li><a href="xbox.html" title="Xbox"><i class="fa-brands fa-xbox fa-fw"></i>Xbox</a></li>
-                        <li><a href="pc.html" title="PC"><i class="fa-solid fa-desktop fa-fw"></i>PC</a></li>
-                        <li><a href="trending.html"><i class="fa-solid fa-fire"></i>Trending</a></li>
-                        <li><a href="support.html" title="Supports"><i class="fa-solid fa-headset fa-fw"></i>Supports</a></li>
-                        <li><a href="about.html" title="About Us"><i class="fa-solid fa-circle-info fa-fw"></i>About Us</a></li>
-                        <li><a href="brands.html" title="Brands"><i class="fa-solid fa-globe fa-fw"></i>Brands</a></li>
-                    </div>
-                    <div class="col">
-                        <li><a href="coming-soon.html" title="coming soon"><i class="fa-solid fa-hourglass-half fa-fw"></i>Coming Soon</a></li>
-                        <li><a href="game-reviews.html" title="Game Reviews"><i class="fa-solid fa-comment fa-fw"></i>Game Reviews</a></li>
-                        <li><a href="gaming-news.html" title="gaming news"><i class="fa-regular fa-newspaper fa-fw"></i>Gaming News</a></li>
-                        <li><a href="hardware.html" title="Hardware"><i class="fa-solid fa-microchip fa-fw"></i>Hardware</a></li>
-                        <li><a href="nintendo.html" title="nintendo"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Nintendo</a></li>
-                        <li><a href="terms.html" title="nintendo"><i class="fa-solid fa-file fa-fw"></i>Terms</a></li>
-                    </div>
-                </ul>
-            </div>
-            <div class="rightOptions">
-                <div class="profile">
-                    <i class="fa-solid fa-user"></i>
-                    <span>Account</span>
-                    <ul class="acc">
-                        <li><a href="profile.html"><i class="fa-solid fa-circle-user"></i>Profile</a></li>
-                        <li><a href="signout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign Out</a></li>
-                    </ul>
-                </div>
-                <a href="cart.html" class="cart">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span id="cart-counter">0</span>
-                </a>
-                <div class="theme-mode" id="theme">
-                    <i class="fa-solid fa-moon fa-fw" id="theme-icon" ></i>
-                </div>
+            <div class="theme-mode" id="theme">
+                <i class="fa-solid fa-moon fa-fw" id="theme-icon" ></i>
             </div>
         </div>
     </nav>
-<!-- =======================Start Your Page Here======================= -->
+    <!-- =======================Start Login Page Here======================= -->
 
 
     <div class="wrapper container">
-        <span class="icon-close">
-            <ion-icon name="close-outline"></ion-icon>
-        </span>
+        
+        <!-- Start login form -->
+        
         <div class="form-box login">
-            <h2>login</h2>
+            <h2>Sign in</h2>
             <form action="#">
                 <div class="input-box">
                     <span class="icon">
@@ -101,16 +62,63 @@
                     Login
                 </button>
                 <div class="login-register">
-                    <p>Don't have an account?<a href="#">Register</a></p>
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- End login form -->
+
+        <!-- Start Registeration form -->
+
+        <div class="form-box register">
+            <h2>Sign up</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                        I agree to the <a href="terms.html">terms & conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">
+                    Sign up
+                </button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Sign in</a></p>
                 </div>
             </form>
         </div>
     </div>
+    <!-- End Registeration form -->
+
+
+</div>
 
 
 <!-- =======================End Your Page Here======================= -->
-    <script src="main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
+<script src="sign.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
