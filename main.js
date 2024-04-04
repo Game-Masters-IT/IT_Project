@@ -69,6 +69,6 @@ for (let i = 0; i < 6; ++i){
         landig_imgs[last_bullet].classList.remove("active");
         landig_imgs[i].classList.add("active");
         last_bullet = i;
-        document.querySelector(".landing-page").style.background = `url(../Images/home/Landing-Page-${i + 1}.jpg) center center / cover`;
+        document.querySelector(".landing-page").style.background = `url(../Images/homeImgs/Landing-Page-${i + 1}.jpg) center center / cover`;
     };
 }

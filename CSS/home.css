@@ -1,5 +1,5 @@
 .landing-page {
-    background: url(../Images/home/Landing-Page-1.jpg) center center / cover;
+    background: url(../Images/homeImgs/Landing-Page-1.jpg) center center / cover;
     background-size: cover;
     height: calc(100vh - 70px);
     position: relative;
