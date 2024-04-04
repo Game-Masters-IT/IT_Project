@@ -1,0 +1,152 @@
+.landing-page {
+    background: url(../Images/home/Landing-Page-1.jpg) center center / cover;
+    background-size: cover;
+    height: calc(100vh - 70px);
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: .3s;
+}
+.landing-page::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 40, 49, 0.6);
+}
+.landing-page::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: var(--main);
+    border-radius: 50%;
+    filter: blur(200px);
+    left: -100px;
+    top: -100px;
+    opacity: .2;
+    height: 50%;
+    width: 25%;
+    animation-name: glow-size;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes glow-size {
+    to {
+        width: 40%;
+        height: 80%;
+    }
+}
+.landing-page .intro {
+    width: 600px;
+    height: 350px;
+    margin-left: 150px;
+    color: white;
+}
+.landing-page .text h3{
+    margin: 0;
+    font-size: 50px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.landing-page .text p{
+    font-size: 20px;
+    max-width: 450px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.landing-page .intro .platforms {
+    display: flex;
+}
+.landing-page .intro a{
+    color: white;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background-color: var(--main);
+    margin-right: 20px;
+    transition: .2s;
+    position: relative;
+}
+.landing-page .intro a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+}
+.landing-page .intro .platforms li:nth-child(2) a{
+    background: rgb(0,48,135);
+    background: linear-gradient(20deg, rgba(0,48,135,1) 41%, rgba(0,119,161,1) 75%, rgba(0,173,181,1) 92%);
+    box-shadow: 0px 0px 26px 3px rgba(0, 48, 135, 0.7);
+}
+.landing-page .intro .platforms li:nth-child(2) a:hover::after{
+    box-shadow: 0px 0px 26px 3px rgba(0, 48, 135, 0.7);
+}
+.landing-page .intro .platforms li:last-child a{
+    background: rgb(16,124,16);
+    background: linear-gradient(20deg, rgba(16,124,16,1) 46%, rgba(102,159,10,1) 77%, rgba(208,202,3,1) 98%, rgba(255,221,0,1) 100%);
+    box-shadow: 0px 0px 26px 3px rgba(16, 124, 16, 0.6);
+}
+.landing-page .intro .platforms li:last-child a:hover::after{
+    box-shadow: 0px 0px 26px 3px rgba(16, 124, 16, 0.4);
+}
+.landing-page .intro .platforms li:first-child a{
+    background: rgb(255,111,0);
+    background: linear-gradient(20deg, rgba(255,111,0,1) 61%, rgba(255,179,0,1) 95%);
+    box-shadow: 0px 0px 26px 3px rgba(255,111,0, 0.4);
+}
+.landing-page .intro .platforms li:first-child a:hover::after{
+    box-shadow: 0px 0px 26px 3px rgba(255,111,0, 0.3);
+}
+
+.landing-page .intro a:hover{
+    transform: translateY(-3px);
+}  
+.landing-page .intro i{
+    margin-right: 10px;
+}
+.landing-page .arrow-to-section {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    animation-name: arrow-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes arrow-animation {
+    to {
+        transform: translateY(15px);
+    }
+}
+.landing-page .bullets {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+
+}
+.landing-page .bullets span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.landing-page .bullets span.active{
+    background-color: var(--main);
+
+}

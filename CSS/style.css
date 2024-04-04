@@ -10,7 +10,7 @@
     --main: #00ADB5;
     --light: #EEEEEE;
     --white: white;
-    --tranlayer: rgba(255,255,255,.08);
+    --tranlayer: rgba(23, 16, 16, 0.08);
 }
 
 .light-theme {
@@ -79,8 +79,9 @@ a {
 nav {
     user-select: none;
     background-color: var(--dark);
-    position: sticky;
+    /* position: sticky; */
     top: 0;
+    z-index: 100;
 }
 nav .container {
     display: flex;
@@ -273,6 +274,21 @@ footer {
     background-color: var(--dark);
     padding-top: 50px;
     padding-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+footer::after {
+    content: '';
+    position: absolute;
+    background: var(--main);
+    border-radius: 50%;
+    filter: blur(200px);
+    height: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    opacity: .2;
+    width: 25%;
     
 }
 footer .container {
