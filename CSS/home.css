@@ -47,6 +47,7 @@
     height: 350px;
     margin-left: 150px;
     color: white;
+    user-select: none;
 }
 .landing-page .text h3{
     margin: 0;
