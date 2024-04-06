@@ -229,3 +229,86 @@
     color: #bbb;
     margin: 0;
 }
+/* ======================================== */
+/* Discover Section */
+.discover {
+    background-color: var(--dark);
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.discover::after {
+    content: '';
+    position: absolute;
+    background: var(--main);
+    border-radius: 50%;
+    filter: blur(200px);
+    left: -10%;
+    bottom: 0;
+    opacity: .2;
+    height: 60%;
+    width: 30%;
+    z-index: -1;
+    animation-name: glow-size;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.discover .collections {
+    z-index: 2;
+    padding-top: 100px;
+    display: flex;
+    gap: 40px;
+}
+.discover .collections .box {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    user-select: none;
+    transition: .3s;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.discover .collections .box:hover {
+    transform: translateY(-10px);
+}
+.discover .collections .box a{
+    display: flex;
+    flex-direction: column;
+}
+.discover .collections .box img{
+    display: block;
+    width: 200px;
+    align-self: center;
+}
+.discover .collections .box .txt{
+    padding: 20px;
+    background-color: var(--black-tran);
+}
+.discover .collections .box .txt p{
+    line-height: 1.7;
+}
+.discover .collections .box .txt h3{
+    font-size: 25px;
+    transition: .3s;
+    font-weight: normal;
+    position: relative;
+}
+.discover .collections .box .txt i{
+    position: absolute;
+    font-size: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    opacity: 0;
+    color: var(--main);
+    transition: .3s;
+}
+.discover .collections .box:hover i{
+    right: 15%;
+    opacity: 1;
+}
+.discover .collections .box:hover h3{
+    color: var(--main);
+}

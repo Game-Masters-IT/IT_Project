@@ -33,3 +33,10 @@
 - Returns and Refunds: Provide a clear policy for returns and refunds for both physical and digital purchases.
 - View System Requirements: Customers have the option to see detailed system requirements for each game before making a purchase, ensuring compatibility with their gaming setup before buying.
 - Gaming News: Latest updates and announcements from the gaming industry.
+# brands
+- Epic Games
+- Steam
+- Riot Games
+- Playstaion
+- Xbox
+- 

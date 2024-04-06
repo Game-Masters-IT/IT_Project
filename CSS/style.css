@@ -11,6 +11,7 @@
     --light: #EEEEEE;
     --white: white;
     --tranlayer: rgba(23, 16, 16, 0.08);
+    --black-tran: rgba(0, 0, 0, 0.15);
 }
 
 .light-theme {
@@ -20,6 +21,7 @@
     --light: #393E46;
     --white: #222831;
     --tranlayer: rgba(0,0,0,.08);
+    --black-tran: rgba(0, 0, 0, 0.05);
 }
 
 html {
