@@ -1,3 +1,4 @@
+/* Landing Page */
 .landing-page {
     background: url(../Images/homeImgs/Landing-Page-1.jpg) center center / cover;
     background-size: cover;
@@ -149,5 +150,82 @@
 }
 .landing-page .bullets span.active{
     background-color: var(--main);
+}
+/* ======================================== */
+/* Our Services Section */
+.Our-Services {
+    padding: 120px 0;
+}
+.section-heading {
+    margin: 0;
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    background: rgb(0,173,181);
+    background-image: linear-gradient(41deg, rgba(0,173,181,1) 28%, rgba(0,181,103,1) 95%);
+    background-clip: text;
+    color: transparent;
+}
+.Our-Services .services {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Our-Services {
+    position: relative;
+    overflow: hidden;
 
+}
+.Our-Services::after {
+    content: '';
+    position: absolute;
+    background: var(--main);
+    border-radius: 50%;
+    filter: blur(200px);
+    right: -10%;
+    bottom: 0;
+    opacity: .2;
+    height: 60%;
+    width: 30%;
+    animation-name: glow-size;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.Our-Services .services .box {
+    width: 380px;
+    height: 300px;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Our-Services .services .box h3 {
+    font-size: 25px;
+    padding: 0;
+    text-transform: capitalize;    
+}
+.Our-Services .services .box i {
+    font-size: 35px;
+}
+.Our-Services .services .box .icon {
+    border-radius: 35%;
+    background-color: var(--main);
+    color: var(--darker);
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px 2px rgba(0,173,181,0.2);
+}
+.Our-Services .services .box p {
+    line-height: 1.8;
+    color: #bbb;
+    margin: 0;
 }

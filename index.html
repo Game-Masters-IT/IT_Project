@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Masters</title>
     <link rel="icon" type="image/png" href="Images/favicon.png" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Normalize-->
     <link rel="stylesheet" href="./CSS/normalize.css">
     <!--Font Awsome-->
@@ -17,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/home.css">
 </head>
-<body>
+<body data-aos-easing="ease" data-aos-delay="0">
     <nav>
         <div class="container">
             <a href="index.html" class="logo">
@@ -94,7 +95,41 @@
     </div>
 
     <div class="Our-Services" id="Our-Services">
-        <h2>Our Services</h2>
+        <div class="container">
+            <h2 class="section-heading aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Our Services</h2>
+            <div class="services">
+                <div class="box">
+                    <div class="icon aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up"><i class="fa-solid fa-credit-card fa-fw"></i></div>
+                    <h3 class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Online Purchasing</h3>
+                    <p class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">buy your favourite games directly from our website.</p>
+                </div>
+                <div class="box">
+                    <div class="icon aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up"><i class="fa-solid fa-truck-fast fa-fw"></i></div>
+                    <h3 class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Hard Copy</h3>
+                    <p class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Ship physical game copies and accessories to your address.</p>
+                </div>
+                <div class="box">
+                    <div class="icon aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up"><i class="fa-solid fa-microchip "></i></div>
+                    <h3 class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Hardware components</h3>
+                    <p class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">You can buy hardware components directly from our website.</p>
+                </div>
+                <div class="box">
+                    <div class="icon aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up"><i class="fa-solid fa-handshake fa-fw"></i></div>
+                    <h3 class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Returns and Refunds</h3>
+                    <p class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Provide a clear policy for returns and refunds for both physical and digital purchases.</p>
+                </div>
+                <div class="box">
+                    <div class="icon aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up"><i class="fa-solid fa-memory fa-fw"></i></div>
+                    <h3 class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">System Requirements</h3>
+                    <p class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Check game system requirements before purchasing to ensure compatibility with your setup.</p>
+                </div>
+                <div class="box">
+                    <div class="icon aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up"><i class="fa-solid fa-newspaper fa-fw"></i></div>
+                    <h3 class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Gaming News</h3>
+                    <p class="aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Latest updates and announcements from the gaming industry.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="temp-div"></div>
@@ -134,6 +169,8 @@
         </div>
         <p>Copyright &copy; 2024 GameMasters. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="main.js"></script>
 </body>
 </html>
