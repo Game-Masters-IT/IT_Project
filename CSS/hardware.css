@@ -1,0 +1,35 @@
+*{
+    background-color: #222831;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+.head{
+   /* background-color: #393E46;*/
+ 
+ padding: 25px ;
+ font-family:sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 3.7em;
+    font-weight: 800;
+    margin: 15px;
+
+}
+.containar img{
+    display: inline-block;
+    align-items:center ;
+    padding: 20px;
+    margin: 0px 0px 0px 31px;
+    border-radius:50px;
+    background-color: #fff;
+    width: fit-content;
+    width: 200px;
+    
+    
+} 
+.containar {
+    display: flex ;
+    justify-content: center;
+
+ }
