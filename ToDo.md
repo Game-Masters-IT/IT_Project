@@ -39,4 +39,8 @@
 - Riot Games
 - Playstaion
 - Xbox
+- Nvidia
+- intel
+- Heper x
+- logitc
 - 
