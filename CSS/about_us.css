@@ -1,0 +1,24 @@
+.pk{
+    border: white 1px solid;
+    width: 85%;
+}
+.lkj{
+    padding-left:90px ;
+    color: white;
+}
+.fgh{
+    width: 40%;
+    
+}
+.edk{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.ad{
+    padding: 7px;
+}
+.ol{
+    color: blue;
+}
