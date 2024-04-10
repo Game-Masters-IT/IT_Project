@@ -81,7 +81,7 @@ a {
 nav {
     user-select: none;
     background-color: var(--dark);
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     z-index: 100;
 }
