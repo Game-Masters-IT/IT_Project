@@ -473,3 +473,175 @@
     left: 10px;
     margin: 10px;
 }
+/* ================================================================================ */
+/* Recommended Articles */
+.recommended-articles {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.recommended-articles::after {
+    content: '';
+    position: absolute;
+    background: var(--main);
+    border-radius: 50%;
+    filter: blur(200px);
+    left: -10%;
+    bottom: 0;
+    opacity: .2;
+    height: 60%;
+    width: 30%;
+    z-index: -1;
+    animation-name: glow-size;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.recommended-articles .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.recommended-articles .articles-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.recommended-articles .articles-head h2{
+    font-size: 35px;
+}
+.recommended-articles .articles-head a{
+    display: block;
+    color: var(--light);
+    padding: 7px 15px;
+    border: 1px solid var(--light);
+    border-image: linear-gradient(41deg, rgba(0,173,181,1) 28%, rgba(0,181,103,1) 95%);
+    border-image-slice: 1;
+    width: fit-content;
+    height: fit-content;
+    transition: .3s !important;
+    margin-right: 50px;
+}
+.recommended-articles .articles-head a:hover {
+    background-color: var(--white);
+    color: var(--darker);
+}
+.recommended-articles .some-articles {
+    display: flex;
+    height: 500px;
+    gap: 20px;
+}
+.some-articles .box:first-child {
+    background-image: url(../Images/homeImgs/articles/valorant.jpg);
+}
+.some-articles .col .box:first-child {
+    background-image: url(../Images/homeImgs/articles/spiderman.jpg);
+}
+.some-articles .col .box:last-child {
+    background-image: url(../Images/homeImgs/articles/destiny.jpg);
+}
+.some-articles .box {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+    cursor: pointer;
+    user-select: none;
+}
+.some-articles .box:hover {
+    transform: translateY(-5px);
+}
+.some-articles > .box {
+    flex-basis: 65%;
+}
+.some-articles .col {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.some-articles .col .box {
+    height: calc(50% - 10px);
+}
+.some-articles .box .logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 20px;
+    top: 20px;
+}
+.some-articles .box .logo .lg {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 30% 30% 30% 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.some-articles .box .logo img{
+    height: 100%;
+}
+.some-articles .box .logo .valo{
+    background-color: #ff4655;
+}
+.some-articles .box .logo .txt h4 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+.some-articles .box .logo .Destiny{
+    height: 60%;
+}
+.some-articles .col .box .logo {
+    left: 15px;
+    top: 15px;
+}
+.some-articles .col .box .lg {
+    width: 45px;
+    height: 45px;
+}
+.some-articles .col .box .txt h4 {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+.some-articles .col .box .txt span {
+    font-size: 12px;
+}
+.some-articles .box .poster{
+    position: absolute;
+    height: 200px;
+    border-radius: 0 15px 0 15px;
+    bottom: 0;
+    left: 0;
+}
+.some-articles .col .box .poster{
+    height: 120px;
+}
+.some-articles .box .long-txt {
+    position: absolute;
+    bottom: 30px;
+    left: 160px;
+}
+.some-articles .box .long-txt p:first-child {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.some-articles .box .long-txt p:last-child {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #aaa;
+}
+.some-articles .col .box .long-txt {
+    bottom: 20px;
+    left: 95px;
+}
+.some-articles .col .box .long-txt p {
+    margin: 0;
+    color: white;
+}
