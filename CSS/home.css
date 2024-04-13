@@ -480,6 +480,8 @@
     position: relative;
     overflow: hidden;
     z-index: 0;
+    color: white;
+    background-color: var(--dark);
 }
 .recommended-articles::after {
     content: '';
@@ -644,4 +646,54 @@
 .some-articles .col .box .long-txt p {
     margin: 0;
     color: white;
+}
+/* ================================================================================ */
+/* sponsered */
+.fortnite-trailer {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.fortnite-trailer::after {
+    content: '';
+    position: absolute;
+    background: var(--main);
+    border-radius: 50%;
+    filter: blur(200px);
+    right: -10%;
+    bottom: 0;
+    opacity: .2;
+    height: 60%;
+    width: 30%;
+    z-index: -1;
+    animation-name: glow-size;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.fortnite-trailer h2 {
+    /* color: white; */
+    width: 700px;
+    font-size: 35px;
+    text-align: left;
+    line-height: 1.6;
+    position: relative;
+    margin-bottom: 30px;
+}
+.fortnite-trailer h2 span{
+    position: absolute;
+    font-size: 15px;
+    background-color: var(--main);
+    color: black;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 6px;
+    bottom: 15px;
+    right: 80px;
+}
+.fortnite-trailer iframe {
+    width: 100%;
+    height: 700px;
 }
