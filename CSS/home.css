@@ -553,9 +553,23 @@
     transition: .3s;
     cursor: pointer;
     user-select: none;
+    z-index: 0;
+}
+.some-articles .box::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    box-shadow: inset 0px 0px 300px 20px rgba(0, 0, 0, 1);
+    opacity: 0;
 }
 .some-articles .box:hover {
     transform: translateY(-5px);
+}
+.some-articles .box:hover::after {
+    opacity: .5;
 }
 .some-articles > .box {
     flex-basis: 65%;
@@ -575,6 +589,7 @@
     align-items: center;
     left: 20px;
     top: 20px;
+    z-index: -1;
 }
 .some-articles .box .logo .lg {
     width: 60px;
@@ -621,6 +636,7 @@
     border-radius: 0 15px 0 15px;
     bottom: 0;
     left: 0;
+    z-index: -1;
 }
 .some-articles .col .box .poster{
     height: 120px;
@@ -696,4 +712,68 @@
 .fortnite-trailer iframe {
     width: 100%;
     height: 700px;
+}
+/* ================================================================================ */
+/* Game Platform Comparison */
+.platform-comparison {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-color: var(--dark);
+}
+.platform-comparison::after {
+    content: '';
+    position: absolute;
+    background: var(--main);
+    border-radius: 50%;
+    filter: blur(200px);
+    left: -10%;
+    bottom: 0;
+    opacity: .2;
+    height: 60%;
+    width: 30%;
+    z-index: -1;
+    animation-name: glow-size;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+.platform-comparison .container {
+    display: flex;
+    flex-direction: column;
+}
+.platform-comparison h2 {
+    margin-bottom: 40px;
+}
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+tr:nth-child(odd) {
+    background-color: var(--darker);
+    
+}
+td {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0;
+}
+th {
+    padding: 20px;
+    background-color: var(--main);
+    border: 1px solid black;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+table i {
+    margin-right: 10px;
+}
+footer {
+    background-color: var(--darker);
+}
+footer > p {
+    border-top-color: var(--dark);
 }
