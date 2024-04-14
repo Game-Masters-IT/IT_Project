@@ -144,3 +144,7 @@ a:link{
     justify-items: center;
     max-width: 1200px; 
 }
+.father {
+    display: flex;
+    flex-wrap: wrap;
+}
