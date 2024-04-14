@@ -168,7 +168,7 @@ nav #toggle-menu:hover {
 #menu-arrow {
     font-size: 16px;
     margin-left: 5px;
-    transition: .3s;
+    /* transition: .3s; */
 }
 .rotate-arrow-on-click {
     transform: rotate(180deg);
