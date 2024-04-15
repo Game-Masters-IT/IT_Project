@@ -8,7 +8,6 @@ for (let j = 0; j < 6; j++){
     const imgToChange = productBoxes[j].querySelector('img');
     for (let i = 0; i < 6; ++i){
         productImages[i].onclick = () => {
-            console.log(productImages[i]);
             productImages[lastChoise].classList.remove("active-img");
             productImages[i].classList.add("active-img");
             lastChoise = i;
