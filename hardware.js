@@ -1,15 +1,18 @@
-let productColors = [];
-for (let i = 0; i < 6; ++i){
-    productColors[i] = document.getElementById(`p${i + 1}`);
-}
-let last_color = 0;
-const item1 = document.querySelector(".item-1 img");
-for (let i = 0; i < 6; ++i){
-    productColors[i].onclick = () => {
-        productColors[last_color].classList.remove("active");
-        productColors[i].classList.add("active");
-        last_color = i;
-        item1.style.transition = '.3s';
-        item1.src = `D:\pc hardware\chair-${i + 1}.png`;
-    };
+let productBoxes = document.querySelectorAll('.product-box');
+for (let j = 0; j < 6; j++){
+    let productImages = [];
+    for (let i = 0; i < 6; ++i){
+        productImages[i] = productBoxes[j].querySelector(`#p${i + 1}`);
+    }
+    let lastChoise = 0;
+    const imgToChange = productBoxes[j].querySelector('img');
+    for (let i = 0; i < 6; ++i){
+        productImages[i].onclick = () => {
+            console.log(productImages[i]);
+            productImages[lastChoise].classList.remove("active-img");
+            productImages[i].classList.add("active-img");
+            lastChoise = i;
+            imgToChange.src = `Images/hardware/chair-${j + 1}-${i + 1}.png`;
+        };
+    }
 }
