@@ -100,7 +100,8 @@ border-radius: 20px;
     /* box-shadow: inset 2px 2px 30px rgba(0, 0, 0, .05); */
     margin: 5px;
     cursor: pointer;
-    background-color: var(--main);
+    background-color: transparent;
+    border: 1px solid var(--white);
 }
 .des{
     display: flex;
@@ -152,5 +153,5 @@ a:link{
     flex-wrap: wrap;
 }
 .active-img {
-    border: 1px solid white;
+    background-color: var(--main) !important;
 }
