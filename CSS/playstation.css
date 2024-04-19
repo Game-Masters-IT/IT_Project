@@ -274,7 +274,7 @@ nav .cart:hover {
 /* Start Landing Page */
 
 .slider{
-    width: 1526px;
+    width: auto;
     max-width: 100vw;
     height: 730px;
     margin: auto;
@@ -285,7 +285,7 @@ nav .cart:hover {
 }
 .slider .list{
     position: absolute;
-    width: max-content;
+    width: 100%;
     height: 100%;
     left: 0;
     top: 0;
@@ -293,6 +293,15 @@ nav .cart:hover {
     transition: 1s;
 }
 .slider .list img{
+    width: 1526px;
+    max-width: 100vw;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .list video{
     width: 1526px;
     max-width: 100vw;
     margin: auto;
@@ -325,7 +334,7 @@ nav .cart:hover {
 }
 .slider .dots{
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 0;
     color: #fff;
     width: 100%;
@@ -338,7 +347,7 @@ nav .cart:hover {
     list-style: none;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #eeff00;
     margin: 10px;
     border-radius: 20px;
     transition: 0.5s;
