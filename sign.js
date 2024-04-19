@@ -9,4 +9,4 @@ registerLink.addEventListener('click', ()=> {
 loginLink.addEventListener('click', ()=> {
     wrapper.classList.remove('sign-active');
 });
-// End Sign-in page
+
