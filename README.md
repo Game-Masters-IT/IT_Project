@@ -7,6 +7,6 @@
 - Abdelrhman Nader Hussein
 - Shereen Mohamed Yasin
 - Ezzeldeen Atef Mohammed
-- Ammar Omar Adawi
+- Ammar Amr Adawy
 - Omar Ahmed Abdel Azim
 - Abdullah Nasser Abdullah

@@ -12,7 +12,6 @@
     --white: white;
     --tranlayer: rgba(23, 16, 16, 0.08);
     --black-tran: rgba(0, 0, 0, 0.15);
-    --black-tran-2: rgba(255, 255, 255, 0.2);
 }
 
 .light-theme {
@@ -23,7 +22,6 @@
     --white: #222831;
     --tranlayer: rgba(0,0,0,.08);
     --black-tran: rgba(0, 0, 0, 0.05);
-    --black-tran-2: rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -170,7 +168,7 @@ nav #toggle-menu:hover {
 #menu-arrow {
     font-size: 16px;
     margin-left: 5px;
-    transition: .3s;
+    /* transition: .3s; */
 }
 .rotate-arrow-on-click {
     transform: rotate(180deg);
@@ -272,6 +270,82 @@ nav .cart:hover {
 
 /* End Nav */
 /* Start Landing Page */
+
+.slider{
+    width: 1526px;
+    max-width: 100vw;
+    height: 730px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1526px;
+    max-width: 100vw;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
 
 /* End Landing Page */ 
 /* Start Footer */
@@ -375,3 +449,4 @@ footer > p {
     text-align: center;
 }
 /* End Footer */ 
+
