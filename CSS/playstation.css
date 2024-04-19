@@ -317,6 +317,10 @@ nav .cart:hover {
     font-family: monospace;
     font-weight: bold;
 }
+.slider .buttons :hover{
+    background-color: #eee;
+    color: black;
+}
 .slider .dots{
     position: absolute;
     bottom: 10px;
