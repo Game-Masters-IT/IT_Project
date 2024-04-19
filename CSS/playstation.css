@@ -12,6 +12,7 @@
     --white: white;
     --tranlayer: rgba(23, 16, 16, 0.08);
     --black-tran: rgba(0, 0, 0, 0.15);
+    --black-tran-2: rgba(255, 255, 255, 0.2);
 }
 
 .light-theme {
@@ -22,6 +23,7 @@
     --white: #222831;
     --tranlayer: rgba(0,0,0,.08);
     --black-tran: rgba(0, 0, 0, 0.05);
+    --black-tran-2: rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -168,7 +170,7 @@ nav #toggle-menu:hover {
 #menu-arrow {
     font-size: 16px;
     margin-left: 5px;
-    /* transition: .3s; */
+    transition: .3s;
 }
 .rotate-arrow-on-click {
     transform: rotate(180deg);
