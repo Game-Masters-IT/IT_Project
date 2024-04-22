@@ -5,8 +5,10 @@
 body{
     font-family:serif;
 }
+
 nav{
     font-family: "Rubik ",sans-serif;
+    text-decoration: none;
 }
 .lkj{
     padding-left:90px ;
