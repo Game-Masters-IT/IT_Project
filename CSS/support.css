@@ -3,8 +3,9 @@
     font-size: large;
     color: white;
 }
-a{
+#nu{
     color: rgb(66, 66, 255);
+    text-decoration: underline;
 }
 #qw{
     color:rgba(0, 173, 181, 1); ;
@@ -67,7 +68,7 @@ button{
     border-radius: 5px;
     padding: 6px;
     background-color:rgb(128, 128, 255); 
-    width: 60px;
+    width: 70px;
     display: flex;
     justify-content: space-between;
     
@@ -84,7 +85,7 @@ h4{
 }
 
 .icon{
-    transform: translate(-335px, 5px);
+    transform: translate(-295px, 5px);
     color: rgb(128, 128, 255);
 }
 .ko{
