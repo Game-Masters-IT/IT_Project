@@ -17,7 +17,7 @@ for (let j = 0; j < 6; j++){
 }
 
 let productB = document.querySelectorAll('.product-b');
-for (let j = 0; j < 2; j++){
+for (let j = 0; j < 4; j++){
     let productImage = [];
     for (let i = 0; i < 2; ++i){
         productImage[i] = productB[j].querySelector(`#p${i + 1}`);
