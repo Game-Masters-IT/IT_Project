@@ -15,3 +15,21 @@ for (let j = 0; j < 6; j++){
         };
     }
 }
+
+let productB = document.querySelectorAll('.product-b');
+for (let j = 0; j < 2; j++){
+    let productImage = [];
+    for (let i = 0; i < 2; ++i){
+        productImage[i] = productB[j].querySelector(`#p${i + 1}`);
+    }
+    let lastChoise = 0;
+    const imgToChange = productB[j].querySelector('img');
+    for (let i = 0; i < 2; ++i){
+        productImage[i].onclick = () => {
+            productImage[lastChoise].classList.remove("first-img");
+            productImage[i].classList.add("first-img");
+            lastChoise = i;
+            imgToChange.src = `Images/hardware/headphone-${j + 1}-${i + 1}.png`;
+        };
+    }
+}
