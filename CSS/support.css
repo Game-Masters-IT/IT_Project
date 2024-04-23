@@ -1,7 +1,7 @@
 .lkj{
     padding-left: 100px;
     font-size: large;
-    color: white;
+    color: var(--white);
 }
 #nu{
     color: rgb(66, 66, 255);
@@ -11,7 +11,7 @@
     color:rgba(0, 173, 181, 1); ;
 }
 .io{
-    border: rgb(255, 255, 255) solid 1px;
+    border: var(--white) solid 1px;
     width: 85%;
 
 }
@@ -27,8 +27,8 @@ button{
     border: none;
     margin-left: 15px;
     font-weight:bold;
-    background-color:#222831;
-    color: white;
+    background-color:var(--darker);
+    color: var(--white);
 }
 #gh{
     display:flex;

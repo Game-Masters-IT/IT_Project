@@ -1,5 +1,5 @@
 .pk{
-    border: white 1px solid;
+    border: var(--white) 1px solid;
     width: 1200px;
 }
 body{
@@ -12,7 +12,7 @@ nav{
 }
 .lkj{
     padding-left:90px ;
-    color: white;
+    color: var(--white);
 }
 .fgh{
     width: 550px;
