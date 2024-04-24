@@ -112,13 +112,26 @@ h4{
     text-align: center;
     border: 3px solid  rgba(0, 181, 103, 1) 95% ;
     color:rgb(0, 27, 146) ;
-    width: 700px;
+    width: 470px;
     border-radius: 10px;
     transform: translate(390px);
     background: linear-gradient(41deg, rgba(0, 173, 181, 1) 28%, rgba(0, 181, 103, 1) 95%);
 }
-#qb{
-    color: blue;
-    text-decoration: underline;
-    
+#pa{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    outline: none;
+    padding-top: 10px;
+    padding-left: 10px;
 }
+#kq{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(45, 45, 166);
+    color: white;
+
+}
+

@@ -25,3 +25,8 @@ function func3(z) {
    }
    
 }
+function func4(event) {
+    var zl = document.getElementById("zl");
+    zl.textContent = "We appreciate your feedback.";
+}
+document.getElementById("feedbackForm").addEventListener("submit", func4);
