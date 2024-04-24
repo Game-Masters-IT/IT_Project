@@ -242,3 +242,56 @@ a:link{
     margin-left: -150px;
     
 }
+.item-3{
+    display: inline-block;
+    flex-direction: column;
+    justify-items: center;
+    width: 200px;
+}
+.ram-box{
+    display: flex;
+    box-sizing: border-box;
+    user-select: none;
+    justify-content: center;
+     
+}
+.ram-box img{
+    width: 170px;
+    height: 150px;
+    padding: 0px 0px;
+    display: flex;
+    object-position: center ; 
+    justify-content: center;
+    align-items: center;
+}
+.desc .price-btn{
+    color: #222831;
+    background: #00ADB5;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    width: 45px;
+    height: 25px;
+    font-family: "Rubik, sans-serif";
+    border-radius: 20px;
+}
+.desc p{
+    color: white;
+    font-family: "Rubik, sans-serif";
+    font-size: 1 rem;
+    max-width: 150px;
+    line-height: 11px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px; 
+}
