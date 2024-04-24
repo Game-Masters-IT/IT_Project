@@ -105,3 +105,20 @@ h4{
     cursor: pointer;
 
 }
+#zl{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    text-align: center;
+    border: 3px solid  rgba(0, 181, 103, 1) 95% ;
+    color:rgb(0, 27, 146) ;
+    width: 700px;
+    border-radius: 10px;
+    transform: translate(390px);
+    background: linear-gradient(41deg, rgba(0, 173, 181, 1) 28%, rgba(0, 181, 103, 1) 95%);
+}
+#qb{
+    color: blue;
+    text-decoration: underline;
+    
+}
