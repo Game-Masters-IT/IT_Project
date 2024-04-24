@@ -1,20 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: rgb(123, 118, 118);
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 800px;
+  width: 80%;
   margin: 0 auto;
-  padding: 20px;
 }
 
 h1 {
-  color: #2d7f83;
   text-align: center;
+  margin-top: 20px;
 }
 
 .search-bar {
@@ -32,7 +29,7 @@ h1 {
 }
 
 .search-bar button {
-  background-color: #2d7f83;
+  background-color: #25a788;
   color: white;
   border: none;
   padding: 10px 20px; 
@@ -41,84 +38,144 @@ h1 {
   cursor: pointer;
 }
 
-.product-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.game {
+/* Game Details Styles */
+.game-details {
   display: flex;
   margin-bottom: 40px;
-  background-color: #f9f9f9; 
+  background-color: #fdfdfd;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 1200px; /* Limiting the width of the game container */
+  margin: 0 auto; /* Centering the game container */
 }
 
-.game img {
-  max-width: 200px;
-  height: auto;
+.game-details img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
   margin-right: 20px;
 }
 
-.game-content {
-  flex: 1;
-}
-
 .game-title {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.game-desc {
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 0px;
 }
 
 .rating {
+  color: #f1c40f;
   margin-bottom: 10px;
 }
 
-.star {
-  color: rgb(216, 188, 28);
+.game-price {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* Quantity Input Styles */
+.quantity {
+  margin-top: 10px;
 }
 
-.add-to-cart {
-  background-color: #2d7f83;
-  color: white;
+.quantity label {
+  margin-right: 10px;
+  font-weight: bold; /* Make the quantity word bold */
+  font-size: 16px; /* Increase the font size */
+}
+
+.quantity input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add some space between quantity and add to cart button */
+.add-to-cart-btn {
+  margin-top: 10px;
+  margin-left: 10px; /* Add space to the left of the button */
+  background-color: #25a788;
+  color: #fff;
   border: none;
-  padding: 15px 20px; 
-  margin-top: 10px; 
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.add-to-cart:hover {
-  background-color: #1f5f62;
-}
 
 .add-to-favorite {
-  display: flex;
-  align-items: center;
-  color: #2d7f83;
+  color: #2b6b6e;
   text-decoration: none;
-  margin-top: 10px; 
 }
 
-.add-to-favorite i {
-  margin-right: 5px;
+.game-info {
+  flex: 1; /* Take up the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contact-section {
-  background-color: #2d7f83;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
+.game-info img {
+  width: 500px;
+  height: 300px;
+}
+
+
+
+.game-info .game-description {
+  color: #535151;
+}
+.game-description  {
+  flex: 1; /* Take up the available space */
+  padding-left: 20px; /* Add spacing between the sections */
+  color: #635f5f;
+}
+
+.game-description iframe {
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+}
+
+/* Related Products Section */
+.related-products h2 {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 20px; /* Adjust the left margin as needed */
+   
+}
+
+.related-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px; 
+  margin: 0 auto; 
   margin-top: 40px; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.icon img {
-  width: 50px;
-  height: 50px;
+.listgames {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
+
+.listgames img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.listgames .game-content {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.listgames .game-title {
+  margin-top: 0;
+}
+
+.listgames .game-price {
+  font-weight: bold;
+  color: #0d0e0e;
+}
+
+
