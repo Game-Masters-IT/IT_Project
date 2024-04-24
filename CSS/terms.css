@@ -16,7 +16,7 @@ nav {
     text-transform: uppercase;
     color: white;
 }
-.container {
+.page-container {
     padding: 100px 0;
     display: flex;
     gap: 30px;
@@ -53,6 +53,6 @@ h2 {
     font-size: 25px;
     margin-bottom: 5px;
 }
-.fa-solid {
+.side-menu .fa-solid {
     margin-right: 10px;
 }
