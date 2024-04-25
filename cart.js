@@ -6,7 +6,7 @@ function addGamesStrorageCart() {
         <div class="item" gameid="${e.gameId}">
             <div class="product">
                 <img src="${e.gameImage}" alt="${e.gameName}">
-                <h4 id="game-name">${e.gameName}</h4>
+                <a href="game-product-page.html?game=${e.gameId}"><h4 id="game-name">${e.gameName}</h4></a>
             </div>
             <span id="price">${e.gamePrice}</span>
             <div class="quantity">

@@ -256,24 +256,12 @@ nav .cart:hover {
     background-color: var(--tranlayer);
     color: var(--white);
 }
-
-
-
-
-
-
 @media (max-width: 767px){
-    nav .profile span {
+    .logo span {
         display: none;
     }
 }
-
-
-
 /* End Nav */
-/* Start Landing Page */
-
-/* End Landing Page */ 
 /* Start Footer */
 footer {
     background-color: var(--dark);
@@ -294,7 +282,6 @@ footer::after {
     top: 70%;
     opacity: .2;
     width: 25%;
-    
 }
 footer .container {
     display: flex;
