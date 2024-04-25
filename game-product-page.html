@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./CSS/all.min.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/Game-product-page.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +70,6 @@
     </nav>
 <!-- =======================Start Your Page Here======================= -->
  <div class="container">
-    <h1>Game Master's Store</h1>
     <!-- Search Bar -->
      <div class="search-bar">
       <input type="text" placeholder="Search for games.....">
@@ -79,9 +79,9 @@
  <div class="product-container">
   <!-- Game Details Section -->
   <div class="game-details">
-    <img src="https://api.egyptgamestore.com/uploads/products/I2XV5T7LaTaNF2OGYjh1occniWkAqReZJHroePps.jpg" alt="WWE 2K23 - PS5">
+    <img src="" id="game-img" alt="WWE 2K23 - PS5">
     <div class="game-content">
-      <h2 class="game-title">WWE 2K23 - PS5</h2>
+      <h2 class="game-title" id="game-name">WWE 2K23 - PS5</h2>
       <div class="rating">
         <span class="star">&#9733;</span>
         <span class="star">&#9733;</span>
@@ -89,30 +89,23 @@
         <span class="star">&#9733;</span>
         <span class="star">&#9733;</span>
       </div>
-      <p class="game-price">2650 EGP</p>
+      <p class="game-price" id="game-price">2650 EGP</p>
       <div class="quantity">
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" value="1" min="1">
     </div>
-    
-      <button gameid="1"
-      gamename="WWE 2K23 - PS5"
-      gameprice="2650 EGP"
-      gameimage="https://api.egyptgamestore.com/uploads/products/I2XV5T7LaTaNF2OGYjh1occniWkAqReZJHroePps.jpg" class="yourClassName add-to-cart-btn">Add To Cart</button>
+      <button class="add-to-cart-btn">Add To Cart</button>
     </div>
   </div>
 
-  <div class="game-desc">
+  <div class="game-desc" >
   <strong>Description:</strong>
-    <p>Step into the squared circle and unleash your inner superstar in WWE 2K23. Featuring the most realistic WWE gameplay to date, this game puts you in control of your favorite WWE Superstars and Legends. With enhanced graphics, new gameplay mechanics, and an expanded roster, WWE 2K23 delivers the ultimate wrestling experience for fans old and new.</p>
+    <p id="game-desc">Step into the squared circle and unleash your inner superstar in WWE 2K23. Featuring the most realistic WWE gameplay to date, this game puts you in control of your favorite WWE Superstars and Legends. With enhanced graphics, new gameplay mechanics, and an expanded roster, WWE 2K23 delivers the ultimate wrestling experience for fans old and new.</p>
   </div>
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/-jjh0l3kHjc" title="WWE 2K23 Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe id="game-trailer" src="https://www.youtube.com/embed/-jjh0l3kHjc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </div>
-          </a>
-        </div>
-      </div>
 
       <!-- Related Products Section -->
       <h2>Related Products</h2>
@@ -189,22 +182,7 @@
         </div>
       </div>
   </div>
-  <script>
-    let cartGames = JSON.parse(localStorage.getItem('cart-games')) || {};
-    document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('add-to-cart-btn')) {
-            let gameToBeAdded = {
-                gameName: e.target.getAttribute('gamename'),
-                gamePrice: e.target.getAttribute('gameprice'),
-                gameImage: e.target.getAttribute('gameimage'),
-                gameId: e.target.getAttribute('gameid'),
-            };
-            cartGames[e.target.getAttribute('gameid')] = gameToBeAdded;
-            localStorage.setItem('cart-games', JSON.stringify(cartGames));
-            document.getElementById('cart-counter').innerHTML = Object.keys(cartGames).length;
-        }
-    });
-</script>
+  <script src="game-page.js"></script>
 
 
 <!-- =======================End Your Page Here======================= -->

@@ -1,0 +1,53 @@
+{
+
+    "0": {
+        "gameName": "Far Cry® 6 Game of the Year Edition",
+        "gamePrice": "$119.99",
+        "gameImg": "Images/homeImgs/Trending/farcry.jpg",
+        "gameDesc": "Far Cry 6 is a thrilling first-person shooter set in the fictional Caribbean island of Yara. Players take on the role of Dani Rojas, a guerrilla fighter battling against the oppressive regime of dictator Antón Castillo. Explore a vast open world, engage in intense firefights, and uncover the dark secrets of Castillo's rule. With customizable weapons and dynamic gameplay, Far Cry 6 delivers an immersive experience filled with action and revolution. Join the fight for freedom and become a hero in Far Cry 6.",
+        "gameTrailer": "https://www.youtube.com/embed/-IJuKT1mHO8"
+    },
+    "1": {
+        "gameName": "Grand Theft Auto V: Premium Edition",
+        "gamePrice": "$29.99",
+        "gameImg": "Images/homeImgs/Trending/GTAV.jpg",
+        "gameDesc": "Grand Theft Auto V (GTA V) is an action-packed open-world game set in the sprawling city of Los Santos and its surrounding areas. Play as three protagonists: Michael, a retired bank robber; Franklin, a young hustler; and Trevor, a volatile career criminal. Navigate a world of crime, corruption, and betrayal, engaging in daring heists, high-speed chases, and explosive confrontations. Explore a vibrant open world filled with activities and side missions, from skydiving to golfing. With stunning graphics and immersive gameplay, GTA V offers an unparalleled gaming experience that captivates players worldwide.",
+        "gameTrailer": "https://www.youtube.com/embed/QkkoHAzjnUs"
+    },
+    "2": {
+        "gameName": "League of Legends",
+        "gamePrice": "$10",
+        "gameImg": "Images/homeImgs/Trending/EGS_LeagueofLegends.jpg",
+        "gameDesc": "League of Legends (LoL) is a fast-paced multiplayer online battle arena (MOBA) game developed and published by Riot Games. Players choose from a diverse roster of champions and team up with others to compete in intense 5v5 matches. With strategic gameplay, dynamic combat, and a vibrant community, LoL has become one of the most popular and enduring esports titles worldwide. Join millions of players in the ultimate battle for supremacy on the Fields of Justice in League of Legends.",
+        "gameTrailer": "https://www.youtube.com/embed/aR-KAldshAE"
+        
+    },
+    "3": {
+        "gameName": "EA SPORTS FC™ 24 Standard Edition",
+        "gamePrice": "$69.99",
+        "gameImg": "Images/homeImgs/Trending/EGS_EASPORTS.jpg",
+        "gameDesc": "EA SPORTS FC 24 Standard Edition is the latest installment in the acclaimed EA SPORTS franchise. Featuring fast-paced action, stunning graphics, and realistic gameplay, this soccer simulation game brings the excitement of the pitch to life like never before. With a wide range of teams, leagues, and game modes to choose from, players can experience the thrill of competition on their journey to soccer glory. Whether it's dominating the field in Career Mode, competing online in FIFA Ultimate Team, or playing with friends in local multiplayer, EA SPORTS FC 24 Standard Edition offers something for every soccer fan. Get ready to score the winning goal and lead your team to victory in EA SPORTS FC 24 Standard Edition.",
+        "gameTrailer": "https://www.youtube.com/embed/XhP3Xh4LMA8"
+    },
+    "4": {
+        "gameName": "PUBG: BATTLEGROUNDS",
+        "gamePrice": "$10",
+        "gameImg": "Images/homeImgs/Trending/pubg.jpg",
+        "gameDesc": "PUBG: BATTLEGROUNDS is a thrilling battle royale game developed by PUBG Corporation. Drop onto an island with 99 other players and fight to be the last one standing. With intense gunfights, strategic gameplay, and ever-shrinking play zones, every match is a pulse-pounding race for survival. Team up with friends in squads or go solo in this adrenaline-fueled fight for dominance. Are you ready to conquer the battlegrounds and emerge victorious in PUBG: BATTLEGROUNDS?",
+        "gameTrailer": "https://www.youtube.com/embed/u1oqfdh4xBY"
+    },
+    "98": {
+        "gameName": "PUBG: BATTLEGROUNDS",
+        "gamePrice": "$10",
+        "gameImg": "Images/homeImgs/Trending/pubg.jpg",
+        "gameDesc": "",
+        "gameTrailer": "https://www.youtube.com/embed/XhP3Xh4LMA8"
+    },
+    "99": {
+        "gameName": "Red Dead Redemption 2",
+        "gamePrice": "$59.99",
+        "gameImg": "Images/homeImgs/Trending/RDR2.jpg",
+        "gameDesc": "Red Dead Redemption 2 (RDR2) is an epic action-adventure game set in America's late 1800s Wild West. Play as Arthur Morgan, an outlaw navigating the challenges of survival and morality in the Van der Linde gang. Explore a vast open world teeming with life, from bustling towns to rugged wilderness. Engage in intense shootouts, bond with your trusty steed, and discover a wealth of side activities like hunting and gambling. With breathtaking visuals and immersive gameplay, RDR2 sets a new standard for open-world gaming, delivering an unforgettable journey through the lawless frontier of the American West.",
+        "gameTrailer": "https://www.youtube.com/embed/gmA6MrX81z4"
+    }
+}

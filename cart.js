@@ -22,20 +22,20 @@ function addGamesStrorageCart() {
     });
 }
 addGamesStrorageCart();
-document.querySelector('.just-to-test').onclick = () => {
-    let gameToBeAdded = {
-        gameName: 'Far Cry® 6 Game of the Year Edition',
-        gamePrice: '$119.99',
-        gameImage: './Images/homeImgs/Trending/farcry.jpg',
-        gameId: '99',
-    };
-    gamesToBeAdded['99'] = gameToBeAdded;
-    localStorage.setItem('cart-games', JSON.stringify(gamesToBeAdded));
-    document.getElementById('cart-counter').innerHTML = Object.keys(gamesToBeAdded).length;
-    addGamesStrorageCart();
-    summarySubTotal();
-    location.reload();
-};
+// document.querySelector('.just-to-test').onclick = () => {
+//     let gameToBeAdded = {
+//         gameName: 'Far Cry® 6 Game of the Year Edition',
+//         gamePrice: '$119.99',
+//         gameImage: './Images/homeImgs/Trending/farcry.jpg',
+//         gameId: '99',
+//     };
+//     gamesToBeAdded['99'] = gameToBeAdded;
+//     localStorage.setItem('cart-games', JSON.stringify(gamesToBeAdded));
+//     document.getElementById('cart-counter').innerHTML = Object.keys(gamesToBeAdded).length;
+//     addGamesStrorageCart();
+//     summarySubTotal();
+//     location.reload();
+// };
 /*===================================================================*/
 
 // Quantity and total price

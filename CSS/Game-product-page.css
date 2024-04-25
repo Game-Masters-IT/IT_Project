@@ -1,13 +1,13 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
+} */
 
-.container {
+/* .container {
   width: 80%;
   margin: 0 auto;
-}
+} */
 
 h1 {
   text-align: center;
@@ -18,6 +18,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .search-bar input[type="text"] {
@@ -26,6 +27,10 @@ h1 {
   border: none;
   border-radius: 5px 0 0 5px;
   font-size: 16px;
+  background-color: var(--dark);
+}
+.search-bar input[type="text"]::placeholder {
+  color: var(--white);
 }
 
 .search-bar button {
@@ -42,16 +47,17 @@ h1 {
 .game-details {
   display: flex;
   margin-bottom: 40px;
-  background-color: #fdfdfd;
+  background-color: var(--dark);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 1200px; /* Limiting the width of the game container */
+  /* width: 80%; Limiting the width of the game container */
   margin: 0 auto; /* Centering the game container */
+  margin-bottom: 70px;
 }
 
 .game-details img {
-  width: 500px;
+  /* width: 500px; */
   height: 300px;
   object-fit: cover;
   margin-right: 20px;
@@ -119,20 +125,18 @@ h1 {
   height: 300px;
 }
 
-
-
-.game-info .game-description {
-  color: #535151;
-}
-.game-description  {
+.game-desc {
   flex: 1; /* Take up the available space */
-  padding-left: 20px; /* Add spacing between the sections */
-  color: #635f5f;
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 50px;
 }
-
-.game-description iframe {
+.video-container {
+  height: 700px;
+}
+iframe {
   width: 100%;
-  height: 300px; /* Adjust the height as needed */
+  height: 100%;
 }
 
 /* Related Products Section */
@@ -140,7 +144,6 @@ h1 {
   font-size: 18px;
   text-align: left;
   margin-left: 20px; /* Adjust the left margin as needed */
-   
 }
 
 .related-products {
@@ -156,6 +159,7 @@ h1 {
   width: calc(25% - 20px);
   margin-bottom: 20px;
   box-sizing: border-box;
+  background-color: var(--dark);
 }
 
 .listgames img {
@@ -166,7 +170,7 @@ h1 {
 
 .listgames .game-content {
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: var(--dark);
 }
 
 .listgames .game-title {
@@ -174,8 +178,9 @@ h1 {
 }
 
 .listgames .game-price {
+  background-color: var(--dark);
   font-weight: bold;
-  color: #0d0e0e;
+  color: var(--white);
 }
 
 
