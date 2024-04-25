@@ -260,6 +260,13 @@ nav .cart:hover {
     .logo span {
         display: none;
     }
+    nav .pages {
+        left: -63px;
+        top: 100%;
+        width: 100vw;
+        justify-content: center;
+    }
+
 }
 /* End Nav */
 /* Start Footer */
