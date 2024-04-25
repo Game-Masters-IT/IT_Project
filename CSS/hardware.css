@@ -295,3 +295,57 @@ a:link{
     align-items: center;
     margin: 0px 0px 0px; 
 }
+@media (max-width:950px) {
+  .accessories{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    transform: translate(80px);
+  }
+}
+@media (max-width:950px) {
+    .item-1{
+        display: block;
+        flex-direction: column;
+      justify-content: center;
+      max-width: 100px;
+      transform: translate(30px);
+    }
+  }
+  @media (max-width:950px) {
+    .cycle-slideshow{
+        display: flex;
+        align-items: center;
+      justify-content: center;
+      max-width: 1000px;
+    }
+  }
+  @media (max-width:950px) {
+    .nvcom{
+        display: column;
+        align-items: center;
+      justify-content: center;
+      max-width: 10px;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width:950px) {
+    .containar{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  }
+
+
+
+
+
+
+
+
+
