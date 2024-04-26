@@ -359,11 +359,11 @@ a:link{
    
   }
 
-  tr:nth-child(even) {
+  tr:nth-child() {
     background-color: rgba(150, 212, 212, 0.4);
   }
   
-  th:nth-child(even),td:nth-child(even) {
+  th:nth-child(even),td:nth-child(odd) {
     background-color: rgba(150, 212, 212, 0.4);
   }
   tr:hover {background-color: #D6EEEE;}
