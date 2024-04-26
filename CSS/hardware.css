@@ -340,10 +340,37 @@ a:link{
       
     }
   }
+  td{
+    height: 200px;
+  }
+  th{
+    height: 50px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    
+  }
+  .ram img{
+    
+    justify-content: center;
+    width:30% ;
+   
+  }
 
-
-
-
+  tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  tr:hover {background-color: #D6EEEE;}
+.main{
+    width: 100%;
+    height: 400px;
+}
 
 
 
