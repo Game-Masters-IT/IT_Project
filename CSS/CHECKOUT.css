@@ -1,21 +1,21 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-  }
+  } */
   
-  .container {
+  .page-container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--dark);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   h1, h2, h3 {
-    color: #333;
+    color: var(--white);
   }
   
   .form-group {
@@ -74,7 +74,7 @@ body {
   }
   
   @media (max-width: 480px) {
-    .container {
+    .page-container {
       margin: 20px;
       padding: 10px;
     }

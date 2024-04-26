@@ -25,6 +25,9 @@ fetch('Games.json').then(results => results.json()).then(data => {
         cartGames[urlParams.get('game')] = gameToBeAdded;
         localStorage.setItem('cart-games', JSON.stringify(cartGames));
         document.getElementById('cart-counter').innerHTML = Object.keys(cartGames).length;
+        setTimeout(() => {
+            alert("The Game Has Been Added To Cart Successfully!");
+        }, 0);
     }
 });
 });
