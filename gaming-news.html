@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Masters</title>
     <link rel="icon" type="image/png" href="Images/favicon.png" >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Normalize-->
     <link rel="stylesheet" href="./CSS/normalize.css">
     <!--Font Awsome-->
     <link rel="stylesheet" href="./CSS/all.min.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Page Css File -->
+    <link rel="stylesheet" href="./CSS/gaming-news.css">
+    <!-- for support-->
+    <!-- <link rel="stylesheet" href="./CSS/home.css"> -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-aos-easing="ease" data-aos-delay="0">
     <nav>
         <div class="container">
             <a href="index.html" class="logo">
@@ -68,10 +73,20 @@
         </div>
     </nav>
 <!-- =======================Start Your Page Here======================= -->
+    <div class="landing-content">
+        <video autoplay muted class="background-clip">
+            <source src="./Images/gaming-news/Awaken - Season 2019 Cinematic - League of Legends (ft. Valerie Broussard)_2.mp4" type="video/mp4">
+        </video>
+        <h1>
+            Get ready for the latest gaming scoop! Dive into breaking news, reviews, and industry updates.
+        </h1>
+    </div>
+
+    <div class="container">
+        
+    </div>
 
 
-    <!-- Delete This  -->
-    <div class="temp-div"></div>
 
 
 <!-- =======================End Your Page Here======================= -->
@@ -109,6 +124,8 @@
         </div>
         <p>Copyright &copy; 2024 GameMasters. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="main.js"></script>
 </body>
 </html>
