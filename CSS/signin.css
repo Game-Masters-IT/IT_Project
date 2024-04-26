@@ -3,33 +3,46 @@
     --link: skyblue;
 }
 
-/* body {
-    background-image: url(../Images/homeImgs/3.jpg);
+
+.blured-background {
+    background-image: url(../Images/homeImgs/Landing-Page-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    width: 100%;
     height: 100vh;
-} */
-
-.container {
-    background: scroll;
     background-color: black;
+    z-index: -1;
+    filter: blur(3px);
 }
-.logo {
+.login-text {
     display: flex;
-    align-items: center;
-    font-size: 50px;
-    font-weight: bold;
+    flex-direction: column;
     position: absolute;
-    top: 20%;
-    left: 20%;
-}
-.logo i {
+    width: 700px;
+    top: 25%;
+    left: 10%;
     font-size: inherit;
     margin-right: 5px;
 }
+.login-text p {
+    line-height: 3;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight:lighter;
+    background: rgb(0, 173, 181);
+    background-image: linear-gradient(41deg, rgba(0, 173, 181, 1) 28%, rgb(165, 27, 61) 95%);
+    background-clip: text;
+    color: transparent;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
 .logo span span{
-    color: var(--main);
+    color: #00ADB5;
 }
 
 /* Start Login Square */
@@ -52,7 +65,6 @@
 .wrapper.sign-active {
     height: 520px;
 }
-
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
@@ -75,32 +87,31 @@
 }
 .wrapper.sign-active .form-box.register {
     transition: transform .15s ease;
-    transform: translateX(-15px);
+    transform: translateX(-1px);
 }
 
-/* form-box.register{
+.form-box.register{
     justify-content: center;
-} */
+}
 
 .form-box h2 {
     font-size: 2em;
-    color: var(--light);
+    color: transparent;
     text-align: center;
     margin-bottom: 60px;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 34px;
-    /* background: rgb(0, 173, 181); */
-    /* background-image: linear-gradient(41deg, rgba(0, 173, 181, 1) 28%, rgba(0, 181, 103, 1) 95%);
+    background: rgb(0, 173, 181);
+    background-image: linear-gradient(41deg, rgba(0, 173, 181, 1) 28%, rgba(0, 181, 103, 1) 95%);
     background-clip: text;
-    color: transparent; */
 }
 
 .input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid var(--light);
+    border-bottom: 2px solid white;
     margin: 30px 0;
 }
 
@@ -110,7 +121,7 @@
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: var(--light);
+    color: white;
     font-weight: 500;
     pointer-events: none;
     transition: .3s;
@@ -128,7 +139,7 @@
     border: none;
     outline: none;
     font-size: 1em;
-    color: var(--light);
+    color: white;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -137,7 +148,7 @@
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: var(--light);
+    color: white;
     line-height: 57px;
 }
 
@@ -150,7 +161,7 @@
 }
 
 .remember-forgot  input {
-    accent-color: var(--light);
+    accent-color: white;
     margin-right: 4px;
 }
 .remember-forgot a:hover {
@@ -161,25 +172,29 @@
 .btn {
     width: 100%;
     height: 45px;
-    background: var(--dark) ;
+    background: white ;
     border: none;
     outline: none;
     border-radius: 100px;
     cursor: pointer;
     font-size: 1em;
-    color: var(--light);
+    color: black;
     font-weight: 500;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
 }
 .login-register {
     font-size: .9em;
-    color: var(--light);
+    color: white;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-register p a {
-    color: var(--light);
+    color: white;
     font-weight: 600;
 }
 .login-register a:hover {

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./CSS/all.min.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/Game-product-page.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,10 +69,120 @@
         </div>
     </nav>
 <!-- =======================Start Your Page Here======================= -->
+ <div class="container">
+    <!-- Search Bar -->
+     <div class="search-bar">
+      <input type="text" placeholder="Search for games.....">
+      <button type="submit">Search</button>
+    </div>
+ <!-- Game Products -->
+ <div class="product-container">
+  <!-- Game Details Section -->
+  <div class="game-details">
+    <img src="" id="game-img" alt="WWE 2K23 - PS5">
+    <div class="game-content">
+      <h2 class="game-title" id="game-name">WWE 2K23 - PS5</h2>
+      <div class="rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <p class="game-price" id="game-price">2650 EGP</p>
+      <div class="quantity">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1">
+    </div>
+      <button class="add-to-cart-btn">Add To Cart</button>
+    </div>
+  </div>
 
+  <div class="game-desc" >
+  <strong>Description:</strong>
+    <p id="game-desc">Step into the squared circle and unleash your inner superstar in WWE 2K23. Featuring the most realistic WWE gameplay to date, this game puts you in control of your favorite WWE Superstars and Legends. With enhanced graphics, new gameplay mechanics, and an expanded roster, WWE 2K23 delivers the ultimate wrestling experience for fans old and new.</p>
+  </div>
+  <div class="video-container">
+    <iframe id="game-trailer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
 
-    <!-- Delete This  -->
-    <div class="temp-div"></div>
+      <!-- Related Products Section -->
+      <h2>Related Products</h2>
+      <div class="related-products">
+        <div class="listgames">
+          <img src="https://api.egyptgamestore.com/uploads/products/xYdTVlc5y1olAJ9xgkDSPgJvdmVk7nh9paEF7Xhx.jpg" alt="FIFA 23 Standard Edition English - PS5">
+          <div class="game-content">
+            <h2 class="game-title">FIFA 23 Standard Edition English - PS5</h2>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <p class="game-price">4000 EGP</p>
+            <button gameid="2"
+            gamename="FIFA 23 Standard Edition English - PS5"
+            gameprice="4000 EGP"
+            gameimage="https://api.egyptgamestore.com/uploads/products/xYdTVlc5y1olAJ9xgkDSPgJvdmVk7nh9paEF7Xhx.jpg" CLASS= "yourClassName add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <div class="listgames">
+          <img src="https://api.egyptgamestore.com/uploads/products/JzxnZpASkH4oiJlRmZqjVV2MzdRTFArGmt1VpLpd.jpg" alt="PlayStation 5 Console (Disc Version)">
+          <div class="game-content">
+            <h2 class="game-title">PlayStation 5 Console (Disc Version)</h2>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              
+            </div>
+            <p class="game-price">50000 EGP</p>
+            <button gameid="3"
+            gamename="PlayStation 5 Console (Disc Version)"
+            gameprice="50000 EGP"
+            gameimage="https://api.egyptgamestore.com/uploads/products/JzxnZpASkH4oiJlRmZqjVV2MzdRTFArGmt1VpLpd.jpg" class="yourClassName add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <div class="listgames">
+          <img src="https://api.egyptgamestore.com/uploads/products/TZ7psVB2Hy6aOE4aks0kN2eBO5QheFBtytwIQHQx.jpg" alt="Marvel's Spider-Man Remastered">
+          <div class="game-content">
+            <h2 class="game-title">Marvel's Spider-Man Remastered</h2>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <p class="game-price">2350 EGP</p>
+            <button gameid="4"
+            gamename="Marvel's Spider-Man Remastered"
+            gameprice="2350 EGP"
+            gameimage="https://api.egyptgamestore.com/uploads/products/TZ7psVB2Hy6aOE4aks0kN2eBO5QheFBtytwIQHQx.jpg" class="yourClassName add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+        <div class="listgames">
+          <img src="https://api.egyptgamestore.com/uploads/products/DCg6m5kVQc70xQXW0TTqwDVeiOqheGi3iS8QqGE2.jpg" alt="TOM Clancy Ghost Recon Break Point Arabic PS4">
+          <div class="game-content">
+            <h2 class="game-title">TOM Clancy Ghost Recon Break Point Arabic PS4</h2>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <p class="game-price">550 EGP</p>
+            <button gameid="5"
+            gamename="TOM Clancy Ghost Recon Break Point Arabic PS4"
+            gameprice="550 EGP"
+            gameimage="https://api.egyptgamestore.com/uploads/products/DCg6m5kVQc70xQXW0TTqwDVeiOqheGi3iS8QqGE2.jpg"  class="yourClassName add-to-cart-btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="game-page.js"></script>
 
 
 <!-- =======================End Your Page Here======================= -->

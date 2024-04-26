@@ -1,23 +1,41 @@
-document.querySelector('.just-to-test').onclick = () => {
-    let itemToBeAdded = `
-    <div class="item">
-        <div class="product">
-            <img src="./Images/homeImgs/Trending/farcry.jpg" alt="">
-            <h4 id="game-name">Far Cry® 6 Game of the Year Edition</h4>
+// Adding Games To Cart
+let gamesToBeAdded = JSON.parse(localStorage.getItem('cart-games')) || {};
+function addGamesStrorageCart() {
+    Object.values(gamesToBeAdded).forEach(e => {
+        let itemToBeAdded = `
+        <div class="item" gameid="${e.gameId}">
+            <div class="product">
+                <img src="${e.gameImage}" alt="${e.gameName}">
+                <a href="game-product-page.html?game=${e.gameId}"><h4 id="game-name">${e.gameName}</h4></a>
+            </div>
+            <span id="price">${e.gamePrice}</span>
+            <div class="quantity">
+                <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                <span id="quantity-ctrl">1</span>
+                <div class="plus"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            <span id="total-price">${e.gamePrice}</span>
+            <i class="fa-solid fa-trash"></i>
         </div>
-        <span id="price">$119.99</span>
-        <div class="quantity">
-            <div class="minus"><i class="fa-solid fa-minus"></i></div>
-            <span id="quantity-ctrl">1</span>
-            <div class="plus"><i class="fa-solid fa-plus"></i></div>
-        </div>
-        <span id="total-price">$119.99</span>
-        <i class="fa-solid fa-trash"></i>
-    </div>
-    `;
-    document.querySelector('.games').innerHTML += itemToBeAdded;
-    summarySubTotal();
-};
+        `;
+        document.querySelector('.games').innerHTML += itemToBeAdded;
+    });
+}
+addGamesStrorageCart();
+// document.querySelector('.just-to-test').onclick = () => {
+//     let gameToBeAdded = {
+//         gameName: 'Far Cry® 6 Game of the Year Edition',
+//         gamePrice: '$119.99',
+//         gameImage: './Images/homeImgs/Trending/farcry.jpg',
+//         gameId: '99',
+//     };
+//     gamesToBeAdded['99'] = gameToBeAdded;
+//     localStorage.setItem('cart-games', JSON.stringify(gamesToBeAdded));
+//     document.getElementById('cart-counter').innerHTML = Object.keys(gamesToBeAdded).length;
+//     addGamesStrorageCart();
+//     summarySubTotal();
+//     location.reload();
+// };
 /*===================================================================*/
 
 // Quantity and total price
@@ -59,12 +77,15 @@ function summarySubTotal(){
         subTotal += parseFloat(it.querySelector('#total-price').innerHTML.slice(1));
     });
     subTotalSpan.innerHTML = `$${subTotal.toFixed(2)}`; 
-    document.getElementById('order-total').innerHTML = `$${subTotal.toFixed(2)}`;
+    document.getElementById('order-total').innerHTML = `$${subTotal.toFixed(2) - (document.querySelector('#disc') ? subTotal.toFixed(2) / 2 : 0)}`;
     checkStatus();
 }
 summarySubTotal();
 document.addEventListener('click', e => {
     if (e.target.classList.contains('fa-trash')){
+        delete gamesToBeAdded[getParentElement(e.target, 'item').getAttribute('gameid')];
+        localStorage.setItem('cart-games', JSON.stringify(gamesToBeAdded));
+        document.getElementById('cart-counter').innerHTML = Object.keys(gamesToBeAdded).length;
         getParentElement(e.target, 'item').classList.add('removing');
         setTimeout(() => {
             getParentElement(e.target, 'item').remove();
@@ -135,6 +156,7 @@ document.addEventListener('click', e => {
                 </div>
             `;
         }
+        summarySubTotal();
     }
 });
 let coupon = document.getElementById('add-coupon');

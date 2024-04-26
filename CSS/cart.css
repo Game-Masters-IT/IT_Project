@@ -7,6 +7,16 @@
 .widgets {
     padding-top: 50px;
 }
+@media (max-width : 1199px) {
+    .widgets .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .cart-content, .order-summary {
+        width: 100% !important;
+    }
+
+}
 .widgets .order-summary {
     border: 1px solid var(--black-tran-2);
     padding: 30px;
@@ -196,15 +206,76 @@
     border-radius: 10px;
     overflow: hidden;
 }
+@media (max-width: 767px){
+    .data-head span {
+        display: none;
+    }
+    .cart-content .item {
+        position: relative !important; 
+        height: 130px;
+    }
+    .item .fa-trash{
+        position: absolute !important;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+    }
+    .item .quantity{
+        position: absolute !important;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 20px;
+
+        padding: 20px;
+    }
+    .item .product{
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 60%;
+        padding-left: 10px;
+    }
+    .item #price::before {
+        content: 'Price :';
+        margin-right: 10px;
+    }
+    .item #total-price::before {
+        content: 'Total Price :';
+        margin-right: 10px;
+    }
+    .item #total-price{
+        position: absolute !important;
+        bottom: 0;
+        left: 60px;
+        padding: 10px;
+    }
+    .item #price{
+        position: absolute !important;
+        bottom: 25px;
+        left: 60px;
+        padding: 10px;
+    }
+    .cart-content .item {
+        display: flex;
+        flex-direction: column;
+    }
+    .empty-cart{
+        width: 100% !important;
+    }
+}
 .cart-content .item:hover {
     background-color: var(--black-tran-2);
 }
 .cart-content .item .product {
     display: flex;
     align-items: center;
+    justify-self: start;
 }
 .cart-content .item .product img {
     height: 70px;
+    width: 50px;
     border-radius: 10px;
 }
 .cart-content .item .product h4 {
@@ -217,6 +288,7 @@
 .cart-content .item .quantity {
     background-color: var(--light);
     width: 50px;
+    height: 25px;
     padding: 3px 10px;
     position: relative;
     display: flex;
@@ -350,6 +422,7 @@
 .rec-games .games {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     left: 0;
     transition: .5s;

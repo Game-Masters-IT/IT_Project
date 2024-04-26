@@ -1,19 +1,26 @@
 .pk{
-    border: white 1px solid;
-    width: 85%;
+    border: var(--white) 1px solid;
+    width: 1200px;
+}
+body{
+    font-family:serif;
+}
+
+nav{
+    font-family: "Rubik ",sans-serif;
+    text-decoration: none;
 }
 .lkj{
     padding-left:90px ;
-    color: white;
+    color: var(--white);
 }
 .fgh{
-    width: 40%;
+    width: 550px;
     
 }
 .edk{
     display: flex;
     justify-content:space-around;
-    align-items: center;
     
 }
 .ad{
@@ -22,3 +29,26 @@
 .ol{
     color: blue;
 }
+#ui{
+    color: #00ADB5;
+}
+#lk{
+    text-align: center;
+    color: rgb(183, 191, 252);
+    padding-top: 10px;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px rgb(103, 103, 103);
+}
+.yu{
+    border-radius: 50%;
+    width: 155px;
+}
+#rf{
+    color: white;
+    font-weight:bold;
+    text-shadow: 2px 2px 15px gray;
+    font-size: 20px;
+    
+}
+
+  
