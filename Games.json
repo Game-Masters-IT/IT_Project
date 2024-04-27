@@ -36,6 +36,13 @@
         "gameDesc": "PUBG: BATTLEGROUNDS is a thrilling battle royale game developed by PUBG Corporation. Drop onto an island with 99 other players and fight to be the last one standing. With intense gunfights, strategic gameplay, and ever-shrinking play zones, every match is a pulse-pounding race for survival. Team up with friends in squads or go solo in this adrenaline-fueled fight for dominance. Are you ready to conquer the battlegrounds and emerge victorious in PUBG: BATTLEGROUNDS?",
         "gameTrailer": "https://www.youtube.com/embed/u1oqfdh4xBY"
     },
+    "5": {
+        "gameName": "PUBG: BATTLEGROUNDS",
+        "gamePrice": "$10",
+        "gameImg": "Images/homeImgs/Trending/pubg.jpg",
+        "gameDesc": "",
+        "gameTrailer": "https://www.youtube.com/embed/XhP3Xh4LMA8"
+    },
     "98": {
         "gameName": "PUBG: BATTLEGROUNDS",
         "gamePrice": "$10",

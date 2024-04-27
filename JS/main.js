@@ -33,6 +33,42 @@ themeToggle.addEventListener("click", () => {
     }
 });
 /*=========================================*/
+// Adding the Search bar to all pages
+let theSearchBar = document.createElement('form');
+theSearchBar.classList.add('search-bar');
+theSearchBar.classList.add('belong-to-srch');
+theSearchBar.setAttribute('action', 'search-results.html');
+theSearchBar.innerHTML = `
+    <button title="Search" class="belong-to-srch" type="button"><i class="fa-solid fa-magnifying-glass fa-fw belong-to-srch"></i></button>
+    <input class="belong-to-srch" placeholder="Search for a game..." type="search" name="search" id="search-input">
+`;
+let theProfileDiv = document.querySelector('.rightOptions .profile');
+theProfileDiv.parentNode.insertBefore(theSearchBar, theProfileDiv);
+let theSearchBtn = document.querySelector('.search-bar button');
+let searchInput = document.querySelector('.search-bar input');
+
+theSearchBtn.addEventListener('click', () => {
+    if (searchInput.value === ""){
+        theSearchBtn.classList.toggle('search-btn-after');
+        theSearchBtn.querySelector('i').classList.toggle('search-i-after');
+        searchInput.classList.toggle('search-input-after');
+    }
+    else {
+        theSearchBtn.setAttribute('type', 'submit');
+    }
+});
+document.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('belong-to-srch')){
+        theSearchBtn.classList.remove('search-btn-after');
+        theSearchBtn.querySelector('i').classList.remove('search-i-after');
+        searchInput.classList.remove('search-input-after');
+        searchInput.value = "";
+    }
+});
+window.onload = () => {
+    searchInput.value = "";
+};
+/*=========================================*/
 // toggle menu on small screens
 const menuIcon = document.getElementById("toggle-menu");
 const pagesLinks = document.getElementById("pages-links");

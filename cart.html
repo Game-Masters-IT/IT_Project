@@ -72,50 +72,48 @@
 
     <div class="widgets">
         <h2 class="main-heading section-heading">Games Cart</h2>
-        <div class="container">
-            <div class="cart-content">
-                <div class="content-head">
-                    <h3 class="section-heading">Cart Content</h3>
-                    <div class="data-head">
-                        <span>Product</span>
-                        <span>Price</span>
-                        <span>Quantity</span>
-                        <span>Total</span>
+        <form action="CHECKOUT.html">
+            <div class="container">
+                <div class="cart-content">
+                    <div class="content-head">
+                        <h3 class="section-heading">Cart Content</h3>
+                        <div class="data-head">
+                            <span>Product</span>
+                            <span>Price</span>
+                            <span>Quantity</span>
+                            <span>Total</span>
+                        </div>
+                    </div>
+                    <div class="games">
+                        
                     </div>
                 </div>
-                <div class="games">
-                    
+                <div class="order-summary">
+                    <h3 class="section-heading">Order Summary</h3>
+                    <div class="sub">
+                        <span>Subtotal</span>
+                        <span id="sub-total">20$</span>
+                    </div>
+                    <div class="ship">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <span id="add-coupon"><span>Add Coupon Code</span><i class="fa-solid fa-arrow-right"></i></span>
+                    <div class="coupon-box hide">
+                        <input type="text" placeholder="Enter Your Coupon Here" id="coupon" >
+                        <button class="get">Apply</button>
+                        <i id="coupon-close" class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div class="total">
+                        <span>Total</span>
+                        <span id="order-total">20$</span>
+                        <input hidden type="text" name="total" id="total-to-be-sumbmited">
+                    </div>
+                    <button type="submit" class="check">Checkout</button>
                 </div>
             </div>
-            <div class="order-summary">
-                <h3 class="section-heading">Order Summary</h3>
-                <div class="sub">
-                    <span>Subtotal</span>
-                    <span id="sub-total">20$</span>
-                </div>
-                <div class="ship">
-                    <span>Shipping</span>
-                    <span>Free</span>
-                </div>
-                <span id="add-coupon"><span>Add Coupon Code</span><i class="fa-solid fa-arrow-right"></i></span>
-                <div class="coupon-box hide">
-                    <input type="text" placeholder="Enter Your Coupon Here" name="coupon" id="coupon" >
-                    <button class="get">Apply</button>
-                    <i id="coupon-close" class="fa-solid fa-circle-xmark"></i>
-                </div>
-                <div class="total">
-                    <span>Total</span>
-                    <span id="order-total">20$</span>
-                </div>
-                <button class="check">Checkout</button>
-            </div>
-        </div>
+        </form>
     </div>
-
-    <!-- Delete This 
-    <button class="just-to-test">Just for test</button>
-    <a href="product-test-page.html" class="just-to-test" style="top: 130px;">Test From Another Page</a> -->
-
     <div class="rec-games">
         <div class="container">
             <h2 class="section-heading aos-init aos-animate" data-aos-duration="1100" data-aos="fade-up">Recommended Games</h2>
@@ -302,7 +300,7 @@
         </div>
         <p>Copyright &copy; 2024 GameMasters. All rights reserved.</p>
     </footer>
-    <script src="cart.js"></script>
-    <script src="main.js"></script>
+    <script src="./JS/cart.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 </html>

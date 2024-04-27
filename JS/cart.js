@@ -3,7 +3,7 @@ let gamesToBeAdded = JSON.parse(localStorage.getItem('cart-games')) || {};
 function addGamesStrorageCart() {
     Object.values(gamesToBeAdded).forEach(e => {
         let itemToBeAdded = `
-        <div class="item" gameid="${e.gameId}">
+        <div class="item" gameid="${e.gameId}" name="${e.gameId}" value="${e.gamePrice}">
             <div class="product">
                 <img src="${e.gameImage}" alt="${e.gameName}">
                 <a href="game-product-page.html?game=${e.gameId}"><h4 id="game-name">${e.gameName}</h4></a>
@@ -57,6 +57,7 @@ function quantityPlusMinus(target, sign){
         else currtentQuantity--;
         quantity.innerHTML = currtentQuantity;
         totalPrice.innerHTML = `$${(productPrice.innerHTML.slice(1) * currtentQuantity).toFixed(2)}`;
+        getParentElement(target, 'item').setAttribute('value', totalPrice.innerHTML);
     }
     summarySubTotal();
 }
@@ -78,6 +79,7 @@ function summarySubTotal(){
     });
     subTotalSpan.innerHTML = `$${subTotal.toFixed(2)}`; 
     document.getElementById('order-total').innerHTML = `$${subTotal.toFixed(2) - (document.querySelector('#disc') ? subTotal.toFixed(2) / 2 : 0)}`;
+    document.getElementById('total-to-be-sumbmited').setAttribute('value', `${subTotal.toFixed(2) - (document.querySelector('#disc') ? subTotal.toFixed(2) / 2 : 0)}`)
     checkStatus();
 }
 summarySubTotal();
@@ -169,3 +171,12 @@ document.addEventListener('click', (e) => {
         couponBox.classList.add('hide');
     }
 });
+
+// Clean The Cart
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('check')) {
+        localStorage.setItem('cart-games', JSON.stringify({}));
+        
+    }
+});
+document.querySelector('.check').addEventListener

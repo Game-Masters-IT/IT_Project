@@ -446,6 +446,22 @@ header .menu{
     }
 }
 
+#myTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #myTable th,
+  #myTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #myTable tr:hover {
+    background-color: #a14bec;
+  }
+
 /* End Landing Page */ 
 /* Start Footer */
 footer {

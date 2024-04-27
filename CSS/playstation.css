@@ -272,7 +272,11 @@ nav .cart:hover {
 
 /* End Nav */
 /* Start Landing Page */
-
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .slider{
     width: auto;
     max-width: 100vw;
@@ -380,7 +384,7 @@ nav .cart:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
     transition: .4s;
-    background: #f2f2f2;
+    background: #16018d;
 }
 .content:hover{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
@@ -388,8 +392,8 @@ nav .cart:hover {
     transform: translate(0px, -8px);
 }
 img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     margin: 0 auto;
     display: block;
@@ -402,19 +406,18 @@ p{
 h6{
     font-size: 26px;
     text-align: center;
-    color: #222f3e;
+    color: #ffffff;
     margin: 0;
 }
-ul{
-    list-style: none;
+/* ul{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 0;
-}
-li{
+} */
+/* li{
     padding-top: 5px;
-}
+} */
 .fa{
     font-size: 26px;
     transition: .4s;
@@ -427,7 +430,8 @@ li{
     transform: scale(1.3);
     transition: .6s;
 }
-button{
+
+.buy{
     text-align: center;
     font-size: 24px;
     color: #fff;
@@ -439,18 +443,7 @@ button{
     margin-top: 5px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-}
-.buy-1{
-    background: #2183a2;
-}
-.buy-2{
-    background: #3b3e6e;
-}
-.buy-3{
     background: #0b0b0b;
-}
-.buy-4{
-    background: #ff9f43;
 }
 @media(max-width:1000px){
     .content{
@@ -462,6 +455,43 @@ button{
         width: 100%;
     }
 }
+
+.advanced-table {
+    width: 100%;
+    height: 500px; /* Adjust this value to increase or decrease the height */
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    th,
+    td {
+    border: 1px solid ;
+    padding: 12px;
+    text-align: left;
+    }
+    
+    th {
+    padding: 20px;
+    background-color: rgb(27, 0, 126);
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    }
+    
+    tr:nth-child(even) {
+    background-color: #c64c8941;
+    }
+    
+    tr:hover {
+    background-color: #7975cf;
+    }
 
 /* End Landing Page */ 
 /* Start Footer */
