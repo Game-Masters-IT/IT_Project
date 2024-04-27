@@ -155,7 +155,7 @@ iframe {
   background-color: var(--dark);
   font-weight: bold;
   color: var(--white);
-
+}
   .advanced-table table {
   width: 100%;
   max-width: 100%; 
@@ -178,6 +178,6 @@ iframe {
 .advanced-table td {
   text-align: center;
 }
-}
+
 
 
