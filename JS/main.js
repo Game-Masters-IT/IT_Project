@@ -52,6 +52,7 @@ theSearchBtn.addEventListener('click', () => {
         theSearchBtn.classList.toggle('search-btn-after');
         theSearchBtn.querySelector('i').classList.toggle('search-i-after');
         searchInput.classList.toggle('search-input-after');
+        searchInput.focus();
     }
     else {
         theSearchBtn.setAttribute('type', 'submit');
