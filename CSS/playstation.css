@@ -272,7 +272,11 @@ nav .cart:hover {
 
 /* End Nav */
 /* Start Landing Page */
-
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .slider{
     width: auto;
     max-width: 100vw;
@@ -353,7 +357,7 @@ nav .cart:hover {
     transition: 0.5s;
 }
 .slider .dots li.active{
-    width: 30px;
+    /* width: 30px; */
 }
 @media screen and (max-width: 768px){
     .slider{
@@ -405,16 +409,15 @@ h6{
     color: #ffffff;
     margin: 0;
 }
-ul{
-    list-style: none;
+/* ul{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 0;
-}
-li{
+} */
+/* li{
     padding-top: 5px;
-}
+} */
 .fa{
     font-size: 26px;
     transition: .4s;
