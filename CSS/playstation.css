@@ -357,7 +357,7 @@ nav .cart:hover {
     transition: 0.5s;
 }
 .slider .dots li.active{
-    /* width: 30px; */
+    width: 30px;
 }
 @media screen and (max-width: 768px){
     .slider{
