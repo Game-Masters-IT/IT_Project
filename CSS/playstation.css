@@ -297,7 +297,7 @@ nav .cart:hover {
     transition: 1s;
 }
 .slider .list img{
-    width: 1526px;
+    width: 100vw;
     max-width: 100vw;
     margin: auto;
     margin-left: auto;
@@ -306,7 +306,7 @@ nav .cart:hover {
     object-fit: cover;
 }
 .slider .list video{
-    width: 1526px;
+    width: 100vw;
     max-width: 100vw;
     margin: auto;
     margin-left: auto;
@@ -455,6 +455,43 @@ h6{
         width: 100%;
     }
 }
+
+.advanced-table {
+    width: 100%;
+    height: 500px; /* Adjust this value to increase or decrease the height */
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    th,
+    td {
+    border: 1px solid ;
+    padding: 12px;
+    text-align: left;
+    }
+    
+    th {
+    padding: 20px;
+    background-color: rgb(27, 0, 126);
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    }
+    
+    tr:nth-child(even) {
+    background-color: #c64c8941;
+    }
+    
+    tr:hover {
+    background-color: #7975cf;
+    }
 
 /* End Landing Page */ 
 /* Start Footer */
