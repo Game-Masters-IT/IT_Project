@@ -778,3 +778,6 @@ footer {
 footer > p {
     border-top-color: var(--dark);
 }
+footer input, footer textarea {
+    background-color: var(--dark) !important;
+}

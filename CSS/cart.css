@@ -495,3 +495,9 @@ footer {
 footer > p {
     border-color: var(--dark);
 }
+footer h2 {
+    font-size: 45px !important;
+}
+footer input, footer textarea {
+    background-color: var(--dark) !important;
+}
