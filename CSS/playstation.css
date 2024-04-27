@@ -380,7 +380,7 @@ nav .cart:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
     transition: .4s;
-    background: #f2f2f2;
+    background: #16018d;
 }
 .content:hover{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
@@ -388,8 +388,8 @@ nav .cart:hover {
     transform: translate(0px, -8px);
 }
 img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     margin: 0 auto;
     display: block;
@@ -402,7 +402,7 @@ p{
 h6{
     font-size: 26px;
     text-align: center;
-    color: #222f3e;
+    color: #ffffff;
     margin: 0;
 }
 ul{
@@ -441,16 +441,16 @@ button{
     border-bottom-left-radius: 20px;
 }
 .buy-1{
-    background: #2183a2;
+    background: #0b0b0b;
 }
 .buy-2{
-    background: #3b3e6e;
+    background: #0b0b0b;
 }
 .buy-3{
     background: #0b0b0b;
 }
 .buy-4{
-    background: #ff9f43;
+    background: #0b0b0b;
 }
 @media(max-width:1000px){
     .content{
