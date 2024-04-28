@@ -1,0 +1,58 @@
+nav {
+    position: unset;
+}
+.landing {
+    background-image: url(../Images/terms-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing h1 {
+    margin: 0;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: white;
+}
+.page-container {
+    padding: 100px 0;
+    display: flex;
+    gap: 30px;
+}
+p {
+    font-size: 18px;
+}
+
+h2 {
+    color: var(--main);
+}
+.side-menu a{
+    display: block;
+}
+.content {
+    width: 80%;
+}
+.content a {
+    color: aquamarine;
+}
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.side-menu a{
+    display: flex;
+    transition: .3s;
+}
+.side-menu a:hover{
+    color: var(--main);
+}
+.side-menu h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.side-menu .fa-solid {
+    margin-right: 10px;
+}

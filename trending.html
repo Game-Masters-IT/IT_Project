@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./CSS/all.min.css">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <!-- page CSS File -->
+    <link rel="stylesheet" href="./CSS/trending.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,9 +72,131 @@
 <!-- =======================Start Your Page Here======================= -->
 
 
-    <!-- Delete This  -->
-    <div class="temp-div"></div>
 
+
+
+    <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="Images/Trending/Far cry 6.jpg">
+                <div class="content">
+                    <p>Trend<i style="color: rgb(255, 0, 0);" class="fa-solid fa-fire"></i></p>
+                    <h2>#1</h2>
+                    <p style="color: gold;">
+                    <b>
+                        Far Cry® 6 Game of the Year Edition
+                    </b>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/Trending/ea-sports-fc-24-main.webp">
+                <div class="content">
+                    <p>Trend<i style="color: rgb(255, 0, 0);" class="fa-solid fa-fire"></i></p>
+                    <h2>#2</h2>
+                    <p style="color: gold;">
+                    <b>
+                        EA SPORTS FC™ 24 Standard Edition
+                    </b>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/Trending/GTAV.jpg">
+                <div class="content">
+                    <p>Trend<i style="color: rgb(255, 0, 0);" class="fa-solid fa-fire"></i></p>
+                    <h2>#3</h2>
+                    <p style="color: gold;">
+                    <b>
+                        Grand Theft Auto V: Premium Edition
+                    </b>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/Trending/PUBG.jpg">
+                <div class="content">
+                    <p>Trend<i style="color: rgb(255, 0, 0);" class="fa-solid fa-fire"></i></p>
+                    <h2>#4</h2>
+                    <p style="color: gold;">
+                    <b>
+                        PlayerUnknown's Battlegrounds
+                    </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="Images/homeImgs/Trending/farcry.jpg" >
+                <div class="content">
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/homeImgs/Trending/EGS_EASPORTS.jpg">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/homeImgs/Trending/GTAV.jpg">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/homeImgs/Trending/pubg.jpg">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Game Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td onclick="location.href='game-product-page.html?game=0'">Far Cry 6 Game of the Year Edition</td>
+                <td>$119.99</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td onclick="location.href='game-product-page.html?game=3'">EA SPORTS FC 24 Standard Edition</td>
+                <td>$69.99</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td onclick="location.href='game-product-page.html?game=1'">Grand Theft Auto V: Premium Edition</td>
+                <td>$29.99</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td onclick="location.href='game-product-page.html?game=4'">PlayerUnknown's Battlegrounds</td>
+                <td>$10.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <iframe style="border:0" src="https://id.sonyentertainmentnetwork.com/id/create_account_ca/#/create_account/wizard/entrance?entry=create_account" width="100%" height="600"></iframe>
+    <audio controls src="Images/Playstation/PlayStation - Copy.mp3"></audio>
+
+
+    <script src="./JS/trending.js"></script>
+
+
+    
 
 <!-- =======================End Your Page Here======================= -->
 
@@ -109,6 +233,6 @@
         </div>
         <p>Copyright &copy; 2024 GameMasters. All rights reserved.</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 </html>

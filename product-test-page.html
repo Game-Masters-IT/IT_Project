@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Masters</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png" >
+    <!--Normalize-->
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <!--Font Awsome-->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <style>
+    .just-to-test {
+        outline: none;
+        border: none;
+        background-color: var(--black-tran-2);
+        padding: 7px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 6px;
+        margin: 10px auto;
+        width: fit-content;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .just-to-test:hover {
+        background-color: var(--main);
+    }
+    </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gamepad"></i>
+                <span><span>Game</span>Masters</span>
+            </a>
+            <div class="pages-box">
+                <i class="fas fa-bars" id="toggle-menu">
+                    <i class="fa-solid fa-angle-down" id="menu-arrow"></i>
+                </i>
+                <ul class="pages" id="pages-links">
+                    <div class="col">
+                        <li><a href="index.html" title="Home"><i class="fa-solid fa-house fa-fw"></i>Home</a></li>
+                        <li><a href="playstation.html" title="Playstation"><i class="fa-brands fa-playstation fa-fw"></i>Playstation</a></li>
+                        <li><a href="xbox.html" title="Xbox"><i class="fa-brands fa-xbox fa-fw"></i>Xbox</a></li>
+                        <li><a href="pc.html" title="PC"><i class="fa-solid fa-desktop fa-fw"></i>PC</a></li>
+                        <li><a href="trending.html"><i class="fa-solid fa-fire"></i>Trending</a></li>
+                        <li><a href="support.html" title="Supports"><i class="fa-solid fa-headset fa-fw"></i>Supports</a></li>
+                        <li><a href="about.html" title="About Us"><i class="fa-solid fa-circle-info fa-fw"></i>About Us</a></li>
+                        <li><a href="brands.html" title="Brands"><i class="fa-solid fa-globe fa-fw"></i>Brands</a></li>
+                    </div>
+                    <div class="col">
+                        <li><a href="coming-soon.html" title="coming soon"><i class="fa-solid fa-hourglass-half fa-fw"></i>Coming Soon</a></li>
+                        <li><a href="game-reviews.html" title="Game Reviews"><i class="fa-solid fa-comment fa-fw"></i>Game Reviews</a></li>
+                        <li><a href="gaming-news.html" title="gaming news"><i class="fa-regular fa-newspaper fa-fw"></i>Gaming News</a></li>
+                        <li><a href="hardware.html" title="Hardware"><i class="fa-solid fa-microchip fa-fw"></i>Hardware</a></li>
+                        <li><a href="nintendo.html" title="nintendo"><i class="fa-solid fa-puzzle-piece fa-fw"></i>Nintendo</a></li>
+                        <li><a href="terms.html" title="nintendo" class="active"><i class="fa-solid fa-file fa-fw"></i>Terms</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="rightOptions">
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Account</span>
+                    <ul class="acc">
+                        <li><a href="profile.html"><i class="fa-solid fa-circle-user"></i>Profile</a></li>
+                        <li><a href="signin.html"><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal" id="sign-in-or-out"></i>Sign In</a></li>
+                    </ul>
+                </div>
+                <a href="cart.html" class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-counter">0</span>
+                </a>
+                <div class="theme-mode" id="theme">
+                    <i class="fa-solid fa-moon fa-fw" id="theme-icon" ></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- =======================Start Your Page Here======================= -->
+
+    <p class="game-name-test"></p>
+    <p class="game-price-test"></p>
+    <img src="" alt="" class="game-img-test">
+    <div class="container" style="height: 80vh; display: flex; justify-content: center; align-items: center;">
+        <button gameid="1" gameimage=".\Images\homeImgs\Trending\fortnite.jpg" gameprice="$20" gamename="Fortnite" class="just-to-test add-to-cart-btn">Add To Cart</button>
+        <button gameid="2" gameimage=".\Images\homeImgs\Trending\EGS_VALORANT.jpg" gameprice="$30" gamename="Valorant" class="just-to-test add-to-cart-btn">Add To Cart</button>
+    </div>
+    <!-- Delete This  -->
+    <div class="temp-div"></div>
+
+
+<!-- =======================End Your Page Here======================= -->
+
+    <footer>
+        <div class="container">
+            <div class="box">
+                <h3>Game Masters</h3>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <p class="text">
+                    Explore endless worlds of gaming adventure with GameStore. Discover the latest releases, join our community, and level up your gaming experience today.
+                </p>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Egypt, Cairo, Helwan University, Faculty of Computer Science and Artificial Intelligence</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                    <span>+20123453459</span>
+                    <span>+20173765432</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 GameMasters. All rights reserved.</p>
+    </footer>
+    <script src="./JS/main.js"></script>
+    <script>
+        let cartGames = JSON.parse(localStorage.getItem('cart-games')) || {};
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('add-to-cart-btn')) {
+                let gameToBeAdded = {
+                    gameName: e.target.getAttribute('gamename'),
+                    gamePrice: e.target.getAttribute('gameprice'),
+                    gameImage: e.target.getAttribute('gameimage'),
+                    gameId: e.target.getAttribute('gameid'),
+                };
+                cartGames[e.target.getAttribute('gameid')] = gameToBeAdded;
+                localStorage.setItem('cart-games', JSON.stringify(cartGames));
+                document.getElementById('cart-counter').innerHTML = Object.keys(cartGames).length;
+            }
+        });
+    </script>
+    <script src="./JS/game-page.js"></script>
+</body>
+</html>

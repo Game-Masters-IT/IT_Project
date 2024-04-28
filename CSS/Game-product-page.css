@@ -1,0 +1,184 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .container {
+  width: 80%;
+  margin: 0 auto;
+} */
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.product-container {
+  margin-top: 50px;
+}
+
+/* Game Details Styles */
+.game-details {
+  display: flex;
+  margin-bottom: 40px;
+  background-color: var(--dark);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* width: 80%; Limiting the width of the game container */
+  margin: 0 auto; /* Centering the game container */
+  margin-bottom: 70px;
+}
+
+.game-details img {
+  /* width: 500px; */
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.game-title {
+  margin-top: 0;
+  margin-left: 0px;
+}
+
+.rating {
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.game-price {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* Quantity Input Styles */
+.quantity {
+  margin-top: 10px;
+}
+
+.quantity label {
+  margin-right: 10px;
+  font-weight: bold; /* Make the quantity word bold */
+  font-size: 16px; /* Increase the font size */
+}
+
+.quantity input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add some space between quantity and add to cart button */
+.add-to-cart-btn {
+  margin-top: 10px;
+  margin-left: 10px; 
+  background-color: #25a788;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.add-to-favorite {
+  color: #2b6b6e;
+  text-decoration: none;
+}
+
+.game-info {
+  flex: 1; /* Take up the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-info img {
+  width: 500px;
+  height: 300px;
+}
+
+.game-desc {
+  flex: 1; 
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.video-container {
+  height: 700px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Related Products Section */
+.related-products h2 {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 20px; 
+}
+
+.related-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px; 
+  margin: 0 auto; 
+  margin-top: 40px; 
+}
+
+.listgames {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: var(--dark);
+}
+
+.listgames img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.listgames .game-content {
+  padding: 10px;
+  background-color: var(--dark);
+}
+
+.listgames .game-title {
+  margin-top: 0;
+}
+
+.listgames .game-price {
+  background-color: var(--dark);
+  font-weight: bold;
+  color: var(--white);
+}
+
+  .advanced-table table {
+  width: 100%;
+  max-width: 100%; 
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.advanced-table th,
+.advanced-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.advanced-table th {
+  background-color: #aaa;
+  font-weight: bold;
+  text-align: center;
+}
+
+.advanced-table td {
+  text-align: center;
+}
+
+
+

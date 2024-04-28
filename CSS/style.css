@@ -12,6 +12,7 @@
     --white: white;
     --tranlayer: rgba(23, 16, 16, 0.08);
     --black-tran: rgba(0, 0, 0, 0.15);
+    --black-tran-2: rgba(255, 255, 255, 0.2);
 }
 
 .light-theme {
@@ -22,6 +23,7 @@
     --white: #222831;
     --tranlayer: rgba(0,0,0,.08);
     --black-tran: rgba(0, 0, 0, 0.05);
+    --black-tran-2: rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -168,7 +170,7 @@ nav #toggle-menu:hover {
 #menu-arrow {
     font-size: 16px;
     margin-left: 5px;
-    /* transition: .3s; */
+    transition: .3s;
 }
 .rotate-arrow-on-click {
     transform: rotate(180deg);
@@ -254,25 +256,98 @@ nav .cart:hover {
     background-color: var(--tranlayer);
     color: var(--white);
 }
-
-
-
-
-
-
 @media (max-width: 767px){
-    nav .profile span {
+    .logo span {
         display: none;
     }
+    nav .pages {
+        left: -63px;
+        top: 100%;
+        width: 100vw;
+        justify-content: center;
+    }
+
 }
-
-
-
 /* End Nav */
-/* Start Landing Page */
 
-/* End Landing Page */ 
+/* Search bar*/
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+.search-bar button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 22;
+    cursor: pointer;
+    transition: .5s;
+    background-color: var(--main);
+}
+.search-bar button i {
+    color: black;
+    font-size: 14px;
+    transform: rotateZ(80deg);
+    transition: .5s;
+}
+.search-bar input {
+    color: var(--white);
+    background-color: var(--darker);
+    display: block;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 0;
+    transition: .5s;
+    column-rule-color: var(--white);
+    opacity: 0;
+}
+.search-bar input::placeholder {
+    color: var(--light);
+    font-size: 14px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+.search-btn-after {
+    margin-right: -25px;
+    border-radius: 6px !important;
+}
+.search-i-after {
+    transform: rotateZ(0deg) !important;
+}
+.search-input-after {
+    opacity: 1 !important;
+    width: 250px !important;
+    height: 30px !important;
+    padding-left: 35px;
+    column-rule-color: var(--dark);
+    border-radius: 6px;
+}
+@media (max-width: 991px){
+    .search-bar {
+        position: absolute;
+        bottom: -60%;
+        right: 10px;
+    }
+}
 /* Start Footer */
+.section-heading {
+    margin: 0;
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    background: rgb(0,173,181);
+    background-image: linear-gradient(41deg, rgba(0,173,181,1) 28%, rgba(0,181,103,1) 95%);
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+}
 footer {
     background-color: var(--dark);
     padding-top: 50px;
@@ -292,7 +367,6 @@ footer::after {
     top: 70%;
     opacity: .2;
     width: 25%;
-    
 }
 footer .container {
     display: flex;
@@ -308,6 +382,7 @@ footer h3 {
 }
 footer .social {
     display: flex;
+    gap: 10px;
 }
 footer .box:first-child {
     max-width: 500px;
@@ -344,9 +419,6 @@ footer .social li{
     }
 
 }
-footer .social li:not(:last-child){
-    margin-right: 15px;
-}
 footer .social li:last-child:hover{
     background-color: red;
 }
@@ -362,14 +434,91 @@ footer .box .line{
     align-items: center;
     margin-bottom: 30px;
 }
-footer .box .line i{
+footer .box .line:not(:last-child) i{
     font-size: 30px;
     margin-right: 10px;
 }
-footer > p {
+footer .box .line i:first-child {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer > p:last-child {
     border-top: 1px solid var(--darker);
     padding-top: 30px;
     margin-top: 50px;
     text-align: center;
+}
+.contact-form {
+    min-width: 400px;
+    padding: 20px;
+}
+.contact-form input {
+    outline: none;
+    border: none;
+    background-color: var(--darker);
+    height: 35px;
+    color: var(--white);
+    padding: 3px 10px;
+    border-radius: 6px;
+}
+.contact-form input::placeholder {
+    color: var(--black-tran-2)
+}
+.contact-form textarea {
+    border-radius: 6px;
+    resize: none;
+    background-color: var(--darker);
+    color: var(--white);
+    outline: none;
+    border: none;
+    height: 100px;
+    padding: 10px;
+}
+.contact-form textarea::-webkit-scrollbar {
+    border-radius: 6px;
+    background-color: var(--darker);
+}
+.contact-form textarea::placeholder {
+    color: var(--black-tran-2);
+}
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.contact-inputs button {
+    outline: none;
+    border: none;
+    background-color: var(--main);
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+.contact-inputs .contact-row {
+    display: flex;
+    gap: 20px;
+}
+@media (max-width: 767px){
+    .contact-inputs .contact-row {
+        flex-direction: column;
+    }
+    footer .box {
+        text-align: left;
+    }
+    footer .box .line:last-child {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+.contact-form p {
+    text-align: left;
 }
 /* End Footer */ 
