@@ -151,7 +151,7 @@ a:link{
     float: left;
     transform: translate(150px);
     justify-items: center;
-    max-width: 1200px; 
+    max-width: 1200px;
 }
 .father {
     display: flex;

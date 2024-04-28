@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Masters</title>
-    <link rel="icon" type="image/png" href="Images/favicon.png" >
+    <link rel="Icon" type="image/png" href="Images/favicon.png" >
     <!--Normalize-->
     <link rel="stylesheet" href="./CSS/normalize.css">
     <!--Font Awsome-->
@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- profile css -->
     <link rel="stylesheet" href="./CSS/profile.css">
 </head>
@@ -71,6 +72,8 @@
         </div>
     </nav>
 <!-- =======================Start Your Page Here======================= -->
+
+<div class="body2">
 <div class="contentofmenu">
     
     
@@ -84,42 +87,46 @@
         </div>
 
         <div class="title-info">
-            <p>dashboard</p>
+            <div class="title-box">
+            <p >dashboard</p>
+            </div>
         </div>
 
         <div class="dashdivision">
             <div class="dashboxes">
+                <div class="text">
                 <h2>username</h2>
+                </div>
                 <p>Ezzeldeen</p>
                 <i class="fa fa-user" aria-hidden="true"></i>
             </div>
 
             <div class="dashboxes">
-                <h2>time-left:</h2>
+                <h2 class="text">time-left:</h2>
                 <p id="timer"></p>
                 <i class="fas fa-clock "></i>
             </div>
 
             <div class="dashboxes">
-                <h2>score</h2>
+                <h2 class="text">score</h2>
                 <p>1400</p>
             </div>
 
             <div class="dashboxes">
-                <h2>your game</h2>
+                <h2 class="text">your game</h2>
                 <p>20 games</p>
                 <i class="fa fa-gamepad" aria-hidden="true"></i>
             </div>
 
             <div class="dashboxes">
-                <h2>balance</h2>
+                <h2 class="text">balance</h2>
                 <p>1200 $</p>
                 <i class="fas fa-money-bill    "></i>
                 
             </div>
 
             <div class="dashboxes">
-                <h2>nickname</h2>
+                <h2 class="text">nickname</h2>
                 <p>leader</p>
                 <i class="fa fa-bolt" aria-hidden="true"></i>
             </div>
@@ -127,14 +134,19 @@
 
         </div>
     </div>
+
+
+    
     <div class="dashboard2">
-        <div class="title-info">
-            <p>achivment</p>
-        </div>
+              <div class="title-info"><p>achivment</p></div>
+              <div class="circle"></div>
+              <div class="invert">
+                  <div class="circle"></div>
+              </div>
 
         <div class="dashdivision2">
-
             <div class="dashboxes">
+                
                 <h3>progress:</h3>
                 <div class="progress"> 
                     <p>strategy:</p>
@@ -150,302 +162,55 @@
 
             <div class="dashboxes">
                 <h3>rank <i class="fas fa-medal "></i></h3>
-                
                 <img src="Images/bronze-medal.png " width="64" height="64" >
-                <span>bronze</span>
-                
-                
-                
+                <h4 style="transform: translateY(-20px);">bronze</h4>
             </div>
 
         </div>
 </div>
+
+<div class="dashboard3">
+    <div class="boxesbarcont">
+        <p style="transform: translateY(-20px);">open world</p>
+        <div class="boxesbar1"></div>
+        <p style="transform: translateY(30px);">race</p>
+        <div class="boxesbar2"></div>
+        <p style="transform: translateY(90px);">horror</p>
+        <div class="boxesbar2"></div>
+        <p style="transform: translateY(150px);">action</p>
+        <div class="boxesbar4"></div>
+    </div>
+
+    <div class="boxesbarcont">
+        <div class="boxesbar1"></div>
+        <div class="boxesbar2"></div>
+        <div class="boxesbar2"></div>
+        <div class="boxesbar4" style="opacity: 0;"></div>
+    </div>
+
+    <div class="boxesbarcont">
+        <div class="boxesbar1"></div>
+        <div class="boxesbar2"></div>
+        <div class="boxesbar2" style="opacity: 0;"></div>
+        <div class="boxesbar4" style="opacity: 0;"></div>
+    </div>
+
+    <div class="boxesbarcont">
+
+        <div class="boxesbar1"></div>
+        <div class="boxesbar2"></div>
+        <div class="boxesbar2"></div>
+        <div class="boxesbar4" style="opacity: 0; "></div>
+    </div>
+</div>
+
+</div> <!--end of body 2 tag-->
 
 <!-- tis addfreind slider-->
 
 
 
 
-<section>
-<div class="bodyofcard">  
- <div class="swiper mySwiper containerallplus">
-    <div class="swiper-wrapper contentplus">
-        <div class="swiper-slide card">
-
-            <div class="cardcontent">
-                <div class="image">
-                    <img src="Images/ammar-amr.png" alt="">
-                </div>
-                <div class="socialmedia">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <div class="name-profession">
-                    <span class="name">your name</span>
-                    <span class="profession">web developer</span>
-                </div>
-
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
-                </div>
-
-                <div class="button2">
-                    <button class="aboutme">show</button>
-                    <button class="add">add</button>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="swiper-slide card">
-            <div class="cardcontent">
-                <div class="image">
-                    <img src="Images/abdelrahman-adel.png" alt="">
-                </div>
-                <div class="socialmedia">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <div class="name-profession">
-                    <span class="name">your name</span>
-                    <span class="profession">web developer</span>
-                </div>
-
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
-                </div>
-
-                <div class="button2">
-                    <button class="aboutme">show</button>
-                    <button class="add">add</button>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="swiper-slide card">
-            <div class="cardcontent">
-                <div class="image">
-                    <img src="Images/8013df7528735ecc2506a779a968e846.jpg" alt="">
-                </div>
-                <div class="socialmedia">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <div class="name-profession">
-                    <span class="name">your name</span>
-                    <span class="profession">web developer</span>
-                </div>
-
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
-                </div>
-
-                <div class="button2">
-                    <button class="aboutme">show</button>
-                    <button class="add">add</button>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="swiper-slide card">
-            <div class="cardcontent">
-                <div class="image">
-                    <img src="" alt="">
-                </div>
-                <div class="socialmedia">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <div class="name-profession">
-                    <span class="name">your name</span>
-                    <span class="profession">web developer</span>
-                </div>
-
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
-                </div>
-
-                <div class="button2">
-                    <button class="aboutme">show</button>
-                    <button class="add">add</button>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="swiper-slide card">
-            <div class="cardcontent">
-                <div class="image">
-                    <img src="Images/abdo.nader.jpg" alt="">
-                </div>
-                <div class="socialmedia">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <div class="name-profession">
-                    <span class="name">your name</span>
-                    <span class="profession">web developer</span>
-                </div>
-
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
-                </div>
-
-                <div class="button2">
-                    <button class="aboutme">show</button>
-                    <button class="add">add</button>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="swiper-slide card">
-            <div class="cardcontent">
-                <div class="image">
-                    <img src="" alt="">
-                </div>
-                <div class="socialmedia">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <div class="name-profession">
-                    <span class="name">your name</span>
-                    <span class="profession">web developer</span>
-                </div>
-
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
-                </div>
-
-                <div class="button2">
-                    <button class="aboutme">show</button>
-                    <button class="add">add</button>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="swiper-slide card">
-            <div class="cardcontent">
-                <div class="image">
-                    <img src="" alt="">
-                </div>
-                <div class="socialmedia">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <div class="name-profession">
-                    <span class="name">your name</span>
-                    <span class="profession">web developer</span>
-                </div>
-
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
-                </div>
-
-                <div class="button2">
-                    <button class="aboutme">show</button>
-                    <button class="add">add</button>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="swiper-slide card">
-            <div class="cardcontent">
-                <div class="image">
-                    <img src="" alt="">
-                </div>
-                <div class="socialmedia">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-                <div class="name-profession">
-                    <span class="name">your name</span>
-                    <span class="profession">web developer</span>
-                </div>
-
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
-                </div>
-
-                <div class="button2">
-                    <button class="aboutme">show</button>
-                    <button class="add">add</button>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div> 
-
-
-<div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div>
-<div class="swiper-pagination"></div>
-</section>
-
-
-
-
-
-
-</div> <!--body of card end tag -->
 
 
 <!--all side menuw content -->
@@ -487,6 +252,263 @@
 
 </div>   <!-- contentofmenu end tag-->
 
+<section>
+    <div class="swiper mySwiper containerallplus">
+      <div class="swiper-wrapper contentplus">
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/8013df7528735ecc2506a779a968e846.jpg" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">abdo dosha</span>
+              <span class="profession">Web Developer</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/abdo.nader.jpg" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">abdelrahman nader</span>
+              <span class="profession">Web Developer</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/ezzeldeen.png" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">Ezzeldeen</span>
+              <span class="profession">Web Design & Dev</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/ammar-amr.png" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">ammar-amr</span>
+              <span class="profession">Web Developer</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/shreen-adel.jpg" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">shreen adel</span>
+              <span class="profession">Web Developer</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/omar.png" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">omar ahmed</span>
+              <span class="profession">Web Developer</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/abdelrahman-adel.png" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">abdelrahman adel</span>
+              <span class="profession">Web Developer</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/abduallah-nasser.jpg" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">abduallah-nasser</span>
+              <span class="profession">Web Developer</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="cardcontent">
+            <div class="image">
+              <img src="Images/last.png" alt="">
+            </div>
+            <div class="socialmedia">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="name-profession">
+              <span class="name">sung jin</span>
+              <span class="profession">anime chracter</span>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="button2">
+              <button class="aboutMe">add freind</button>
+              <button class="hireMe">show</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+
+
 
 
 
@@ -514,37 +536,6 @@
         <i class="fa-solid fa-angle-right"></i>
     </div>
 </div>
-
-
-
-
-<div class="container33">
-    <div class="nav">
-        <span class="one active" onclick="changecolor(event)" ></span>
-        <i class="one" ></i>
-        <span class="two" onclick="changecolor(event)"></span>
-        <i class="two"></i>
-        <span class="three" onclick="changecolor(event)"></span>
-        <i class="three"></i>
-        <span class="four" onclick="changecolor(event)"></span>
-        <i class="four"></i>
-        <img src="610EcKy3MRL._AC_SL1500_.jpg">
-    </div>
-</div>
-<script>
-    function changecolor(event){
-        document.querySelectorAll('span.active').forEach(function(item){
-          item.classList.remove('active')
-        })
-        event.target.classList.add('active')
-
-    }
-</script>
-
-
-
-
-
 
 <!-- =======================End Your Page Here======================= -->
 

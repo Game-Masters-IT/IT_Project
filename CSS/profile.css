@@ -1,14 +1,10 @@
 /* this is body */
 .body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
-
-/* this edition for footer and header */
-nav{
-    background: linear-gradient(45deg, #d66012 ,#30197d);
-}
-footer {
-    background: linear-gradient(45deg, #d66012 ,#30197d);
+.body2{
+    height: 1100px;
 }
 
 .container2{
@@ -18,12 +14,12 @@ footer {
 
 .contentofmenu{
     padding-top: 250px;
-    margin-bottom: 500px;
+   /* margin-bottom: 500px; */
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 auto;
     position: relative;
-    max-width: 100%;
+    width: 100%;
 }
 /* this for all profile section */
 
@@ -35,51 +31,42 @@ footer {
 }
 /* normal dashbord */
 
-
-
-
-
 .dashboard{
     position: relative;
-    background-color: #2ebdf6;
+    background-color: #8d8a96;
     border-radius: 5px;
     width: 600px;
-    height: 300px;
+    height: 400px;
     bottom: 50px;
     right: -920px;
+
 }
 .title-info{
+    background-color: #d7d5df;
     justify-content: space-between;
+    margin: 30px 30px;
+    font-size: 2em; font-family: sans-serif;
 }
 .dashdivision{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: end;
+    gap: 20px;
     max-height: 800px;
 }
-@media (max-width: 1200px){
-    .dashdivision {
-        flex-direction: column;
-    }
-} 
-
-
-
-
 
 
 .dashboxes {
     width: 200px;
     height: 200px;
-    background-color: #00A8E8;
-    color: #ccc;
+    background-color: #7d7b8a;
+    color: #efdede;
     font-size: 25px;
     text-align: center;
-    line-height: 200px;
+    line-height: 20px;
     border-radius: 20px;
-    margin: 10px;
     
 }
 .dashboxes:hover{
@@ -87,32 +74,115 @@ footer {
     opacity: 0.4;
 }
 
-.dashboxes h2{
-    transform: translateY(-50px);
+
+
+
+
+.dashboard::before{
+    content: "";
+  width: 40%;
+  height: 60%;
+  background-color:#222831; /* Adjust as needed */
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: -20%;
+  z-index: 1;
+  
 }
-.dashboxes i{
+
+.text{
+    margin: 30px 30px;
+    background-color: #d7d5df;
+    line-height: 30px;
+    height: 20%;
+}
+/* ------------end of dashboard 1------------------ */
+/* ----------------------------------- */
+
+/* user image */
+.user_image {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgb(55, 60, 77);
     position: relative;
-    transform: translateY(-420px);
+    flex-shrink: 0;
+    bottom: -50px;
+    right: -50px;
+    z-index: 20;
+}
+.user_image img{
+    position: relative;
+    width: 100%;
+    padding: auto;
+    
+
+}
+.user_image h2{
+    position: relative;
+   display: flex;
+   font-size: 2em;
+   color: #00A8E8;
+   align-items: center;
+   gap: 30px;
+}
+
+.user_image_around{
+    transform: translate(-100px ,160px);
+    position: absolute;
+    background: #4f5658;
+    border: 5px solid rgb(54, 53, 67);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 20;
+    
+}
+
+.user_image:hover{
+    background: #fff;
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    transform: translate(-28%,-28%);
+}
+
+/* end of user image edition */
+/* ----------------------------------- */
+
+
+.dashboard2{
+    background-color: #9c9c9c;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    bottom: -350px;
+    left: 600px;
+    z-index: -1;  
+    position: absolute;
+ 
+   
+}
+
+.dashdivision2{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+   
 }
 
 
-.dashboxes p {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 0px;
-    transform: translateY(-230px);
-  }
 
-.dashboxes h3{
-    transform: translateY(-70px);
-}
+/* ----------progress bar ------------------ */
 
-
-.dashboxes .fa-regular.fa-money-bill{
-    transform: translateY(-220px);
-}
-
-  .progress { 
+.progress { 
     position: relative;
     background-color: rgb(221, 219, 219); 
     width: 80%; 
@@ -124,174 +194,151 @@ footer {
 
 
   .skill { 
-    transform: translateY(-220px);
     position: relative;
     background-color: rgb(8, 147, 197); 
     color: white; 
     height: 40px;
     padding: 1%; 
-    text-align: right; 
     font-size: 20px; 
     border-radius: 15px; 
+    transform: translateY(-45px);
     
 } 
 
 .progress{
-    transform: translateY(-180px);
     margin-left: 20px;
 }
-
   .strategy { 
-
     width: 60%; 
   }
-
-  .strategy p{
-   
-    display: flex;
-    margin-left: 20px;
-    transform: translateY(-80px);
-  }
-
-
   .strength {
     width: 40%;
   }
   .strength p{
-    
-    display: flex;
     margin-left: 20px;
-    transform: translateY(-80px);
   }
 
-  .dashdivision2 i{
-    position: relative;
-    transform: translateX(-10px);
-  }
-
-  .dashdivision2 img{
-    transform: translateY(-200px);
-  }
+/* -----------end of progress bar styles------------------------ */
 
 
+/* ---------end of dashboard2 edit----------- */
 
-
-
-/* user image */
-.user_image {
-
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid rgb(58, 103, 239);
-    position: relative;
-    flex-shrink: 0;
-    bottom: -50px;
-    right: -50px;
-}
-.user_image img{
-    width: 100%;
-    padding: auto;
-    /* inline-size: 50px;
-    margin: 0 50px; */
-}
-.user_image h2{
-   display: flex;
-   font-size: 2em;
-   color: #00A8E8;
-   align-items: center;
-   gap: 30px;
-}
-
-.user_image_around{
-    transform: translate(-100px ,150px);
+.dashboard3{
     position: absolute;
-    background: #46b9df;
-    border: 5px solid rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    
-}
-
-
-
-.dashboard2{
-    
-    background-color: #2ebdf6;
+    display: flex;
+    flex-direction: column;
+    background-color: #8d8b94;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
     width: 300px;
-    height: 500px;
-    bottom: 100px;
-    left: 600px;
-    z-index: -1;  
-    position: absolute;
-   
+    height: 300px;
+    margin-top: -50px;
+    transform: translateX(600px);
+  
+    
 }
 
-.dashdivision2{
-    box-sizing: border-box;
+/* ----------------------------------- */
+/* ---------progress box edit---------------- */
+
+
+.boxesbarcont{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: right;
+    justify-content: space-between;
+    height: 20px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: #003459;
+    margin: 20px 80px;
+    align-items: center;
+
 }
 
+.boxesbarcont p{
+   position: absolute;
+   background: #222831;
+   border-radius: 10px;
+   width: 50px;
+}
+/* ----colored bar inside container ------------- */
 
+.boxesbar1{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #f6492e;
+    margin-left: 2px;
+    width: 30px;
+    height: 18px;
 
+}
 
+.boxesbar2{
+    
+    background-color: #f6492e;
+    width: 30px;
+    height: 18px;
+}
 
+.boxesbar4{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 2px;
+    background-color: #f6492e;
+    width: 30px;
+    height: 18px;
+}
+
+.boxesbar1, .boxesbar2 , .boxesbar4{
+
+  width: 30px;
+  height: 18px;
+  background: linear-gradient(45deg, #f15523, #ef3224, #7c3697);
+ 
+}
+/* --------end of bar edition of style---------------- */
+/* -----------end of dashboard3----------------- */
+/* ----------------------------------- */
 
 
 .menuedition{
     margin-top: 100px;
     position: absolute;
-    /* bottom: -350px; */
     left: 0px;
     top: 0;
     padding: 0px 50px;
-    height: 1000px;
     display: flex;
     flex-direction: column;
 }
 
 /* this is box div for menu section */
 #transtion {
-    margin: 20px 0px;
+   
     font-size: 2em;
     font-size: 70;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     height: 150px;
     width: 250px;
-    padding: 10px ;
-    margin: 5x 0;
-    background: linear-gradient(45deg, #22037f ,#582ee1);
-    /* border: 5px solid rosybrown; */
-    border: 5px solid rgb(80, 12, 182);
+    background: linear-gradient(45deg, #887fa4 ,#323134);
+    border: 5px solid rgb(0, 0, 0);
     border-radius:5px ;
     transition: transform 0.3s ease 0s;
-    position: relative;
+    position: relative; /* ----remove this button will appear on hover------- */
+    margin: 20px 0px;
 }
 
 #transtion:hover {
-    background-color: #03116b;
-    opacity: 0.5;
-    /* height: 200px; */
     transform: translateX(-30px);
 }
-/* #transtion:hover  */
+
 .contenthidden {
     cursor: pointer;
     position: absolute;
     width: 100%;
     height: 100%;
-    font-size: 0.5em;
+    font-size: 0.5em; 
     top: 0;
     left: 0;
     display: none;
-    /* z-index: 99; */
 } 
 
 .contenthidden.clicked {
@@ -300,7 +347,7 @@ footer {
     margin-top: 10%;
     margin-bottom: 10%;
     transition: 0.6s;
-    background-color: #00A8E8;
+    background-color: #7e9ca8;
     transform: translateX(30px);
     width:auto;
     height: auto;
@@ -387,17 +434,16 @@ footer {
     }
 }
 
-
+/* button styles*/
 
 #buttons{
     position: absolute;
-    background: #b011bb;
+    background: #9c9faa;
     font-family: "roboto" ,sans-serif;
-    color: #d114e2;
+    color: #1b191b;
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
     -webkit-transition-duration:0.3s ;
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow, transform;
@@ -405,6 +451,8 @@ footer {
     font-size: 25px;
     width: 150px;
     bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+
 }
 
 #buttons a{
@@ -420,15 +468,15 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform:scale(1.1) ;
     transform: scale(1.1);
-    color: rgb(237, 59, 253)
+    color: rgb(238, 238, 238)
 }
 
 
 
+            /* end of button styles*/
 
+/* -----------------------------------------------------------*/
 /* style 2 of slider using html css and javascript*/
-
-
   
 .wrapper{
     max-width: 950px;
@@ -499,14 +547,10 @@ footer {
 
 .bodyofcard{
 
-    min-height: -200vh;
-    transform: translateY(500px);
-    margin-left:400px ;
+    transform: translateX(-500px);
     justify-content: center;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    box-sizing: border-box;
+   
 }
 
 section {
@@ -648,85 +692,3 @@ section {
   .swiper-button-prev {
     color: #0ef;
   }
-
-  
-
-.container33{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.container33 img {
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    max-width: 300px;
-}
-
-.container33 .nav{
-    transform: translateX(1000px);
-    position: sticky;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    background: white;
-
-} 
-
-.container33 .nav span{
-    width: 20px;
-    height: 20px;
-    margin: 10px 5px;
-    background: rgb(212, 0, 255);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 2;
-}
-
-
-.container33 .nav span.active
-{
-   border: 2px solid black;
-   transform: scale(1.2);
-}
-
-.container33 .nav span.one,
-.container33 .nav i.one
-{
-    background: orange;
-}
-
-.container33 .nav span.two,
-.container33 .nav i.two
-{
-    background: rgb(47, 47, 242);
-}
-
-.container33 .nav span.three,
-.container33 .nav i.three
-{
-    background: rgb(0, 255, 166);
-}
-
-.container33 .nav span.for,
-.container33 .nav i.four
-{
-    background: rgb(159, 80, 255);
-}
-
-.container33 .nav span.active + i{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    mix-blend-mode: hue;
-
-}
- 
