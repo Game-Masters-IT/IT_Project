@@ -1,6 +1,6 @@
 .all{
     padding: 0;
-    margin: 100px  0;
+    margin: auto;
     width: 100%;
 }
 .head-cover img{
@@ -9,6 +9,7 @@
     justify-content: center;
     overflow: hidden;
     object-fit: cover;
+    margin: auto;
    
 }
 .head-cover{
@@ -111,12 +112,17 @@ margin: 10px;
 }
 .pct-s{
     position: relative;
+    
+}
+.pct-s:hover{
+transition: 0.4s;
+transform: translate(0px, -8px);
 }
 .pct-s img{
     opacity: 1;
     display: flex;
+    
 }
-
 .pct-s:hover #s1{
     opacity: 0.3;
   }
@@ -125,7 +131,7 @@ margin: 10px;
     opacity: 1;
   }
 .price{
-  background-color: rgb(40, 28, 163);
+  background-color: var(--main);
   color: white;
   font-size: 20px;
   padding: 16px 32px;
@@ -133,7 +139,7 @@ margin: 10px;
   cursor: pointer;
 }
 .card {
-    background-color: rgb(40, 28, 163);
+    background-color: var(--main);
     color: white;
     font-size: 20px;
     padding: 16px 32px;
