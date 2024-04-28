@@ -11,9 +11,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: black;
-    z-index: -1;
-    filter: blur(3px);
+    filter: blur(5px);
 }
 .login-text {
     display: flex;
@@ -96,7 +94,7 @@
 
 .form-box h2 {
     font-size: 2em;
-    color: transparent;
+    color: white;
     text-align: center;
     margin-bottom: 60px;
     text-transform: uppercase;
@@ -105,6 +103,7 @@
     background: rgb(0, 173, 181);
     background-image: linear-gradient(41deg, rgba(0, 173, 181, 1) 28%, rgba(0, 181, 103, 1) 95%);
     background-clip: text;
+    color: transparent;
 }
 
 .input-box {
