@@ -86,10 +86,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
-
-    });
-  });
-  
-
-
-  
