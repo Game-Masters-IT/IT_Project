@@ -106,7 +106,7 @@ theFooter.innerHTML = `
     <div class="container">
         <div style="padding-left: 20px;">
             <h2 class="section-heading">Contact Us</h2>
-            <p>We are looking forward to hearing form you soon</p>
+            <p>We are looking forward to hearing from you soon</p>
         </div>
     </div>
     <div class="container">
