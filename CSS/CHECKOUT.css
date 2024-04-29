@@ -14,7 +14,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     color: var(--white);
   }
   
@@ -83,7 +83,7 @@
 
   /* faq-help-table.css */
 
-h5{
+h6{
 font-size : 29px;
 text-align: left;
 margin-left:130px;
