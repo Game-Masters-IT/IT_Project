@@ -1,8 +1,15 @@
 
-.product-detail{
+/* .product-detail{
     display: flex;
     align-items: center;
     flex-direction: row;
+} */
+.product {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding: 0px 0;
 }
 
 .adjust{
@@ -70,7 +77,7 @@
 }
 
 
-.detailbox{
+.detailbox ,.detailbox_q , .detailboxv2{
     background: rgb(204, 205, 231);
     position: relative;
     width: 400px;
@@ -78,6 +85,14 @@
     border-radius:10px ;
     border: black solid 2px;
 }
+
+.detailbox_q{
+  top: 12.5%;
+  right: 7.5%;
+  position: absolute;
+  z-index: 1;
+}
+
 
 .detailbox span{
     font-size: 50px;
@@ -94,12 +109,9 @@
 .rating{
      margin-left: 50px;
 }
-.detailbox .fa.fa-arrow-circle-right{
-    position: relative;
-    transform: translate(370px, 150px);
-    font-size: 50px;
-    z-index: 22;
 
+.textsection{
+    margin-top: 50px;
 }
 
 
@@ -207,12 +219,11 @@
 }
 
 
-.list{
-    justify-content: space-between;
-    margin-left: 350px;
-    gap: 30px;
-    position: relative;
-    display: inline-block;
+.list .container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    user-select: none;
 }
 
 
@@ -226,11 +237,18 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-top: 50px;
+    margin-right: 60px;
   }
 
-  
-.list:hover .item_1 ,.list:hover .item_2 {
+.list .item_1, .list .item_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item_1:hover ,.item_2:hover  {
     background-color: #3e8e41;
+
 }
 
 .item_1:hover .items ,.item_1:hover .items{
@@ -245,6 +263,7 @@
 table, th, td {
     border: 3px solid rgb(159, 180, 255);
     background-color: azure;
+    color: rgb(29, 28, 30);
   }
 
   table{
@@ -257,7 +276,7 @@ table, th, td {
   
   .detailbox video{
     background-color: rgb(23, 22, 24);
-    width: 350px;
+    width: 400px;
     clip: var(-100px);
     margin-top: 15px;
     padding-left: 10px;
@@ -302,18 +321,19 @@ body {
     .card-star {
     text-align: center;
     justify-content: center;
-    
     max-width: 33rem;
-    background: #fff;
-    margin: 0 1rem;
-    padding: 1rem;
+    background: #a4a5ba;
     width: 100%;
     height: 120px;
     border-radius: 0.5rem;
     }
-    
+
+
     .star {
-    font-size: 1vh;
+    font-size: 4vh;
+    color: black;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     }
     
@@ -337,3 +357,123 @@ body {
     color: rgb(24, 159, 14);
     }
     
+
+    form{
+        margin-top: 50px;
+    }
+
+    input{
+        position: absolute;
+        background-color: #a1d2dd;
+        border-radius: 20%;
+        top: 75%;
+        margin-left: 50px;
+        width: 120px;
+        height: 50px;
+        font-weight: bold;
+    }
+
+    .input:hover{
+        background-color: #efecf8;
+    }
+
+    .dot ,.dotv2 {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0px 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+      
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+
+    .active1, .dotv2:hover {
+        background-color: #717171;
+    }
+
+    .prev, .next  {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+    margin-left: 850px;
+    border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+/* ------another one for detailboxv2 ----*/
+    .nextt {
+        margin-left: 850px;
+        border-radius: 3px 0 0 3px;
+    }
+        
+        /* On hover, add a black background color with a little bit see-through */
+    .prevv:hover, .nextt:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+
+    .prevv, .nextt  {
+        cursor: pointer;
+        position: absolute;
+        top: 70%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .detailboxv2 video{
+        background-color: rgb(23, 22, 24);
+        width: 400px;
+        clip: var(-100px);
+        margin-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 320px;
+      }
+
+      .detailbox span{
+        font-size: 50px;
+    }
+    
+    .detailboxv2 h2 ,.rating{
+        transform: translateY(-50px);
+        line-height: 20px
+    }
+    .detailboxv2 h2{
+         margin-left:50px ;
+    }
+/* ------------------------------- ----*/
+
+    .detailbox {display: none}
+    .detailboxv2 {display: none}
+
+
+

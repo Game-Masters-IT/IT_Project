@@ -68,48 +68,50 @@
                 <div class="theme-mode" id="theme">
                     <i class="fa-solid fa-moon fa-fw" id="theme-icon" ></i>
                 </div>
+                <i class="fa fa-music" aria-hidden="true" style="margin: 0 10px;" value="PLAY" onclick="playSound('sound')"></i>
             </div>
         </div>
     </nav>
 <!-- =======================Start Your Page Here======================= -->
 
-
-<div class="list">
-      <div class="item_1" onclick="myFunction()" >hardware</div>
-      <div class="items" id="myDropdown_0">
-        <li>monitor</li>
-        <li>GM.chair</li>
-        <li>GM.mouse</li>
-        <li>keyboard</li>
-        <li>case</li>
-      </div>
-      <div class="item_2" onclick="myFunction()" >software</div>
-      <div class="items" id="myDropdown_1">
-        <li>ps games</li>
-        <li>xbox games</li>
-        <li>nintendo</li>
-        <li>pc games</li>
-      </div>
+<div class="list"> 
+    <div class="container"> 
+          <div class="item_1" onclick="myFunction()" >hardware</div>
+          <div class="items" id="myDropdown_0">
+            <li>monitor</li>
+            <li>GM.chair</li>
+            <li>GM.mouse</li>
+            <li>keyboard</li>
+            <li>case</li>
+          </div>
+          <div class="item_2" onclick="myFunction2()" >software</div>
+          <div class="items" id="myDropdown_1" style=" margin-right: -180px;">
+            <li>ps games</li>
+            <li>xbox games</li>
+            <li>nintendo</li>
+            <li>pc games</li>
+          </div>
+    </div>
 </div>
 
-
-<div class="product-detail">
-    <div class="card">
-        <div class="cardcontent">
-            <img src="Images/game-review/playstation-legend-pedestal-2021029_1_abf77133-6820-4c4a-b19b-84fc0b491173.webp" width="200px" >
-            <div class="name-profession">
-            <span class="profession">gaming chair of model vpading.hardware 2015</span>
-            </div>
-            <div class="button2">
-            <button class="aboutMe">add to cart</button>
-            <button class="hireMe">more review</button>
+<div class="product">
+    <div class="product-detail">
+        <div class="card">
+            <div class="cardcontent">
+                <img src="Images/game-review/playstation-legend-pedestal-2021029_1_abf77133-6820-4c4a-b19b-84fc0b491173.webp" width="200px" >
+                <div class="name-profession">
+                <span class="profession">gaming chair of model vpading.hardware 2015</span>
+                </div>
+                <div class="button2">
+                <button class="aboutMe">add to cart</button>
+                <button class="hireMe" onclick="myFunction_0()">add review</button>
+                </div>
             </div>
         </div>
     </div>
 
-            <div class="detailbox" id="element1">
-                <div class="mySlides">
-                <a class="next" onclick="plusSlides(1)" id="btn1"> <i class="fa fa-arrow-circle-right"></i></a>
+            <div class="detailbox">
+                <div class="textsection">
                 <div class="numbertext">1 / 4</div>
                 <h2>total : 193 review </h2>
                 <h2>avarage <span>4.4</span> out of 5 </h2>
@@ -120,6 +122,7 @@
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                         </div>
+                </div>
                     <div class="adjust">
                         <div class="barcontainer">
                             <div class="bar-fullstar"></div>
@@ -141,13 +144,10 @@
                             <button>show people review</button>
                         </div>
                     </div>
-                </div>
             </div>
             
-            <div class="detailbox "style="display: none;" id="element2">
-                <div class="mySlides">
+            <div class="detailbox">
                 <div class="numbertext">2 / 4</div>
-                <a class="next" onclick="plusSlides(1)" id="btn2"> <i class="fa fa-arrow-circle-right"></i></a>
                 <div class="comment">
                     <div class="user_image">
                      
@@ -184,14 +184,11 @@
                     <div class="seprate_line"></div>
                     <p> have many angle to adjust</p>
                 </div>
-                </div>
             </div>
 
 
-            <div class="detailbox " style="display: none;" id="element3">
-                <div class="mySlides">
+            <div class="detailbox">
                 <div class="numbertext">3 / 4</div>
-                <a class="next" onclick="plusSlides(1)" id="btn3"> <i class="fa fa-arrow-circle-right"></i></a>
                 <table>
                 <tr>
                     <th>style</th>
@@ -230,25 +227,33 @@
                             <td>blutooh</td>
                         </tr>
                         </table>
-                </div>
 
             </div>
            
-            <div class="detailbox" style="display: none;" id="element4">
-                <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
+            <div class="detailbox">
+                <div class="numbertext">4 / 4</div>
                 <video width="320" height="240" controls>
                 <source src="Images/game-review/The X Rocker Sony Legend_ Officially Licensed PlayStation Gaming Chair.mp4" type="video/mp4">
-                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
+
+            </div>
+            <br>
+
+            <div style="text-align: center; margin-left: 350px;">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
             </div>
 
 
-            <div class="detailbox">
-            <form>
+            <div class="detailbox_q" id="myDIV">
 
                 <div class="card-star">
-                    <p>rate your experience<p>
-                    <br />
+                    <h2>rate your experience</h2>
                     <span onclick="gfg(1)"
                         class="star">★
                     </span>
@@ -264,44 +269,260 @@
                     <span onclick="gfg(5)"
                         class="star">★
                     </span>
-                    <h3 id="output">
+                    <h3 id="output" style="background-color: rgb(145, 145, 145);">
                         Rating is: 0/5
                     </h3>
                 </div>
-
+            
+            
+            <form>
                 <label for="country">Country</label>
                 <select id="country" name="country">
                 <option value="australia">Australia</option>
                 <option value="canada">Canada</option>
                 <option value="usa">USA</option>
                 </select>
-
                 <label for="feedback">feedback</label>
-                <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
+                <br>
+                <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:100px"></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="input">
           
             </form>
             </div>
-
 </div>
 
 
 
 
- <script src="game-review.js"></script>
+<div class="product">
+    <div class="product-detail">
+        <div class="card">
+            <div class="cardcontent">
+                <img src="Images/hardware/chair-1-1.png" width="200px" >
+                <div class="name-profession">
+                <span class="profession">gaming chair of model borx.hardware 2022</span>
+                </div>
+                <div class="button2">
+                <button class="aboutMe">add to cart</button>
+                <button class="hireMe">more review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="detailboxv2">
+                <div class="textsection">
+                <div class="numbertext">1 / 4</div>
+                <h2>total : 193 review </h2>
+                <h2>avarage <span>4.4</span> out of 5 </h2>
+                        <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        </div>
+                </div>
+                    <div class="adjust">
+                        <div class="barcontainer">
+                            <div class="bar-fullstar"></div>
+                        </div>
+
+                        <div class="barcontainer">
+                            <div class="bar-5star"></div>
+                        </div>
+
+                        <div class="barcontainer">
+                            <div class="bar-4star"></div>
+                        </div>
+
+                        <div class="barcontainer">
+                            <div class="bar-3star"></div>
+                        </div>
+                        
+                        <div class="button">
+                            <button>show people review</button>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="detailboxv2">
+                <div class="numbertext">2 / 4</div>
+                <div class="comment">
+                    <div class="user_image">
+                     
+                     <img src="Images/user_pic.png" >
+                     
+                     <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                    </div>
+                    <div class="name"> unkowun_user504</div>
+                    </div>
+                    <div class="seprate_line"></div>
+                    <p> vrey good chair i recommend it</p>
+                </div>
+                <div class="comment">
+                    <div class="user_image">
+                     
+                     <img src="Images/user_pic.png" >
+                     
+                     <div class="rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
+                    </div>
+                    <div class="name"> user_57</div>
+                    </div>
+                    <div class="seprate_line"></div>
+                    <p> have many angle to adjust</p>
+                </div>
+            </div>
+
+
+            <div class="detailboxv2">
+                <div class="numbertext">3 / 4</div>
+                <table>
+                <tr>
+                    <th>style</th>
+                    <th>Diemnstion</th>
+                    <th>connectivity</th>
+                </tr>
+                <tr>
+                    <td>playstaion</td>
+                    <td>15 x 15 cm</td>
+                    <td>blutooh</td>
+                </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th>type</th>
+                        <th>angle</th>
+                        <th>colors</th>
+                    </tr>
+                    <tr>
+                        <td>fixed</td>
+                        <td>up to 90 dgree</td>
+                        <td>black , white blue</td>
+                    </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <th>style</th>
+                            <th>Diemnstion</th>
+                            <th>connectivity</th>
+                        </tr>
+                        <tr>
+                            <td>playstaion</td>
+                            <td>15 x 15 cm</td>
+                            <td>blutooh</td>
+                        </tr>
+                        </table>
+
+            </div>
+           
+            <div class="detailboxv2">
+                <div class="numbertext">4 / 4</div>
+                <video width="320" height="240" controls>
+                <source src="Images/game-review/KitchenZ _ GTGAMEZ™ LED Lighting Gaming Chair with RGB _ Red Bull RGB LED Gaming Chair _ 721RD-LED.mp4" type="video/mp4">
+            </div>
+
+            <a class="prevv" onclick="plusSlidess(-1)"><</a>
+            <a class="nextt" onclick="plusSlidess(1)">></a>
+
+            </div>
+            <br>
+
+            <div style="text-align: center; margin-left: 350px;">
+                <span class="dotv2" onclick="currentSlidee(1)"></span> 
+                <span class="dotv2" onclick="currentSlidee(2)"></span> 
+                <span class="dotv2" onclick="currentSlidee(3)"></span> 
+                <span class="dotv2" onclick="currentSlidee(4)"></span> 
+            </div>
+
+         <!--
+            <div class="detailbox_q" style="z-index: -2; top: 54%;">
+
+                <div class="card-star">
+                    <h2>rate your experience</h2>
+                    <span onclick="gfgg(1)"
+                        class="star">★
+                    </span>
+                    <span onclick="gfgg(2)"
+                        class="star">★
+                    </span>
+                    <span onclick="gfgg(3)"
+                        class="star">★
+                    </span>
+                    <span onclick="gfgg(4)"
+                        class="star">★
+                    </span>
+                    <span onclick="gfgg(5)"
+                        class="star">★
+                    </span>
+                    <h3 id="output" style="background-color: rgb(145, 145, 145);">
+                        Rating is: 0/5
+                    </h3>
+                </div>
+            
+            
+            
+            <form>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                </select>
+                <label for="feedback">feedback</label>
+                <br>
+                <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:100px"></textarea>
+
+                <input type="submit" value="Submit" class="input">
+          
+            </form>
+            </div>
+            -->
+</div>
+
+
+
+
+
+
+
+<audio controls autoplay id="audio" >
+    <source src="Images/game-review/perfect-beauty-191271.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+
+
+
 
 
 
 <!-- =======================End Your Page Here======================= -->
 
-    <footer>
-        <div class="container">
-            <div class="box">
-                <h3>Game Masters</h3>
-                <ul class="social">
-                    <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://twitter.com/" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+<footer>
+    <div class="container">
+        <div class="box">
+            <h3>Game Masters</h3>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
                     <li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
                 </ul>
                 <p class="text">
@@ -320,7 +541,7 @@
                 <div class="line">
                     <i class="fas fa-phone-volume fa-fw"></i>
                     <div class="info">
-                    <span>+20123453459</span>
+                        <span>+20123453459</span>
                     <span>+20173765432</span>
                     </div>
                 </div>
@@ -329,5 +550,6 @@
         <p>Copyright &copy; 2024 GameMasters. All rights reserved.</p>
     </footer>
     <script src="./JS/main.js"></script>
+    <script src="game-review.js"></script>
 </body>
 </html>

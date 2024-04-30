@@ -11,7 +11,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("detailbox");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
@@ -25,15 +25,33 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-document.getElementById("btn1").addEventListener("click", function() {
-    var element = document.getElementById("element1");
-    if (element.style.display === "none") {
-        element.style.display = "block";
-    } else {
-        element.style.display = "none";
-    }
-});
 
+let slideIndexx = 1;
+showSlidess(slideIndexx);
+
+function plusSlidess(n) {
+  showSlidess(slideIndexx += n);
+}
+
+function currentSlidee(n) {
+  showSlidess(slideIndexx = n);
+}
+
+function showSlidess(n) {
+  let i;
+  let slidess = document.getElementsByClassName("detailboxv2");
+  let dotss = document.getElementsByClassName("dotv2");
+  if (n > slidess.length) {slideIndexx = 1}    
+  if (n < 1) {slideIndexx = slidess.length}
+  for (i = 0; i < slidess.length; i++) {
+    slidess[i].style.display = "none";  
+  }
+  for (i = 0; i < dotss.length; i++) {
+    dotss[i].className = dotss[i].className.replace(" active1", "");
+  }
+  slidess[slideIndexx-1].style.display = "block";  
+  dotss[slideIndexx-1].className += " active1";
+}
 
 
 
@@ -57,17 +75,14 @@ window.onclick = function(event) {
     }
   }
 }
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
+function myFunction2() {
   document.getElementById("myDropdown_1").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.item_2')) {
-    var dropdowns = document.getElementsByClassName("items");
+    var dropdowns = document.getElementsByClassName("items_1");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -77,7 +92,6 @@ window.onclick = function(event) {
     }
   }
 }
-
 
 // script.js
 
@@ -108,4 +122,27 @@ function remove() {
 		stars[i].className = "star";
 		i++;
 	}
+}
+
+
+
+function myFunction_0() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+function hide() {
+  var x = document.getElementById("myDIV");
+  x.style.display = "none";
+}
+window.onload = hide;
+
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
 }
