@@ -127,6 +127,7 @@ h2:last-child {
 }
 .hot-news .item .text .article-text {
     font-size: 1.4rem;
+    color: white;
 
 }
 .hot-news .item .text .article-text:hover {
@@ -218,22 +219,70 @@ h2:last-child {
     border-color: white;
 }
 
-/* .article-img .img::after {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: .5s;
-    box-shadow: inset 0px 0px 300px 20px rgba(0, 0, 0, 1);
-    opacity: 0;
-    border-radius: 15px;
-    transform: translateX(-50%);
-}
-
-.hot-news .item:hover::after {
-    opacity: .5;
-} */
 
 
 /*--------------------- End articles ------------------*/
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 70px;
+}
+.table-img {
+    width: 45px;
+    height: 70px;
+    background-image: url('../Images/homeImgs/Trending/fortnite.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10%;
+}
+tr:nth-child(odd) {
+    background-color: var(--dark);
+}
+td {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0;
+}
+table .content {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+table td:hover {
+    background-color: var(--main);
+}
+
+table .content .txt {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+} 
+table .content .txt .name {
+    font-size: larger;
+    font-weight: bold;
+}
+table .content .txt .name:hover {
+    text-decoration: underline;
+}
+table .content .txt .price {
+    margin-top: 10px;
+}
+th {
+    padding: 20px;
+    background-color: var(--main);
+    border: 1px solid black;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+table i {
+    margin-right: 10px;
+}
+
+
+

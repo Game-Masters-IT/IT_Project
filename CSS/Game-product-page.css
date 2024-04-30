@@ -70,7 +70,7 @@ h1 {
 }
 
 /* Add some space between quantity and add to cart button */
-.add-to-cart-btn {
+.add-to-cart-btn, .add-to-cart-related {
   margin-top: 10px;
   margin-left: 10px; 
   background-color: #25a788;

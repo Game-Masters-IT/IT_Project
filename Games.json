@@ -1,6 +1,6 @@
 {
-
     "0": {
+        "gameID": 0,
         "gameName": "Far Cry® 6 Game of the Year Edition",
         "gamePrice": "$119.99",
         "gameImg": "Images/homeImgs/Trending/farcry.jpg",
@@ -8,6 +8,7 @@
         "gameTrailer": "https://www.youtube.com/embed/-IJuKT1mHO8"
     },
     "1": {
+        "gameID": 1,
         "gameName": "Grand Theft Auto V: Premium Edition",
         "gamePrice": "$29.99",
         "gameImg": "Images/homeImgs/Trending/GTAV.jpg",
@@ -15,6 +16,7 @@
         "gameTrailer": "https://www.youtube.com/embed/QkkoHAzjnUs"
     },
     "2": {
+        "gameID": 2,
         "gameName": "League of Legends",
         "gamePrice": "$10",
         "gameImg": "Images/homeImgs/Trending/EGS_LeagueofLegends.jpg",
@@ -23,6 +25,7 @@
         
     },
     "3": {
+        "gameID": 3,
         "gameName": "EA SPORTS FC™ 24 Standard Edition",
         "gamePrice": "$69.99",
         "gameImg": "Images/homeImgs/Trending/EGS_EASPORTS.jpg",
@@ -30,6 +33,7 @@
         "gameTrailer": "https://www.youtube.com/embed/XhP3Xh4LMA8"
     },
     "4": {
+        "gameID": 4,
         "gameName": "PUBG: BATTLEGROUNDS",
         "gamePrice": "$10",
         "gameImg": "Images/homeImgs/Trending/pubg.jpg",
@@ -37,6 +41,7 @@
         "gameTrailer": "https://www.youtube.com/embed/u1oqfdh4xBY"
     },
     "5": {
+        "gameID": 5,
         "gameName": "Red Dead Redemption 2",
         "gamePrice": "$59.99",
         "gameImg": "Images/homeImgs/Trending/RDR2.jpg",
@@ -44,6 +49,7 @@
         "gameTrailer": "https://www.youtube.com/embed/gmA6MrX81z4"
     },
     "6": {
+        "gameID": 6,
         "gameName": "VALORANT",
         "gamePrice": "$10",
         "gameImg": "Images/homeImgs/Trending/EGS_VALORANT.jpg",
@@ -51,6 +57,7 @@
         "gameTrailer": "https://www.youtube.com/embed/e_E9W2vsRbQ"
     },
     "7": {
+        "gameID": 7,
         "gameName": "Fortnite",
         "gamePrice": "$10",
         "gameImg": "Images/homeImgs/Trending/fortnite.jpg",
@@ -58,6 +65,7 @@
         "gameTrailer": "https://www.youtube.com/embed/aOAiUwz7Zt8"
     },
     "8": {
+        "gameID": 8,
         "gameName": "Among Us",
         "gamePrice": "$1.99",
         "gameImg": "Images/homeImgs/Trending/amogusportrait.jpg",
@@ -65,6 +73,7 @@
         "gameTrailer": "https://www.youtube.com/embed/CermGp8bwFE"
     },
     "9": {
+        "gameID": 9,
         "gameName": "Assassins Creed Odyssey",
         "gamePrice": "$11.99",
         "gameImg": "Images/homeImgs/Trending/ACOrigins.jpg",
@@ -72,6 +81,7 @@
         "gameTrailer": "https://www.youtube.com/embed/s_SJZSAtLBA"
     },
     "10": {
+        "gameID": 10,
         "gameName": "Call of Duty: WWII",
         "gamePrice": "$29.99",
         "gameImg": "Images/homeImgs/Trending/28204.jpg",
@@ -79,17 +89,11 @@
         "gameTrailer": "https://www.youtube.com/embed/D4Q_XYVescc"
     },
     "11": {
+        "gameID": 11,
         "gameName": "Rocket League®",
         "gamePrice": "$10",
         "gameImg": "Images/homeImgs/Trending/EGS_RocketLeague.jpg",
         "gameDesc": "Rocket League is a high-octane blend of soccer and vehicular mayhem, where players control rocket-powered cars to score goals in dynamic arenas. With fast-paced matches, customizable vehicles, and addictive gameplay, it's a unique sports experience that's easy to pick up but hard to master. Whether playing solo or with friends, get ready to unleash your inner athlete in this adrenaline-fueled arcade sensation.",
         "gameTrailer": "https://www.youtube.com/embed/SgSX3gOrj60"
-    },
-    "98": {
-        "gameName": "",
-        "gamePrice": "$10",
-        "gameImg": "",
-        "gameDesc": "",
-        "gameTrailer": "https://www.youtube.com/embed/XhP3Xh4LMA8"
     }
 }

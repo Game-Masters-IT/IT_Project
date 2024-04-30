@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const paypalForm = document.getElementById("paypal-form");
   const fawryForm = document.getElementById("fawry-form");
 
-  // Show or hide the  payment details section based on the selected payment method
+  // Show or hide the payment details section based on the selected payment method
   function togglePaymentDetails() {
     if (this.value === "credit-card") {
       cardDetails.style.display = "block";
@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Toggle visibility of answers when clicking on questions
+  // visibility of answers when clicking on questions
   const questions = document.querySelectorAll('.faq-help-table tbody tr');
-  
+
   questions.forEach(question => {
     question.addEventListener('click', function() {
       const answer = this.nextElementSibling;
@@ -85,4 +85,22 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
+  // Complaints form
+  const complaintsForm = document.getElementById('complaintsForm');
+  const message = document.getElementById('message');
+
+  complaintsForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const complaints = document.getElementById('complaints').value;
+
+    // Clear form fields
+    complaintsForm.reset();
+
+    message.textContent = 'Complaints submitted successfully!';
+  });
 });
+

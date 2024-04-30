@@ -14,7 +14,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     color: var(--white);
   }
   
@@ -79,28 +79,34 @@
     background-color: #3376a3;
   }
   
-
+ 
+.audio-container {
+  display: flex;
+  justify-content: center;
+}
   /* faq-help-table.css */
-h5{
-font-size : 25px;
-text-align: center;
+.help {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+h6{
+font-size : 29px;
+text-align: left;
+margin: 20px 0;
 }
 .faq-help-table-container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
+  /* height: fit-content; */
   background-color: var(--dark);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
   border: 1px solid #171616;
 }
 .faq-help-table {
   border-collapse: collapse;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
   border: 2px solid #171616;
+  height: 100%;
 }
 
 .faq-help-table th,
@@ -112,11 +118,61 @@ text-align: center;
   border: 1px solid #171616;
 }
 
-/* Change background color and font color on hover */
 .faq-help-table tbody tr:hover {
   background-color:#3376a3; 
 }
 
 .faq-help-table tbody tr:hover td {
   color: #000000; 
+}
+.complaints-container {
+  /* float: right; */
+  width: 50%;
+  /* margin: 20px 0; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* margin-bottom: 100px; */
+  height: 400px;
+  /* overflow-y: auto;  */
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%; /* Change this line */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box; /* Add this line */
+}
+
+form textarea {
+  height: 100px;
+}
+
+form button {
+  display: block;
+  width: 100%; /* Change this line */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+#message {
+  margin-top: 20px;
+  text-align: center;
 }

@@ -98,7 +98,7 @@ document.onclick = (e) => {
 let cartIconHeader = document.querySelector('.fa-bag-shopping');
 cartIconHeader.classList.remove('fa-bag-shopping');
 cartIconHeader.classList.add('fa-cart-shopping');
-document.getElementById('cart-counter').innerHTML = Object.keys(JSON.parse(localStorage.getItem('cart-games'))).length;
+document.getElementById('cart-counter').innerHTML = Object.keys(JSON.parse(localStorage.getItem('cart-games')) || {}).length;
 /*=========================================*/
 // Adding Contact us to the footer
 let theFooter = document.querySelector('footer');

@@ -70,38 +70,38 @@
         </div>
     </nav>
 <!-- =======================Start Your Page Here======================= -->
-<div class="page-container">
-    <h1>Checkout</h1>
+  <div class="page-container">
+    <h1>Checkout <img src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/check-out-icon.png" alt="" class="icon"></h1>
     <form action="index.html" method="post">
-       <!-- Billing Details Section -->
+      <!-- Billing Details Section -->
       <div class="section billing-details">
         <h2>Billing Details</h2>
-        <div class="form-group">
-          <label for="full-name"><img src="https://icons.veryicon.com/png/o/miscellaneous/jiankangxian/full-name-11.png" alt="" class="icon"> Full Name:</label>
-          <input type="text" id="full-name" name="full-name" required>
-             <div class="error-message" id="full-name-error"></div>
+          <div class="form-group">
+          <label for="country"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83cJyu9w9G4uyHZh5NkEVf-ssbQm07KNjjmRMzqqVdQ&s" alt="" class="icon"> Country:</label>
+          <input type="text" id="country" name="country" required>
         </div>
-        <div class="form-group">
-          <label for="email"><img src="https://t4.ftcdn.net/jpg/05/25/22/63/360_F_525226337_x7lLRcnU08vDLkijRwgcbaIs8zCfDktC.jpg" alt="" class="icon">Email Address:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="address"><img src="https://static.thenounproject.com/png/2340040-200.png" alt="" class="icon"> Address:</label>
-          <input type="text" id="address" name="address" required>
-        </div>
-        <div class="form-group">
+           <div class="form-group">
           <label for="city"><img src="https://banner2.cleanpng.com/20180418/jzw/kisspng-cities-skylines-computer-icons-building-city-skycraper-5ad715d01a79a6.9868520715240452641085.jpg" alt="" class="icon">City:</label>
           <input type="text" id="city" name="city" required>
         </div>
         <div class="form-group">
-          <label for="country"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT83cJyu9w9G4uyHZh5NkEVf-ssbQm07KNjjmRMzqqVdQ&s" alt="" class="icon"> Country:</label>
-          <input type="text" id="country" name="country" required>
+          <label for="address"><img src="https://static.thenounproject.com/png/2340040-200.png" alt="" class="icon"> Address:</label>
+          <input type="text" id="address" name="address" required>
+        </div>    
+        <div class="form-group">
+          <label for="email"><img src="https://t4.ftcdn.net/jpg/05/25/22/63/360_F_525226337_x7lLRcnU08vDLkijRwgcbaIs8zCfDktC.jpg" alt="" class="icon">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+          <div class="form-group">
+          <label for="full-name"><img src="https://icons.veryicon.com/png/o/miscellaneous/jiankangxian/full-name-11.png" alt="" class="icon"> Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+          <div class="error-message" id="full-name-error"></div>
         </div>
       </div>
 
       <!-- Payment Methods Section -->
       <div class="section payment-methods">
-        <h2>Payment Methods</h2>
+        <h3>Payment Methods</h3>
         <label>
           <input type="radio" name="payment-method" value="credit-card"> Credit Card
         </label>
@@ -118,7 +118,7 @@
 
       <!-- Payment Details Section -->
       <div class="section" id="payment-details">
-        <h3>Payment Details</h3>
+        <h4>Payment Details</h4>
         <div class="card-details" id="card-details">
           <div class="form-group">
             <label for="card-number">Card Number:</label>
@@ -138,7 +138,7 @@
           </div>
         </div>
         <div class="instapay-form" id="instapay-form">
-          <h4>InstaPay</h4>
+          <h5>InstaPay</h5>
           <p>Make payment using InstaPay by following the steps below:</p>
           <ol>
             <li>Log in to your InstaPay account.</li>
@@ -169,66 +169,99 @@
       <button type="submit" id="place-order-button">Place Order</button>
     </form>
   </div>
+  <div class="audio-container">
+    <audio controls> 
+      <source src="Images/CHECKOUT/better-day.mp3">
+    </audio>
+  </div>
+
+  <!-- FAQ section -->
+  <div class="container">
+    <h6>FAQs & Help</h6>
+  </div>
+  <div class="container help">
+
+    <div class="faq-help-table-container">
+      <table class="faq-help-table">
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Answer</th>
+            <th>Category</th>
+            <th>Date Added</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>How can I track my order?</td>
+            <td>You can track your order by visiting the "Track Order" page and entering your order ID.</td>
+            <td>Shipping</td>
+            <td>2024-04-20</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>What payment methods do you accept?</td>
+            <td>We accept Visa, Mastercard, American Express, and PayPal.</td>
+            <td>Payment</td>
+            <td>2024-04-21</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>How long does shipping take?</td>
+            <td>Shipping times vary depending on your location. Standard shipping usually takes 3-5 business days.</td>
+            <td>Shipping</td>
+            <td>2024-04-22</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Can I return an item if I'm not satisfied?</td>
+            <td>Yes, you can return items within 30 days of purchase for a full refund.</td>
+            <td>Returns</td>
+            <td>2024-04-23</td>
+            <td>Active</td>
+          </tr>
+              <tr>
+            <td colspan="5">
+        <div class="nested-element">
+          <p>for further information , please contact :</p>
+          <ul>
+            <li>01423435322</li>
+            <li>01893456775</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+        </tbody>
+      </table> 
+    </div> 
+    <!-- Complaints form -->
+    <!-- <h6>Complaints & Suggestions</h6> -->
+    <div class="complaints-container">
+      <form id="complaintsForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="complaints">Complaints:</label>
+        <textarea id="complaints" name="complaints" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
     
-    <h5>FAQs and Help</h5>
-  <table class="faq-help-table">
-    <thead>
-      <tr>
-        <th>Question</th>
-        <th>Answer</th>
-        <th>Category</th>
-        <th>Date Added</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>How can I track my order?</td>
-        <td>You can track your order by visiting the "Track Order" page and entering your order ID.</td>
-        <td>Shipping</td>
-        <td>2024-04-20</td>
-        <td>Active</td>
-      </tr>
-      <tr>
-        <td>What payment methods do you accept?</td>
-        <td>We accept Visa, Mastercard, American Express, and PayPal.</td>
-        <td>Payment</td>
-        <td>2024-04-21</td>
-        <td>Active</td>
-      </tr>
-      <tr>
-        <td>How long does shipping take?</td>
-        <td>Shipping times vary depending on your location. Standard shipping usually takes 3-5 business days.</td>
-        <td>Shipping</td>
-        <td>2024-04-22</td>
-        <td>Active</td>
-      </tr>
-      <tr>
-        <td>Can I return an item if I'm not satisfied?</td>
-        <td>Yes, you can return items within 30 days of purchase for a full refund.</td>
-        <td>Returns</td>
-        <td>2024-04-23</td>
-        <td>Active</td>
-      </tr>
-    </tbody>
-  </table> 
-</div>
-
-  <script src="./JS/CHECKOUT.js"></script>
-
-
-
-
-<!-- =======================End Your Page Here======================= -->
-
+    <script src="./JS/CHECKOUT.js"></script>
+    <!-- =======================End Your Page Here======================= -->
+    
     <footer>
-        <div class="container">
-            <div class="box">
-                <h3>Game Masters</h3>
-                <ul class="social">
-                    <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://twitter.com/" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
+      <div class="container">
+        <div class="box">
+          <h3>Game Masters</h3>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
                 </ul>
                 <p class="text">
                     Explore endless worlds of gaming adventure with GameStore. Discover the latest releases, join our community, and level up your gaming experience today.

@@ -29,5 +29,17 @@ fetch('Games.json').then(results => results.json()).then(data => {
             alert("The Game Has Been Added To Cart Successfully!");
         }, 0);
     }
+    if(e.target.classList.contains('add-to-cart-related')){
+        let gameToBeAdded = {
+            gameName: e.target.getAttribute('gamename'),
+            gamePrice: e.target.getAttribute('gameprice'),
+            gameImage: e.target.getAttribute('gameimage'),
+            gameId: e.target.getAttribute('gameid'),
+        };
+        cartGames[e.target.getAttribute('gameid')] = gameToBeAdded;
+        localStorage.setItem('cart-games', JSON.stringify(cartGames));
+        document.getElementById('cart-counter').innerHTML = Object.keys(cartGames).length;
+        alert("The Product Has Been Added To Cart Successfully!");
+    }
 });
 });
