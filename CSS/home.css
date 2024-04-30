@@ -159,16 +159,6 @@
 .Our-Services {
     padding: 100px 0 80px;
 }
-.section-heading {
-    margin: 0;
-    font-weight: normal;
-    font-size: 45px;
-    text-align: center;
-    background: rgb(0,173,181);
-    background-image: linear-gradient(41deg, rgba(0,173,181,1) 28%, rgba(0,181,103,1) 95%);
-    background-clip: text;
-    color: transparent;
-}
 .Our-Services .services {
     padding-top: 100px;
     display: flex;
@@ -776,5 +766,8 @@ footer {
     background-color: var(--darker);
 }
 footer > p {
-    border-top-color: var(--dark);
+    border-top-color: var(--dark) !important;
+}
+footer input, footer textarea {
+    background-color: var(--dark) !important;
 }

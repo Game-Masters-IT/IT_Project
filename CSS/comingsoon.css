@@ -100,14 +100,3 @@ header ul li a:hover{
 } */
 
 /* <====================    Starting here    ===================> */
-
-header p {
-    text-transform: capitalize;
-    font-size: xx-large;
-    text-align: center;
-    letter-spacing: 5px;
-    font-weight: bold;
-    background-image: linear-gradient(41deg, rgba(0, 173, 181, 1) 28%, rgba(0, 181, 103, 1) 95%);
-    background-clip: text;
-    color: transparent;
-}

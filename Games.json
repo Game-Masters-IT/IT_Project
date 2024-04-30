@@ -1,6 +1,6 @@
 {
-
     "0": {
+        "gameID": 0,
         "gameName": "Far Cry® 6 Game of the Year Edition",
         "gamePrice": "$119.99",
         "gameImg": "Images/homeImgs/Trending/farcry.jpg",
@@ -8,6 +8,7 @@
         "gameTrailer": "https://www.youtube.com/embed/-IJuKT1mHO8"
     },
     "1": {
+        "gameID": 1,
         "gameName": "Grand Theft Auto V: Premium Edition",
         "gamePrice": "$29.99",
         "gameImg": "Images/homeImgs/Trending/GTAV.jpg",
@@ -15,6 +16,7 @@
         "gameTrailer": "https://www.youtube.com/embed/QkkoHAzjnUs"
     },
     "2": {
+        "gameID": 2,
         "gameName": "League of Legends",
         "gamePrice": "$10",
         "gameImg": "Images/homeImgs/Trending/EGS_LeagueofLegends.jpg",
@@ -23,6 +25,7 @@
         
     },
     "3": {
+        "gameID": 3,
         "gameName": "EA SPORTS FC™ 24 Standard Edition",
         "gamePrice": "$69.99",
         "gameImg": "Images/homeImgs/Trending/EGS_EASPORTS.jpg",
@@ -30,6 +33,7 @@
         "gameTrailer": "https://www.youtube.com/embed/XhP3Xh4LMA8"
     },
     "4": {
+        "gameID": 4,
         "gameName": "PUBG: BATTLEGROUNDS",
         "gamePrice": "$10",
         "gameImg": "Images/homeImgs/Trending/pubg.jpg",
@@ -37,24 +41,59 @@
         "gameTrailer": "https://www.youtube.com/embed/u1oqfdh4xBY"
     },
     "5": {
-        "gameName": "PUBG: BATTLEGROUNDS",
-        "gamePrice": "$10",
-        "gameImg": "Images/homeImgs/Trending/pubg.jpg",
-        "gameDesc": "",
-        "gameTrailer": "https://www.youtube.com/embed/XhP3Xh4LMA8"
-    },
-    "98": {
-        "gameName": "PUBG: BATTLEGROUNDS",
-        "gamePrice": "$10",
-        "gameImg": "Images/homeImgs/Trending/pubg.jpg",
-        "gameDesc": "",
-        "gameTrailer": "https://www.youtube.com/embed/XhP3Xh4LMA8"
-    },
-    "99": {
+        "gameID": 5,
         "gameName": "Red Dead Redemption 2",
         "gamePrice": "$59.99",
         "gameImg": "Images/homeImgs/Trending/RDR2.jpg",
         "gameDesc": "Red Dead Redemption 2 (RDR2) is an epic action-adventure game set in America's late 1800s Wild West. Play as Arthur Morgan, an outlaw navigating the challenges of survival and morality in the Van der Linde gang. Explore a vast open world teeming with life, from bustling towns to rugged wilderness. Engage in intense shootouts, bond with your trusty steed, and discover a wealth of side activities like hunting and gambling. With breathtaking visuals and immersive gameplay, RDR2 sets a new standard for open-world gaming, delivering an unforgettable journey through the lawless frontier of the American West.",
         "gameTrailer": "https://www.youtube.com/embed/gmA6MrX81z4"
+    },
+    "6": {
+        "gameID": 6,
+        "gameName": "VALORANT",
+        "gamePrice": "$10",
+        "gameImg": "Images/homeImgs/Trending/EGS_VALORANT.jpg",
+        "gameDesc": "Valorant is a fast-paced tactical shooter where teams of agents with unique abilities battle in a variety of objective-based game modes. Players must strategize, communicate, and showcase their skills to outmaneuver opponents and secure victory in intense, high-stakes matches.",
+        "gameTrailer": "https://www.youtube.com/embed/e_E9W2vsRbQ"
+    },
+    "7": {
+        "gameID": 7,
+        "gameName": "Fortnite",
+        "gamePrice": "$10",
+        "gameImg": "Images/homeImgs/Trending/fortnite.jpg",
+        "gameDesc": "Fortnite is a wildly popular online multiplayer game that combines elements of shooting, building, and survival. Players drop onto an island, scavenge for weapons and resources, and battle to be the last one standing in a constantly shrinking map. With its vibrant graphics, diverse gameplay modes, and frequent updates, Fortnite has become a cultural phenomenon, attracting millions of players worldwide.",
+        "gameTrailer": "https://www.youtube.com/embed/aOAiUwz7Zt8"
+    },
+    "8": {
+        "gameID": 8,
+        "gameName": "Among Us",
+        "gamePrice": "$1.99",
+        "gameImg": "Images/homeImgs/Trending/amogusportrait.jpg",
+        "gameDesc": "Among Us is a social deduction game where players work together to complete tasks on a spaceship while trying to identify the impostors among them. With its simple yet addictive gameplay and emphasis on deception and deduction, Among Us has become a hit among gamers of all ages. Will you trust your crewmates or uncover the impostors before it's too late?",
+        "gameTrailer": "https://www.youtube.com/embed/CermGp8bwFE"
+    },
+    "9": {
+        "gameID": 9,
+        "gameName": "Assassins Creed Odyssey",
+        "gamePrice": "$11.99",
+        "gameImg": "Images/homeImgs/Trending/ACOrigins.jpg",
+        "gameDesc": "Assassin's Creed Odyssey transports players to ancient Greece, where they embark on an epic journey as a mercenary caught in the midst of a legendary conflict between Athens and Sparta. With stunning open-world exploration, thrilling combat, and a rich narrative filled with choice and consequence, players will forge their own path to become a legendary hero or villain in this immersive action-adventure RPG.",
+        "gameTrailer": "https://www.youtube.com/embed/s_SJZSAtLBA"
+    },
+    "10": {
+        "gameID": 10,
+        "gameName": "Call of Duty: WWII",
+        "gamePrice": "$29.99",
+        "gameImg": "Images/homeImgs/Trending/28204.jpg",
+        "gameDesc": "Call of Duty: WWII takes players back to the iconic battles of World War II, immersing them in the epic struggle against tyranny across Europe. From the beaches of Normandy to the heart of Nazi Germany, experience intense infantry combat, gripping narrative missions, and thrilling multiplayer action. With authentic weapons, historic locations, and a gritty, cinematic atmosphere, this installment redefines the WWII gaming experience for a new generation",
+        "gameTrailer": "https://www.youtube.com/embed/D4Q_XYVescc"
+    },
+    "11": {
+        "gameID": 11,
+        "gameName": "Rocket League®",
+        "gamePrice": "$10",
+        "gameImg": "Images/homeImgs/Trending/EGS_RocketLeague.jpg",
+        "gameDesc": "Rocket League is a high-octane blend of soccer and vehicular mayhem, where players control rocket-powered cars to score goals in dynamic arenas. With fast-paced matches, customizable vehicles, and addictive gameplay, it's a unique sports experience that's easy to pick up but hard to master. Whether playing solo or with friends, get ready to unleash your inner athlete in this adrenaline-fueled arcade sensation.",
+        "gameTrailer": "https://www.youtube.com/embed/SgSX3gOrj60"
     }
 }

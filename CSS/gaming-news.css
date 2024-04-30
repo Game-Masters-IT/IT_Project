@@ -1,0 +1,288 @@
+a {
+    cursor: pointer;
+}
+/*------------------- Start Landing content  -------------------*/
+.landing-content {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: rgba(0, 0, 0, .4);
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    transition-timing-function: ease;
+}
+.landing-content h1 {
+    text-align: center;
+    font-size: 45px;
+    color: var(--light);
+    background: rgb(0, 173, 181);
+    background-image: linear-gradient(41deg, rgba(0, 173, 181, 1) 28%, rgba(0, 181, 103, 1) 95%);
+    background-clip: text;
+    color: transparent;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.background-clip {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: inherit;
+    object-fit:cover ;
+}
+
+.landing-content .arrow-to-section {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    animation-name: arrow-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes arrow-animation {
+    to {
+        transform: translateY(15px);
+    }
+}
+
+
+/*------------------- End Landing content  -------------------*/
+
+/*--------------------- Start Hot News --------------------- */
+
+.contain {
+    position: relative;
+}
+.betngan {
+    font-size: 45px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+h2:last-child {
+    width: 100%;
+    text-align: center;
+}
+.hot-news {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 50px;
+    grid-template-areas:
+        "left-side-1 right-side-1"
+        "left-side-2 right-side-2";
+}
+.item-1 {
+    background-image: url(../Images/gaming-news/hot-news-images/1.png);
+    grid-area: left-side-1;
+}
+.item-2 {
+    background-image: url(../Images/gaming-news/hot-news-images/2.png);
+    grid-area: right-side-1;
+}
+.item-3 {
+    background-image: url(../Images/gaming-news/hot-news-images/3.png);
+    grid-area: left-side-2;
+}
+.item-4 {
+    background-image: url(../Images/gaming-news/hot-news-images/4.png);
+    grid-area: right-side-2;
+}
+
+.hot-news .item {
+    position: relative;
+    background-color: brown;
+    border-radius: 15px;
+    width: 100%;
+    height:300px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+    z-index: 0;
+    /* cursor: pointer; */
+}
+.hot-news .item .text {
+    position: absolute;
+    left:30px;
+    bottom: 10px;
+    text-align: left;
+}
+.hot-news .item .text .label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--main);
+    color: black;
+    padding: 7px 10px;
+    bottom: 60px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+.hot-news .item .text .article-text {
+    font-size: 1.4rem;
+    color: white;
+
+}
+.hot-news .item .text .article-text:hover {
+    text-decoration: underline;
+}
+
+.hot-news .item::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    box-shadow: inset 0px 0px 300px 20px rgba(0, 0, 0, 1);
+    opacity: 0;
+    border-radius: 15px;
+    transform: translateX(-50%);
+}
+.hot-news .item:hover {
+    transform: translateY(-5px);
+}
+.hot-news .item:hover::after {
+    opacity: .5;
+}
+
+.gaming-news-video .iframe-container iframe {
+    width: 100%;
+    height: 700px;
+}
+
+
+
+/*--------------------- End Hot News --------------------- */
+
+
+/*--------------------- Start articles ------------------*/
+
+.hot-articles li {  
+    width: 100%;
+    /* height: 120px; */
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid var(--black-tran-2);
+    padding: 20px 0;
+    vertical-align: middle;
+}
+.hot-articles li a:nth-child(2) {
+    font-weight: bold;
+}
+.article-img .img-1 {
+    background-image: url(../Images/gaming-news/article-images/1.jpg);
+}
+.article-img .img-2 {
+    background-image: url(../Images/homeImgs/articles/valorant.jpg);
+}
+.article-img .img-3 {
+    background-image: url(../Images/homeImgs/articles/spiderman.jpg);
+}
+.article-img .img-4 {
+    background-image: url(../Images/homeImgs/articles/destiny.jpg);
+}
+.article-img .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    filter: contrast(1);
+    transition: 0.3s;
+}
+.article-img .img:hover {
+    filter: contrast(0.7);
+}
+.hot-articles .text p {
+    color: rgba(245, 245, 245, 0.5);
+}
+
+.hot-articles .text p:first-child{
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.read-more {
+    border-bottom: 1px solid var(--black-tran-2);
+    transition: all ease 0.5s;
+}
+.read-more:hover {
+    border-color: white;
+}
+
+
+
+/*--------------------- End articles ------------------*/
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 70px;
+}
+.table-img {
+    width: 45px;
+    height: 70px;
+    background-image: url('../Images/homeImgs/Trending/fortnite.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10%;
+}
+tr:nth-child(odd) {
+    background-color: var(--dark);
+}
+td {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0;
+}
+table .content {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+table td:hover {
+    background-color: var(--main);
+}
+
+table .content .txt {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+} 
+table .content .txt .name {
+    font-size: larger;
+    font-weight: bold;
+}
+table .content .txt .name:hover {
+    text-decoration: underline;
+}
+table .content .txt .price {
+    margin-top: 10px;
+}
+th {
+    padding: 20px;
+    background-color: var(--main);
+    border: 1px solid black;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+table i {
+    margin-right: 10px;
+}
+
+
+

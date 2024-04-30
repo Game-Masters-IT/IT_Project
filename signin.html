@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrap">
+    <!-- <div class="wrap">
         <div class="blured-background"></div>
         <div class="login-text">
             <a href="index.html" class="logo">
@@ -36,24 +36,22 @@
     
     <div class="wrapper">
         
-        <!-- Start login form -->
-        
         <div class="form-box login">
             <h2>Sign in</h2>
-            <form action="#">
+            <form onsubmit="return validate()" action="index.html">
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="mail"></ion-icon>
                     </span>
-                    <input type="email" required>
-                    <label>Email</label>
+                    <input class="inputField" id="email-login" type="email">
+                    <label for="email-login">Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="lock-closed"></ion-icon>
                     </span>
-                    <input type="password" required>
-                    <label>Password</label>
+                    <input  class="inputField" id="pass-login" type="password">
+                    <label for="pass-login">Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">Remember me</label>
@@ -68,33 +66,31 @@
             </form>
         </div>
 
-        <!-- End login form -->
 
-        <!-- Start Registeration form -->
 
         <div class="form-box register">
             <h2>Create Account</h2>
-            <form action="#">
+            <form onsubmit="return validate()" action="index.html">
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="person"></ion-icon>
                     </span>
-                    <input type="text" required>
-                    <label>Username</label>
+                    <input class="inputField" id="uname" type="text">
+                    <label for="uname">Username</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="mail"></ion-icon>
                     </span>
-                    <input type="email" required>
-                    <label>Email</label>
+                    <input class="inputField" id="email-sign-up" type="email">
+                    <label for="email-sign-up">Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="lock-closed"></ion-icon>
                     </span>
-                    <input type="password" required>
-                    <label>Password</label>
+                    <input class="inputField" id="pass-sign-up" type="password">
+                    <label for="pass-sign-up">Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">
@@ -109,9 +105,126 @@
                 </div>
             </form>
         </div>
-        <!-- End Registeration form -->
+    </div>
+</div> -->
+<nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gamepad"></i>
+                <span><span>Game</span>Masters</span>
+            </a>
+            <div class="theme-mode" id="theme">
+                <i class="fa-solid fa-moon fa-fw" id="theme-icon" ></i>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+<div id="container" class="container2">
+    <div class="form-container sign-up">
+        <form class="" action="index.html" method="GET">
+            <h1>Create Account</h1>
+            <div class="social-icons">
+                <a href="#" class="icon">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+            <span>or use your Email for sign up</span>
+            <input class="register-name" required type="text" placeholder="Name">
+            <input class="register-email" required  type="email"  placeholder="Email">
+            <input  class="register-pass" required  type="password" placeholder="Password">
+            <button class="register-btn">Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in">
+        <form action="index.html">
+            <h1>Sign In</h1>
+            <div class="social-icons">
+                <a href="#" class="icon">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+            <span>or use your Email and Password</span>
+            <input class="sign-in-email" required type="email" placeholder="Email">
+            <span class="error-sign-email"></span>
+            <input class="sign-in-pass" required type="password" placeholder="Password">
+            <span class="error-sign-pass"></span>
+            <a href="#">Forget Your Password?</a>
+            <button>Sign In</button>
+        </form>
+    </div>
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>Enter your Personal details to use all of site features</p>
+                <button class="hidden" id="login">
+                    Sign In
+                </button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Hello, Friend!</h1>
+                <p>Register with your Personal details to use all of site features</p>
+                <button class="hidden" id="register">
+                    Sign Up
+                </button>
+            </div>
+        </div>
     </div>
 </div>
+
+<!-- <footer>
+    <div class="container">
+        <div class="box">
+            <h3>Game Masters</h3>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <p class="text">
+                Explore endless worlds of gaming adventure with GameStore. Discover the latest releases, join our community, and level up your gaming experience today.
+            </p>
+        </div>
+        <div class="box">
+            <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">Egypt, Cairo, Helwan University, Faculty of Computer Science and Artificial Intelligence</div>
+            </div>
+            <div class="line">
+                <i class="far fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                <span>+20123453459</span>
+                <span>+20173765432</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Copyright &copy; 2024 GameMasters. All rights reserved.</p>
+</footer> -->
+
 
 
 <!-- =======================End Your Page Here======================= -->

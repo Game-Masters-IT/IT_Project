@@ -36,6 +36,7 @@
     color: transparent;
 }
 .widgets .order-summary h3 {
+    width: 100%;
     margin: 0;
     padding-bottom: 15px;
     margin-bottom: 20px;
@@ -493,5 +494,11 @@ footer {
     background-color: var(--darker);
 }
 footer > p {
-    border-color: var(--dark);
+    border-color: var(--dark) !important;
+}
+footer h2 {
+    font-size: 45px !important;
+}
+footer input, footer textarea {
+    background-color: var(--dark) !important;
 }

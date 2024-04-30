@@ -50,5 +50,28 @@ nav{
     font-size: 20px;
     
 }
+#la{
+    border: 2px var(--white) solid;
+    border-collapse: collapse; 
+    transform: translate(350px); 
+    width: 650px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+th,td{
+    border: 1px var(--white) solid;
+    padding-left: 5px;
+    font-weight: bold;
+    
+}
+tr:nth-child(even)
+{
+    background-color: #00bac4;
+}
+th{
+    font-weight: bolder;
+    font-size:larger;
+}
 
   

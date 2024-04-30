@@ -52,6 +52,7 @@ theSearchBtn.addEventListener('click', () => {
         theSearchBtn.classList.toggle('search-btn-after');
         theSearchBtn.querySelector('i').classList.toggle('search-i-after');
         searchInput.classList.toggle('search-input-after');
+        searchInput.focus();
     }
     else {
         theSearchBtn.setAttribute('type', 'submit');
@@ -97,4 +98,59 @@ document.onclick = (e) => {
 let cartIconHeader = document.querySelector('.fa-bag-shopping');
 cartIconHeader.classList.remove('fa-bag-shopping');
 cartIconHeader.classList.add('fa-cart-shopping');
-document.getElementById('cart-counter').innerHTML = Object.keys(JSON.parse(localStorage.getItem('cart-games'))).length;
+document.getElementById('cart-counter').innerHTML = Object.keys(JSON.parse(localStorage.getItem('cart-games')) || {}).length;
+/*=========================================*/
+// Adding Contact us to the footer
+let theFooter = document.querySelector('footer');
+theFooter.innerHTML = `
+    <div class="container">
+        <div style="padding-left: 20px;">
+            <h2 class="section-heading">Contact Us</h2>
+            <p>We are looking forward to hearing from you soon</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <form action="" class="contact-form">
+                <div class="contact-inputs">
+                    <div class="contact-row">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="contact-row">
+                        <input type="tel" name="phone" placeholder="Phone" required>
+                        <input type="text" name="address" placeholder="Address" required>
+                    </div>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="box">
+            <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">Egypt, Cairo, Helwan University, Faculty of Computer Science and Artificial Intelligence</div>
+            </div>
+            <div class="line">
+                <i class="far fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                <span>+20123453459</span>
+                <span>+20173765432</span>
+                </div>
+            </div>
+            <div class="line">
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <p>Copyright &copy; 2024 GameMasters. All rights reserved.</p>
+`;
