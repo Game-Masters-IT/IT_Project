@@ -1,45 +1,3 @@
-// swaping between sign in and sign up 
-// const wrapper = document.querySelector('.wrapper');
-// const loginLink = document.querySelector('.login-link');
-// const registerLink = document.querySelector('.register-link');
-
-// registerLink.addEventListener('click', ()=> {
-//     wrapper.classList.add('sign-active');
-// });
-// loginLink.addEventListener('click', ()=> {
-//     wrapper.classList.remove('sign-active');
-// });
-
-// function checkInput() {
-//     const inputFields = document.querySelectorAll('.inputField');
-  
-//     inputFields.forEach(inputField => {
-//       const label = inputField.nextElementSibling; // Assuming the label is immediately before the input field
-  
-//       if (inputField.value !== '') {
-//         label.classList.add('input-filled');
-//       } else {
-//         label.classList.remove('input-filled');
-//       }
-//     });
-//   }
-  
-  
-// validation 
-
-// function validate(){
-//     var username = document.getElementById("uname");
-//     var email_login = document.elementFromPoint("email-login");
-//     var email_signup = document.elementFromPoint("email-sign-up");
-//     var pass_Login = document.getElementById("pass-login");
-//     var pass_signup = document.getElementById("pass-sign-up");
-    
-//     if( email_login.value == "" || pass_Login.value == ""){
-//         console.log("")
-//     }
-// }
-
-
 const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
@@ -52,68 +10,107 @@ loginBtn.addEventListener('click', ()=> {
   container.classList.remove("active");
 })
 
-const sign_email =  document.querySelector('.sign-in-email');
-const sign_pass = document.querySelector('.sign-in-pass');
-const sign_email_error = document.querySelector('.error-sign-email');
-const sign_pass_error = document.querySelector('.error-sign-pass');
 
-sign_email.addEventListener('input', () => {
-  if(sign_email.value == '' || sign_email.value.includes('@')){
-    sign_email_error.innerHTML = "";
-    if(sign_email.value.slice(sign_email.value.indexOf('@')+1) == ""){
-      sign_email_error.innerHTML = "Enter a valid Email !";
+
+//--------------------------- register-form ---------------------------------------
+// let register_name,register_email,register_pass;
+//     register_name =  document.querySelector('.register-name');
+//     register_email = document.querySelector('.register-email');
+//     register_pass = document.querySelector('.register-pass');
+
+
+
+// register_name.addEventListener('input' , ()=>{
+//   if(register_name.value.length < 5 ){
+//     register_name.setCustomValidity("Enter at least 5 characters !");
+//   }
+//   else {
+//     register_name.setCustomValidity("");
+//   }
+// });
+// register_email.addEventListener('input' , ()=>{
+//   if(register_email.value.includes('@')  && register_email.value.slice(sign_email.value.indexOf('@')+1) == ""){
+//     register_email.setCustomValidity("ENTER A VALID EMAIL !");
+//   }
+//   else {
+//     register_email.setCustomValidity("");
+//   }
+// });
+// register_pass.addEventListener('input' , ()=>{
+//   if(register_pass.value.length < 8){
+//     register_pass.setCustomValidity("Enter at least 8 digits !");
+    
+//   }
+//   else {
+//     register_pass.setCustomValidity("");
+//   }
+// });
+
+
+
+
+
+
+
+//---------------------------------------------------------------------------------------------
+
+function saveData(){
+  let name ,email , password;
+  name = document.getElementById("name").value;
+  email = document.getElementById("email").value;
+  password = document.getElementById("password").value;
+
+
+
+  let user_records = new Array();
+  user_records = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[];
+  
+  if(user_records.some((v)=>{
+    return v.email==email;
+  })){
+    alert("This Email Adress Already Existing");
+  }
+  else {
+      if(name !== "" && email !== "" && password !== ""){
+        
+        user_records.push({
+          "name" : name,
+          "email" : email,
+          "password" : password
+        })
+        localStorage.setItem("users",JSON.stringify(user_records));
+        window.location.href="index.html";
+      }
     }
+}
+
+
+
+function checkData(){
+
+
+  let email , password;
+  email = document.getElementById("log-email").value;
+  password = document.getElementById("log-password").value;
+
+
+  let user_record = new Array();
+  user_record = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+  if(user_record.some((v)=>{
+    return v.email == email && v.password== password
+  })){
+    alert("Login Successfull");
+
+
+    let current_user = user_record.filter((v) =>{
+      return v.email==email && v.password == password
+    })[0]
+
+    window.location.href="index.html";
   }
 
-  else{
-    sign_email_error.innerHTML = "Enter a valid Email !";
-  }
-});
-
-sign_pass.addEventListener('input' , ()=> {
-  if(sign_pass.value.length >= 8 || sign_pass.value == ''){
-    sign_pass_error.innerHTML = "";
-  }
   else {
-    sign_pass_error.innerHTML = "please enter at least 8 lenght password !";
+    alert("Wrong Email Or Password !");
   }
-});
-
-const register_name =  document.querySelector('.register-name');
-const register_email = document.querySelector('.register-email');
-const register_pass = document.querySelector('.register-pass');
-// const register_Btn = document.querySelector('.register-btn');
-
-
-register_name.addEventListener('input' , ()=> {
-  if(register_name.value.length < 5 ){
-    register_name.setCustomValidity("Enter at least 5 characters !");
-  }
-  else {
-    register_name.setCustomValidity("");
-  }
-
-});
-register_email.addEventListener('input' , ()=> {
-  if(register_email.value.includes('@')  && register_email.value.slice(sign_email.value.indexOf('@')+1) == ""){
-    register_email.setCustomValidity("ENTER A VALID EMAIL !");
-  }
-  else {
-    register_email.setCustomValidity("");
-  }
-
-});
-register_pass.addEventListener('input' , ()=> {
-  if(register_pass.value.length < 8){
-    register_pass.setCustomValidity("Enter at least 8 digits !");
-  }
-  else {
-    register_pass.setCustomValidity("");
-  }
-
-});
-
-
-
-
+}
 
