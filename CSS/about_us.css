@@ -69,5 +69,9 @@ tr:nth-child(even)
 {
     background-color: #00bac4;
 }
+th{
+    font-weight: bolder;
+    font-size:larger;
+}
 
   
