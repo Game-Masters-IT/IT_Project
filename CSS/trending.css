@@ -394,6 +394,7 @@ header .menu{
 .arrows button:hover{
     background-color: #eee;
     color: black;
+    cursor: pointer;
 }
 .thumbnail{
     position: absolute;
@@ -420,6 +421,7 @@ header .menu{
 }
 .thumbnail :hover {
     transform: translateY(-10px);
+    cursor: pointer;
 }
 .thumbnail .item img{
     width: 105%;
@@ -456,6 +458,10 @@ header .menu{
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+  }
+
+  #myTable td:hover {
+    cursor: pointer;
   }
   
   #myTable tr:hover {

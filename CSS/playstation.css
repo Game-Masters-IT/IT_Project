@@ -379,7 +379,6 @@ nav .cart:hover {
     float: left;
     text-align: center;
     border-radius: 20px;
-    cursor: pointer;
     padding-top: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
@@ -512,7 +511,7 @@ table {
     #feedback-form form {
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: center;
         padding: 20px;
     }
     
