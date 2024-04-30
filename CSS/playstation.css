@@ -335,6 +335,7 @@ nav .cart:hover {
 .slider .buttons :hover{
     background-color: #eee;
     color: black;
+    cursor: pointer;
 }
 .slider .dots{
     position: absolute;
