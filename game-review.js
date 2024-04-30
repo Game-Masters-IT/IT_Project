@@ -146,3 +146,22 @@ function play() {
   var audio = document.getElementById("audio");
   audio.play();
 }
+
+
+
+
+
+let cartGames = JSON.parse(localStorage.getItem('cart-games')) || {};
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('add-to-cart-btn')) {
+        let gameToBeAdded = {
+            gameName: e.target.getAttribute('gamename'),
+            gamePrice: e.target.getAttribute('gameprice'),
+            gameImage: e.target.getAttribute('gameimage'),
+            gameId: e.target.getAttribute('gameid'),
+        };
+        cartGames[e.target.getAttribute('gameid')] = gameToBeAdded;
+        localStorage.setItem('cart-games', JSON.stringify(cartGames));
+        document.getElementById('cart-counter').innerHTML = Object.keys(cartGames).length;
+    }
+});

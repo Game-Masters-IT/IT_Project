@@ -477,3 +477,26 @@ body {
 
 
 
+    .iframe-container
+    {
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .iframe-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 0px 400px;
+
+    
+    }
+    .iframe-container h2{
+        background-color: #717171;
+        width: 60%;
+    }
