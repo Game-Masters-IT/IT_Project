@@ -169,6 +169,7 @@
     </div>
 
     <table>
+        <div class="advanced-table">
         <thead>
         <tr>
         <th style="color: rgb(255, 255, 255);">Specifications</th>
@@ -214,7 +215,32 @@
         </tr>
         </tbody>
         </table>
-        
+    </div>
+    <div class="form" id="feedback-form">
+            <h2>Feedback Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+    
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="1">1 (Poor)</option>
+                    <option value="2">2 (Fair)</option>
+                    <option value="3">3 (Good)</option>
+                    <option value="4">4 (Very Good)</option>
+                    <option value="5">5 (Excellent)</option>
+                </select>
+    
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
 
 
 </div>
