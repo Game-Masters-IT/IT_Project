@@ -95,5 +95,53 @@
         "gameImg": "Images/homeImgs/Trending/EGS_RocketLeague.jpg",
         "gameDesc": "Rocket League is a high-octane blend of soccer and vehicular mayhem, where players control rocket-powered cars to score goals in dynamic arenas. With fast-paced matches, customizable vehicles, and addictive gameplay, it's a unique sports experience that's easy to pick up but hard to master. Whether playing solo or with friends, get ready to unleash your inner athlete in this adrenaline-fueled arcade sensation.",
         "gameTrailer": "https://www.youtube.com/embed/SgSX3gOrj60"
+    },
+    "12": {
+        "gameID": 12,
+        "gameName": "Tales of Kenzera™: ZAU",
+        "gamePrice": "$19.99",
+        "gameImg": "https://cdn1.epicgames.com/offer/49cd2d3bc2fb416984bee5533ceb5d88/EGS_TalesofKenzeraZAUStandardEdition_SurgentStudios_S2_1200x1600-2af3bfa32e7609eccae3d6d02c8a5e59?h=480&quality=medium&resize=1&w=360",
+        "gameDesc": "Wield the dance of the shaman. Reclaim your father’s spirit. Brave the beautiful and treacherous land of Kenzera with the God of Death in Tales of Kenzera™: ZAU, a metroidvania-style adventure.",
+        "gameTrailer": "https://www.youtube.com/embed/5lEbG0Bx83U"
+    },
+    "13": {
+        "gameID": 13,
+        "gameName": "F1® 24 Champions Edition + Limited Time Bonus",
+        "gamePrice": "$89.99",
+        "gameImg": "https://cdn1.epicgames.com/offer/edffc5fcc62140a7afd239d9e65df463/EGS_F124ChampionsEditionLimitedTimeBonus_Codemasters_Editions_S2_1200x1600-fb60d5336b673d8f14f05800688f3d00?h=480&quality=medium&resize=1&w=360",
+        "gameDesc": "Be One of the 20 in EA SPORTS™ F1® 24. LIMITED TIME ONLY — Pre-purchase* F1® 24 Champions Edition by May 1st, 2024 and receive 2024 liveries and esports liveries in F1® 23** and much more!",
+        "gameTrailer": "https://www.youtube.com/embed/NnyCWsA6KSI"
+    },
+    "14": {
+        "gameID": 14,
+        "gameName": "EA SPORTS™ WRC",
+        "gamePrice": "$49.99",
+        "gameImg": "https://cdn1.epicgames.com/offer/50b6612049324d0faf8642014139b082/EGS_WRC_Codemasters_S2_1200x1600-8c4c26fb91b620a830c867cb78d69efb?h=480&quality=medium&resize=1&w=360",
+        "gameDesc": "Build the car of your dreams in our biggest rally game ever, EA SPORTS™ WRC, the all-new official videogame of the FIA World Rally Championship, the first developed by the award-winning team behind the DiRT Rally series.",
+        "gameTrailer": "https://www.youtube.com/embed/JFy_cWefBtQ"
+    },
+    "15": {
+        "gameID": 15,
+        "gameName": "Madden NFL 24 Deluxe Edition",
+        "gamePrice": "$99.99",
+        "gameImg": "https://cdn1.epicgames.com/offer/0460f46401ae4bdcadbc931d30028015/EGS_MaddenNFL24DeluxeEdition_Tiburon_Editions_S2_1200x1600-4dc7b0b0d74d6a2160e8e25624f48343?h=480&quality=medium&resize=1&w=360",
+        "gameDesc": "FieldSENSE™ : Improvements to the FieldSENSE™ Gameplay System increase control in throwing, catching, blocking and tackling with a suite of new animations added to Hit Everything 2.0 and Skill-Based Passing 2.0.",
+        "gameTrailer": "https://www.youtube.com/embed/UVZ0IIeW2mw"
+    },
+    "16": {
+        "gameID": 16,
+        "gameName": "F1® 23",
+        "gamePrice": "$69.99",
+        "gameImg": "https://cdn1.epicgames.com/offer/b7773a08a6fa41e3a0fbc4c1e51c95a4/EGS_F123_Codemasters_S2_1200x1600-9ee0158a6d9f052deb753af836f9bd8d?h=480&quality=medium&resize=1&w=360",
+        "gameDesc": "Be the last to brake in EA SPORTS™ F1® 23, the official videogame of the 2023 FIA Formula One World Championship™.",
+        "gameTrailer": "https://www.youtube.com/embed/wHNgoRCWqTg"
+    },
+    "17": {
+        "gameID": 17,
+        "gameName": "F1® 23",
+        "gamePrice": "$69.99",
+        "gameImg": "https://cdn1.epicgames.com/offer/b7773a08a6fa41e3a0fbc4c1e51c95a4/EGS_F123_Codemasters_S2_1200x1600-9ee0158a6d9f052deb753af836f9bd8d?h=480&quality=medium&resize=1&w=360",
+        "gameDesc": "Be the last to brake in EA SPORTS™ F1® 23, the official videogame of the 2023 FIA Formula One World Championship™.",
+        "gameTrailer": "https://www.youtube.com/embed/wHNgoRCWqTg"
     }
 }
