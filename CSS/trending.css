@@ -448,6 +448,11 @@ header .menu{
     }
 }
 
+.audio-container {
+    display: flex;
+    justify-content: center;
+  }
+  
 #myTable {
     width: 100%;
     border-collapse: collapse;
