@@ -138,10 +138,34 @@
     },
     "17": {
         "gameID": 17,
-        "gameName": "F1® 23",
-        "gamePrice": "$69.99",
-        "gameImg": "https://cdn1.epicgames.com/offer/b7773a08a6fa41e3a0fbc4c1e51c95a4/EGS_F123_Codemasters_S2_1200x1600-9ee0158a6d9f052deb753af836f9bd8d?h=480&quality=medium&resize=1&w=360",
-        "gameDesc": "Be the last to brake in EA SPORTS™ F1® 23, the official videogame of the 2023 FIA Formula One World Championship™.",
-        "gameTrailer": "https://www.youtube.com/embed/wHNgoRCWqTg"
+        "gameName": "Super Mega Baseball 4",
+        "gamePrice": "$59.99",
+        "gameImg": "Images/pc/pct-6.png",
+        "gameDesc": "The series’ signature combination of arcade-inspired style and immersive gameplay depth returns with more than 200 baseball Legends, 6 all-new stadiums, and a grand slam of presentation upgrades.",
+        "gameTrailer": "https://www.youtube.com/embed/alFTKIcYsRQ"
+    },
+    "18": {
+        "gameID": 18,
+        "gameName": "STAR WARS Jedi: Survivor™",
+        "gamePrice": "$69.99",  
+        "gameImg": "https://cdn1.epicgames.com/offer/5a2ea5980ac147c195775039195a3081/EGS_STARWARSJediSurvivorStandardEdition_RespawnEntertainment_S2_1200x1600-fd090aecb23a065b29ea101939798edd?h=480&quality=medium&resize=1&w=360",
+        "gameDesc": "The story of Cal Kestis continues in the critically acclaimed STAR WARS Jedi: Survivor™, an epic new adventure that will push Cal further than ever as he fights to protect the galaxy from descending into darkness..",
+        "gameTrailer": "https://www.youtube.com/embed/VRaobDJjiec"
+    },
+    "19": {
+        "gameID": 19,
+        "gameName": "EA SPORTS™ PGA TOUR™",
+        "gamePrice": "$69.99",  
+        "gameImg": "https://cdn1.epicgames.com/offer/19d5458aa3c849a1b0fff69da4c9ed9d/EGS_EASPORTSPGATOUR_ElectronicArtsTiburon_S2_1200x1600-dad87936ec9ffb1c928bb896b1bc1a7a?h=480&quality=medium&resize=1&w=360",
+        "gameDesc": "The exclusive home of the Majors, EA SPORTS™ PGA TOUR™ features Pure Strike for superior golf gameplay powered by ShotLink®, and unrivaled access to the world’s most exclusive golf courses.",
+        "gameTrailer": "https://www.youtube.com/embed/LmG2A_mfTxA"
+    },
+    "20": {
+        "gameID": 20,
+        "gameName": "BBUY WILD HEARTS™",
+        "gamePrice": "$69.99",  
+        "gameImg": "Images/pc/pct-9.png",
+        "gameDesc": "Master ancient tech to hunt down giant beasts. WILD HEARTS™ is a twist on the hunting genre where technology gives you a fighting chance against giant nature-infused beasts. Hunt alone or with friends.",
+        "gameTrailer": "https://www.youtube.com/embed/8vw9PlFrrOk"
     }
 }
