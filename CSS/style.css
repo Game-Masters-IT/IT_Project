@@ -120,7 +120,7 @@ nav .pages {
     justify-content: space-between;
     padding: 30px;
     z-index: 100;
-    width: 500px;
+    width: 450px;
     font-size: 17px;
 }
 nav .pages li:not(:last-child) {

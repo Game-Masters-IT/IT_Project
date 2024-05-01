@@ -69,6 +69,9 @@ document.addEventListener('click', (e) => {
 window.onload = () => {
     searchInput.value = "";
 };
+document.querySelector('nav #pages-links .col:first-child li:nth-child(3)').remove();
+document.querySelector('nav #pages-links .col:last-child li:first-child').remove();
+document.querySelector('nav #pages-links .col:last-child li:nth-child(4)').remove();
 /*=========================================*/
 // toggle menu on small screens
 const menuIcon = document.getElementById("toggle-menu");
